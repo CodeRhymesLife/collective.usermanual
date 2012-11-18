@@ -7,7 +7,7 @@ import os
 
 version = '1.0'
 
-setup(name='collective.italiandocumentation',
+setup(name='collective.usermanual',
       version=version,
       description="Plone community maintained developer documentation in Sphinx format",
       #long_description=open("README.txt").read() + "\n",
@@ -17,9 +17,9 @@ setup(name='collective.italiandocumentation',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='',
-      author='La comunità Italiana di Plone',
+      author='Plone Community',
       author_email='',
-      url='http://plone.it',
+      url='http://plone.org',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       #namespace_packages=['gomobiletheme'],
