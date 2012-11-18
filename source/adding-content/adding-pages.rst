@@ -34,7 +34,8 @@ text immediately.
 People are naturally comfortable with the WYSIWYG approach of typical
 word processors. We will describe later in this manual. 
 
-**Markup languages**
+Markup languages
+----------------
 
 Your site-administrator may also enable so-called markup languages.
 If you are the sort of person who likes to enter text using so-called
