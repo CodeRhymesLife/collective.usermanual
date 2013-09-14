@@ -23,6 +23,7 @@ import sys, os
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
+        'sphinxcontrib_robotframework',
         'sphinx.ext.autodoc',
         'sphinx.ext.todo'
 #              'collective.sphinx.autoatschema',
@@ -210,7 +211,7 @@ latex_documents = [
 html_use_smartypants = False
 
 
-# Don't build Modules pages 
+# Don't build Modules pages
 html_domain_indices = False
 
 # Don't build term index

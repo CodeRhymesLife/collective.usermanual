@@ -1,21 +1,63 @@
 Adding Pages
-=================
+============
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Settings ***
+
+   Resource  setup.robot
+
+   Suite Setup  Setup
+   Suite Teardown  Teardown
+   Test Setup  Test Setup
+   Test Teardown  Test Teardown
 
 Pages in Plone vary greatly, but are single "web pages," of one sort or
 another.
 
 To add a page, use the *Add new...* menu for a folder:
 
-.. figure:: ../_static/copy_of_addnewmenu.png
+.. code:: robotframework
+   :class: hidden
+
+    *** Test Cases ***
+
+    Add new page
+        Go to  ${PLONE_URL}
+
+        Click link  css=#plone-contentmenu-factories dt a
+        Element should be visible
+        ...    css=#plone-contentmenu-factories dd.actionMenuContent
+
+        Element should be visible
+        ...    css=#plone-contentmenu-factories dd.actionMenuContent
+
+        ${dot1} =  Add dot
+        ...    css=#plone-contentmenu-factories dt a  1
+
+        ${note1} =  Add note
+        ...    css=#plone-contentmenu-factories
+        ...    At first, click Add new… to open the menu
+        ...    width=180  position=left
+
+        Capture and crop page screenshot  add-new-menu.png
+        ...    contentActionMenus
+        ...    css=#plone-contentmenu-factories dd.actionMenuContent
+        ...    ${dot1}  ${note1}
+
+        Remove elements  ${dot1}  ${note1}
+
+.. figure:: add-new-menu.png
    :align: center
-   :alt: 
+   :alt:
 
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
 .. figure:: ../_static/editpagepanelplone3.png
    :align: center
-   :alt: 
+   :alt:
 
 The **Title** and **Description** fields are there at the top. Fill each
 of them out appropriately. There is a *Change note* field at the bottom,
@@ -32,7 +74,7 @@ When you make a change, such as setting a word to bold, you see the bold
 text immediately.
 
 People are naturally comfortable with the WYSIWYG approach of typical
-word processors. We will describe later in this manual. 
+word processors. We will describe later in this manual.
 
 Markup languages
 ----------------
@@ -52,7 +94,7 @@ Each of these works by the embedding of special formatting codes within
 text. For example, with structured text formatting, surrounding a word
 or phrase by double asterisks will make that word or phrase bold, as in
 \*\*This text would be bold.\*\* These mark-up formats are worth
-learning for speed of input if you do a lot of page creation, or if you 
+learning for speed of input if you do a lot of page creation, or if you
 are adept at such slightly more technical approaches to entering text.
-Some people prefer such formats not just for speed itself, but for 
+Some people prefer such formats not just for speed itself, but for
 fluidity of expression.
