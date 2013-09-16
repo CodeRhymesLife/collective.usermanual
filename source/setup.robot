@@ -3,10 +3,14 @@
 Resource  plone/app/robotframework/server.robot
 Resource  sphinxcontrib_robotframework/annotate.robot
 
+*** Variables ***
+
+
 *** Keywords ***
 
 Setup
    Setup Plone site  plone.app.robotframework.testing.AUTOLOGIN_ROBOT_TESTING
+   Set window size  640  480
 
 Test Setup
    Import library  Remote  ${PLONE_URL}/RobotRemote

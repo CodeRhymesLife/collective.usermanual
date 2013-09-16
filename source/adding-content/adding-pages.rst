@@ -6,7 +6,7 @@ Adding Pages
 
    *** Settings ***
 
-   Resource  setup.robot
+   Resource  ../setup.robot
 
    Suite Setup  Setup
    Suite Teardown  Teardown
@@ -33,20 +33,19 @@ To add a page, use the *Add new...* menu for a folder:
         Element should be visible
         ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
-        ${dot1} =  Add dot
-        ...    css=#plone-contentmenu-factories dt a  1
-
-        ${note1} =  Add note
-        ...    css=#plone-contentmenu-factories
-        ...    At first, click Add new… to open the menu
-        ...    width=180  position=left
+        Update element style  css=a#document  outline  2px dotted red
 
         Capture and crop page screenshot  add-new-menu.png
         ...    contentActionMenus
         ...    css=#plone-contentmenu-factories dd.actionMenuContent
-        ...    ${dot1}  ${note1}
 
-        Remove elements  ${dot1}  ${note1}
+        Click link  css=a#document
+
+        Element should be visible
+        ...    css=input#title
+
+        Capture and crop page screenshot  add-new-page-form.png
+        ...    css=#content
 
 .. figure:: add-new-menu.png
    :align: center
@@ -55,7 +54,7 @@ To add a page, use the *Add new...* menu for a folder:
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
-.. figure:: ../_static/editpagepanelplone3.png
+.. figure:: add-new-page-form.png
    :align: center
    :alt:
 
