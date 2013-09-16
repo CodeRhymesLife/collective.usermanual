@@ -3,9 +3,6 @@
 Resource  plone/app/robotframework/server.robot
 Resource  sphinxcontrib_robotframework/annotate.robot
 
-*** Variables ***
-
-
 *** Keywords ***
 
 Setup
