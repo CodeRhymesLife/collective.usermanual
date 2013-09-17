@@ -1,13 +1,14 @@
 *** Settings ***
 
+Library  Selenium2Screenshots
+
 Resource  plone/app/robotframework/server.robot
-Resource  sphinxcontrib_robotframework/annotate.robot
 
 *** Keywords ***
 
 Setup
    Setup Plone site  plone.app.robotframework.testing.AUTOLOGIN_ROBOT_TESTING
-   Set window size  640  480
+   Set window size  640  1024
 
 Test Setup
    Import library  Remote  ${PLONE_URL}/RobotRemote
