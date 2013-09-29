@@ -17,10 +17,7 @@ To add a page, use the *Add new...* menu for a folder:
         Go to  ${PLONE_URL}
 
         Click link  css=#plone-contentmenu-factories dt a
-        Element should be visible
-        ...    css=#plone-contentmenu-factories dd.actionMenuContent
-
-        Element should be visible
+        Wait until element is visible
         ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
         Update element style  css=a#document  outline  2px dotted red
@@ -32,7 +29,7 @@ To add a page, use the *Add new...* menu for a folder:
 
         Click link  css=a#document
 
-        Element should be visible
+        Wait until element is visible
         ...    css=input#title
 
         Capture and crop page screenshot
