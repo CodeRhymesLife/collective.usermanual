@@ -14,14 +14,18 @@ setup(
     author_email='',
     url='https://github.com/collective/collective.usermanual/',
     license='GPL',
+    package_dir={'': 'src'},
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['collective'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'plone.api',
-        'plone.app.robotframework[speak]',
+        'roman',
+        'collective.sphinx.includedoc',
+        'collective.sphinx.autoatschema',
         'sphinxcontrib-robotframework[docs]',
+        'plone.app.robotframework[speak]',
+        'plone.api'
     ]
 )

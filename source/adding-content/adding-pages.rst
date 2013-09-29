@@ -1,17 +1,7 @@
 Adding Pages
 ============
 
-.. code:: robotframework
-   :class: hidden
-
-   *** Settings ***
-
-   Resource  ../setup.robot
-
-   Suite Setup  Setup
-   Suite Teardown  Teardown
-   Test Setup  Test Setup
-   Test Teardown  Test Teardown
+.. include:: ../robot.rst
 
 Pages in Plone vary greatly, but are single "web pages," of one sort or
 another.
@@ -35,7 +25,8 @@ To add a page, use the *Add new...* menu for a folder:
 
         Update element style  css=a#document  outline  2px dotted red
 
-        Capture and crop page screenshot  add-new-menu.png
+        Capture and crop page screenshot
+        ...    ../_static/robot/add-new-menu.png
         ...    contentActionMenus
         ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
@@ -44,17 +35,18 @@ To add a page, use the *Add new...* menu for a folder:
         Element should be visible
         ...    css=input#title
 
-        Capture and crop page screenshot  add-new-page-form.png
+        Capture and crop page screenshot
+        ...    ../_static/robot/add-new-page-form.png
         ...    css=#content
 
-.. figure:: add-new-menu.png
+.. figure:: ../_static/robot/add-new-menu.png
    :align: center
    :alt:
 
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
-.. figure:: add-new-page-form.png
+.. figure:: ../_static/robot/add-new-page-form.png
    :align: center
    :alt:
 

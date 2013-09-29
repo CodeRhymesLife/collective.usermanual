@@ -7,4 +7,6 @@ develop-eggs
 parts
 *.egg-info
 *.pyc
+source/_static/robot/*.png
+docs/
 

@@ -5,17 +5,22 @@ Plone 4 User Manual
 A User Manual for Plone content creators and managers.
 
 .. toctree::
-    :maxdepth: 2
-    :numbered:
+   :maxdepth: 2
+   :numbered:
 
-    introduction/index
-    adding-content/index
-    managing-content/index
-    using-tinymce-as-visual-editor/index
-    using-kupu-as-visual-editor/index
-    collaboration-and-workflow/index
-    using-collections/index
-    portlet-management/index
+   introduction/index
+   adding-content/index
+   managing-content/index
+   using-tinymce-as-visual-editor/index
+   using-kupu-as-visual-editor/index
+   collaboration-and-workflow/index
+   using-collections/index
+   portlet-management/index
+
+.. toctree::
+   :hidden:
+
+   robot
 
 .. |Events summary table| image:: _static/events-summary-chart.jpg
 .. |lights-camera-action.png| image:: _static/lights-camera-action.png
