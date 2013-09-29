@@ -1,0 +1,10 @@
+syntax: glob
+.idea
+.installed.cfg
+.DS_Store
+bin
+develop-eggs
+parts
+*.egg-info
+*.pyc
+
