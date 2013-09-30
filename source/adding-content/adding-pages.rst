@@ -23,7 +23,7 @@ To add a page, use the *Add new...* menu for a folder:
         Update element style  css=a#document  outline  2px dotted red
 
         Capture and crop page screenshot
-        ...    ../_static/robot/add-new-menu.png
+        ...    ../_robot/add-new-menu.png
         ...    contentActionMenus
         ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
@@ -33,17 +33,17 @@ To add a page, use the *Add new...* menu for a folder:
         ...    css=input#title
 
         Capture and crop page screenshot
-        ...    ../_static/robot/add-new-page-form.png
+        ...    ../_robot/add-new-page-form.png
         ...    css=#content
 
-.. figure:: ../_static/robot/add-new-menu.png
+.. figure:: ../_robot/add-new-menu.png
    :align: center
    :alt:
 
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
-.. figure:: ../_static/robot/add-new-page-form.png
+.. figure:: ../_robot/add-new-page-form.png
    :align: center
    :alt:
 
