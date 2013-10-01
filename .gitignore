@@ -1,12 +1,12 @@
 syntax: glob
-.idea
-.installed.cfg
-.DS_Store
-bin
-develop-eggs
-parts
 *.egg-info
 *.pyc
-source/_static/robot/*.png
+.DS_Store
+.idea
+.installed.cfg
+bin
+develop-eggs
 docs/
-
+parts
+selenium-screenshot-*.png
+source/_robot/*.png
