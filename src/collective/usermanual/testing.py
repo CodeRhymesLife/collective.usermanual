@@ -61,7 +61,65 @@ class MockMailHostLayer(Layer):
 MOCK_MAILHOST_FIXTURE = MockMailHostLayer()
 
 
+class CustomRemoteKeywords(RemoteLibrary):
+    """Useful remote keywords, which are run inside a normal ZPublisher-request
+    environment with all the related Plone-magic in place
+
+    """
+
+    def create_content(self, *args, **kwargs):
+        """Create content and return its UID
+        """
+        # XXX: It seems that **kwargs does not yet work with Robot Framework
+        # remote library interface and that's why we need to unpack the
+        # keyword arguments from positional args list.
+        for arg in args:
+            name, value = arg.split('=', 1)
+            kwargs[name] = value
+        assert 'id' in kwargs, u"Keyword arguments must include 'id'."
+        assert 'type' in kwargs, u"Keyword arguments must include 'type'."
+        if 'container' in kwargs:
+            kwargs['container'] = api.content.get(UID=kwargs['container'])
+        else:
+            kwargs['container'] = api.portal.get()
+
+        # Pre-fill Image-types with random content
+        if kwargs.get('type') == 'Image' and not 'image' in kwargs:
+            import random
+            import StringIO
+            from PIL import (
+                Image,
+                ImageDraw
+                )
+            img = Image.new('RGB', (random.randint(320, 640),
+                                    random.randint(320, 640)))
+            draw = ImageDraw.Draw(img)
+            draw.rectangle(((0, 0), img.size), fill=(random.randint(0, 255),
+                                                     random.randint(0, 255),
+                                                     random.randint(0, 255)))
+            del draw
+
+            kwargs['image'] = StringIO.StringIO()
+            img.save(kwargs['image'], 'PNG')
+            kwargs['image'].seek(0)
+
+        return IUUID(api.content.create(**kwargs))
+
+    def get_the_last_sent_email(self):
+        """Return the last sent email from MockMailHost sent messages storage
+        """
+        return self.MailHost.messages[-1] if self.MailHost.messages else u""
+
+USERMANUAL_REMOTE_LIBRARY_FIXTURE = RemoteLibraryLayer(
+    bases=(PLONE_FIXTURE,),
+    libraries=(AutoLogin, CustomRemoteKeywords),
+    name="UserManual:RobotRemote"
+)
+
+
 class UserManualLayer(PloneSandboxLayer):
+    defaultBases = (MOCK_MAILHOST_FIXTURE,
+                    USERMANUAL_REMOTE_LIBRARY_FIXTURE)
 
     def setUpZope(self, app, configurationContext):
         from robot.libraries.BuiltIn import BuiltIn
@@ -102,65 +160,7 @@ class UserManualLayer(PloneSandboxLayer):
 USERMANUAL_FIXTURE = UserManualLayer()
 
 
-class CustomRemoteKeywords(RemoteLibrary):
-    """Useful remote keywords, which are run inside a normal ZPublisher-request
-    environment with all the related Plone-magic in place
-
-    """
-
-    def create_content(self, *args, **kwargs):
-        """Create content and return its UID
-        """
-        # XXX: It seems that **kwargs does not yet work with Robot Framework
-        # remote library interface and that's why we need to unpack the
-        # keyword arguments from positional args list.
-        for arg in args:
-            name, value = arg.split('=', 1)
-            kwargs[name] = value
-        assert 'id' in kwargs, u"Keyword arguments must include 'id'."
-        assert 'type' in kwargs, u"Keyword arguments must include 'type'."
-        if 'container' in kwargs:
-            kwargs['container'] = api.content.get(UID=kwargs['container'])
-        else:
-            kwargs['container'] = api.portal.get()
-
-        # Pre-fill Image-types with random content
-        if kwargs.get('type') == 'Image' and not 'image' in kwargs:
-            import random
-            import StringIO
-            from PIL import (
-                Image,
-                ImageDraw
-            )
-            img = Image.new('RGB', (random.randint(320, 640),
-                                    random.randint(320, 640)))
-            draw = ImageDraw.Draw(img)
-            draw.rectangle(((0, 0), img.size), fill=(random.randint(0, 255),
-                                                     random.randint(0, 255),
-                                                     random.randint(0, 255)))
-            del draw
-
-            kwargs['image'] = StringIO.StringIO()
-            img.save(kwargs['image'], 'PNG')
-            kwargs['image'].seek(0)
-
-        return IUUID(api.content.create(**kwargs))
-
-    def get_the_last_sent_email(self):
-        """Return the last sent email from MockMailHost sent messages storage
-        """
-        return self.MailHost.messages[-1] if self.MailHost.messages else u""
-
-USERMANUAL_REMOTE_LIBRARY_FIXTURE = RemoteLibraryLayer(
-    bases=(PLONE_FIXTURE,),
-    libraries=(AutoLogin, CustomRemoteKeywords),
-    name="UserManual:RobotRemote"
-)
-
 USERMANUAL_ROBOT_TESTING = FunctionalTesting(
-    bases=(MOCK_MAILHOST_FIXTURE,
-           USERMANUAL_REMOTE_LIBRARY_FIXTURE,
-           USERMANUAL_FIXTURE,
-           z2.ZSERVER_FIXTURE),
+    bases=(USERMANUAL_FIXTURE, z2.ZSERVER_FIXTURE),
     name="UserManual:Robot"
 )
