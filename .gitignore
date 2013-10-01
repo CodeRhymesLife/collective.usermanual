@@ -4,9 +4,11 @@ syntax: glob
 .DS_Store
 .idea
 .installed.cfg
+.mr.developer.cfg
 bin
 develop-eggs
 docs/
+ghostdriver.log
 parts
 selenium-screenshot-*.png
 source/_robot/*.png

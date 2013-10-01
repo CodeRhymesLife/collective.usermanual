@@ -30,6 +30,14 @@
    Suite Teardown
        Teardown Plone Site
 
+   Highlight
+       [Arguments]  ${locator}
+       Update element style  ${locator}  outline  2px dotted red
+
+   Remove highlighting
+       [Arguments]  ${locator}
+       Update element style  ${locator}  outline  none
+
    Pause
        Import library  Dialogs
        Pause execution

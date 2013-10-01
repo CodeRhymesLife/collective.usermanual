@@ -105,6 +105,11 @@ class CustomRemoteKeywords(RemoteLibrary):
 
         return IUUID(api.content.create(**kwargs))
 
+    def set_default_language(self, language):
+        """Change portal default language
+        """
+        self.portal_languages.setDefaultLanguage(language)
+
     def get_the_last_sent_email(self):
         """Return the last sent email from MockMailHost sent messages storage
         """
