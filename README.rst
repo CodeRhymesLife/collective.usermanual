@@ -2,6 +2,38 @@ Introduction
 ============
 
 
+Bootstrapping
+-------------
+
+.. code:: bash
+
+   $ python bootstrap.py
+   $ bin/buildout
+
+
+Building with Firefox
+---------------------
+
+.. code:: bash
+
+   $ bin/sphinx-build source docs
+
+
+Building with PhantomJS
+-----------------------
+
+.. code:: bash
+
+   $ ROBOT_BROWSER=phantomjs bin/sphinx-build source docs
+
+
+Resetting generated screenshots
+-------------------------------
+
+.. code:: bash
+
+   $ rm source/_robot/*.png
+
 License
 -------
 

@@ -8,44 +8,52 @@ another.
 
 To add a page, use the *Add new...* menu for a folder:
 
-.. code:: robotframework
-   :class: hidden
-
-    *** Test Cases ***
-
-    Add new page
-        Go to  ${PLONE_URL}
-
-        Click link  css=#plone-contentmenu-factories dt a
-        Wait until element is visible
-        ...    css=#plone-contentmenu-factories dd.actionMenuContent
-
-        Update element style  css=a#document  outline  2px dotted red
-
-        Capture and crop page screenshot
-        ...    ../_robot/add-new-menu.png
-        ...    contentActionMenus
-        ...    css=#plone-contentmenu-factories dd.actionMenuContent
-
-        Click link  css=a#document
-
-        Wait until element is visible
-        ...    css=input#title
-
-        Capture and crop page screenshot
-        ...    ../_robot/add-new-page-form.png
-        ...    css=#content
-
+.. .. figure:: ../_static/copy_of_addnewmenu.png
 .. figure:: ../_robot/add-new-menu.png
    :align: center
    :alt:
 
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show add new menu
+       Go to  ${PLONE_URL}
+
+       Click link  css=#plone-contentmenu-factories dt a
+       Wait until element is visible
+       ...    css=#plone-contentmenu-factories dd.actionMenuContent
+
+       Update element style  css=a#document  outline  2px dotted red
+
+       Capture and crop page screenshot
+       ...    ../_robot/add-new-menu.png
+       ...    contentActionMenus
+       ...    css=#plone-contentmenu-factories dd.actionMenuContent
+
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
+.. .. figure:: ../_robot/editpagepanelplone3.png
 .. figure:: ../_robot/add-new-page-form.png
    :align: center
    :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show new page edit form
+       Go to  ${PLONE_URL}/createObject?type_name=Document
+
+       Wait until element is visible
+       ...    css=input#title
+
+       Capture and crop page screenshot
+       ...    ../_robot/add-new-page-form.png
+       ...    css=#content
 
 The **Title** and **Description** fields are there at the top. Fill each
 of them out appropriately. There is a *Change note* field at the bottom,
@@ -86,3 +94,7 @@ learning for speed of input if you do a lot of page creation, or if you
 are adept at such slightly more technical approaches to entering text.
 Some people prefer such formats not just for speed itself, but for
 fluidity of expression.
+
+.. robotframework::
+   :creates: ../_robot/add-new-menu.png
+             ../_robot/add-new-page-form.png

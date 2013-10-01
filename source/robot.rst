@@ -29,3 +29,7 @@
 
    Suite Teardown
        Teardown Plone Site
+
+   Pause
+       Import library  Dialogs
+       Pause execution
