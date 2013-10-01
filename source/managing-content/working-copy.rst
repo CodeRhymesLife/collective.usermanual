@@ -33,9 +33,47 @@ Using "Check out"
 First, navigate to the page you want check out. Then from the "Actions"
 drop-down menu, select "Check out":
 
-.. figure:: ../_static/01.png
+.. .. figure:: ../_static/01.png
+.. figure:: ../_robot/working-copy-checkout.png
    :align: center
-   :alt: 
+   :alt:
+
+.. include:: ../robot.rst
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Variables ***
+
+   @{CONFIGURE_PACKAGES}  plone.app.iterate
+   @{APPLY_PROFILES}  plone.app.iterate:plone.app.iterate
+
+   *** Test Cases ***
+
+   Create sample content
+       ${container} =  Create content  type=Folder   id=news  title=News
+       ${news} =  Create content  container=${container}  type=News Item
+       ...   id=website-refresh
+       ...   title=Welcome to our new site!
+       ...   description=The long wait is now over
+       ...   text=<p>Over new site is built with Plone.</p>
+       Do workflow action for  ${news}  publish
+
+   Show how to checkout
+       Go to  ${PLONE_URL}/news/website-refresh
+
+       Page should contain element  css=#plone-contentmenu-actions dt a
+       Click link  css=#plone-contentmenu-actions dt a
+       Wait until element is visible
+       ...    css=#plone-contentmenu-actions dd.actionMenuContent
+
+       Mouse over  css=#plone-contentmenu-actions-iterate_checkout
+       Update element style  portal-footer  display  none
+
+       Capture and crop page screenshot
+       ...    ../_robot/working-copy-checkout.png
+       ...    contentActionMenus
+       ...    css=#plone-contentmenu-actions dd.actionMenuContent
 
 An info message will appear indicating you're now working with a working
 copy:

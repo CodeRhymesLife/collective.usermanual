@@ -105,6 +105,13 @@ class CustomRemoteKeywords(RemoteLibrary):
 
         return IUUID(api.content.create(**kwargs))
 
+    def do_workflow_action_for(self, content, action):
+        """Do worklflow action for content
+        """
+        obj = self.portal_catalog.unrestrictedSearchResults(
+            UID=content)[0]._unrestrictedGetObject()
+        self.portal_workflow.doActionFor(obj, action)
+
     def set_default_language(self, language):
         """Change portal default language
         """
@@ -161,6 +168,8 @@ class UserManualLayer(PloneSandboxLayer):
 
         for name in BuiltIn().get_variable_value('${APPLY_PROFILES}', []):
             self.applyProfile(portal, name)
+
+        portal.portal_workflow.setDefaultChain("simple_publication_workflow")
 
 USERMANUAL_FIXTURE = UserManualLayer()
 

@@ -25,7 +25,8 @@ To add a page, use the *Add new...* menu for a folder:
        Wait until element is visible
        ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
-       Highlight  css=a#document
+       Mouse over  css=a#document
+       Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
        ...    ../_robot/add-new-menu.png
