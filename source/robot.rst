@@ -19,8 +19,9 @@
 
    Test Setup
        Import library  Remote  ${PLONE_URL}/RobotRemote
-       Enable autologin as  Site Administrator
-       Set autologin username  test-user-1
+       Enable autologin as  Manager
+       Create user  jane-doe  Member  fullname=Jane Doe
+       Set autologin username  jane-doe
 
    Test Teardown
        Set Zope layer  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING

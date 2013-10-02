@@ -34,7 +34,7 @@ First, navigate to the page you want check out. Then from the "Actions"
 drop-down menu, select "Check out":
 
 .. .. figure:: ../_static/01.png
-.. figure:: ../_robot/working-copy-checkout.png
+.. figure:: ../_robot/working-copy_checkout.png
    :align: center
    :alt:
 
@@ -52,12 +52,12 @@ drop-down menu, select "Check out":
 
    Create sample content
        ${container} =  Create content  type=Folder   id=news  title=News
-       ${news} =  Create content  container=${container}  type=News Item
+       ${item} =  Create content  container=${container}  type=News Item
        ...   id=website-refresh
        ...   title=Welcome to our new site!
        ...   description=The long wait is now over
        ...   text=<p>Over new site is built with Plone.</p>
-       Do workflow action for  ${news}  publish
+       Do workflow action for  ${item}  publish
 
    Show how to checkout
        Go to  ${PLONE_URL}/news/website-refresh
@@ -71,16 +71,36 @@ drop-down menu, select "Check out":
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ../_robot/working-copy-checkout.png
+       ...    ../_robot/working-copy_checkout.png
        ...    contentActionMenus
        ...    css=#plone-contentmenu-actions dd.actionMenuContent
 
 An info message will appear indicating you're now working with a working
 copy:
 
-.. figure:: ../_static/03.png
+.. .. figure:: ../_static/03.png
+.. figure:: ../_robot/working-copy_checkout-notification.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show checkout notification
+       Page should contain element
+       ...  css=#plone-contentmenu-actions-iterate_checkout
+       ${href} =  Get element attribute
+       ...  css=#plone-contentmenu-actions-iterate_checkout@href
+
+       Go to  ${href}
+
+       Element should be visible   css=.portalMessage
+
+       Capture and crop page screenshot
+       ...    ../_robot/working-copy_checkout-notification.png
+       ...    css=#portal-column-content
 
 Now you're free to edit your own local copy of a published document.
 During this time, the original document is "locked" -- that is, no one
@@ -88,9 +108,24 @@ else can edit that published version while you have a working copy
 checked out. This will prevent other changes from being made to (and
 subsequently lost from) the published version while you edit your copy.
 
-.. figure:: ../_static/locked.png
+.. .. figure:: ../_static/locked.png
+.. figure:: ../_robot/working-copy_locked.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show locked original
+       Go to  ${PLONE_URL}/news/website-refresh
+
+       Element should be visible   css=#plone-lock-status
+
+       Capture and crop page screenshot
+       ...    ../_robot/working-copy_locked.png
+       ...    css=#portal-column-content
 
 Using "Check in"
 ----------------
@@ -156,3 +191,8 @@ menu:
 
 The check in routine will handle the state.
 
+
+.. robotframework::
+   :creates: ../_robot/working-copy_checkout.png
+             ../_robot/working-copy_checkout-notification.png
+             ../_robot/working-copy_locked.png

@@ -9,7 +9,7 @@ another.
 To add a page, use the *Add new...* menu for a folder:
 
 .. .. figure:: ../_static/copy_of_addnewmenu.png
-.. figure:: ../_robot/add-new-menu.png
+.. figure:: ../_robot/adding-pages_add-menu.png
    :align: center
    :alt:
 
@@ -29,7 +29,7 @@ To add a page, use the *Add new...* menu for a folder:
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ../_robot/add-new-menu.png
+       ...    ../_robot/adding-pages_add-menu.png
        ...    contentActionMenus
        ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
@@ -37,7 +37,7 @@ Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
 .. .. figure:: ../_robot/editpagepanelplone3.png
-.. figure:: ../_robot/add-new-page-form.png
+.. figure:: ../_robot/adding-pages_add-form.png.png
    :align: center
    :alt:
 
@@ -47,13 +47,15 @@ panel:
    *** Test Cases ***
 
    Show new page edit form
-       Go to  ${PLONE_URL}/createObject?type_name=Document
+       Page should contain element  css=a#document
+       ${href} =  Get element attribute  css=a#document@href
+       Go to  ${href}
 
        Wait until element is visible
        ...    css=input#title
 
        Capture and crop page screenshot
-       ...    ../_robot/add-new-page-form.png
+       ...    ../_robot/adding-pages_add-form.png.png
        ...    css=#content
 
 The **Title** and **Description** fields are there at the top. Fill each
@@ -97,5 +99,5 @@ Some people prefer such formats not just for speed itself, but for
 fluidity of expression.
 
 .. robotframework::
-   :creates: ../_robot/add-new-menu.png
-             ../_robot/add-new-page-form.png
+   :creates: ../_robot/adding-pages_add-menu.png
+             ../_robot/adding-pages_add-form.png.png
