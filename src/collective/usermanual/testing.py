@@ -19,7 +19,8 @@ from plone.app.robotframework.remote import RemoteLibrary
 from plone.app.testing import (
     PLONE_FIXTURE,
     ploneSite,
-    PloneSandboxLayer)
+    PloneSandboxLayer
+)
 from plone.app.testing.layers import FunctionalTesting
 from Products.MailHost.interfaces import IMailHost
 
@@ -127,6 +128,11 @@ class CustomRemoteKeywords(RemoteLibrary):
 
         return IUUID(api.content.create(**kwargs))
 
+    def apply_profile(self, name):
+        """Apply named profile
+        """
+        self.portal_setup.runAllImportStepsFromProfile('profile-%s' % name)
+
     def do_workflow_action_for(self, content, action):
         """Do worklflow action for content
         """
@@ -137,6 +143,7 @@ class CustomRemoteKeywords(RemoteLibrary):
     def set_default_language(self, language):
         """Change portal default language
         """
+        setattr(self.portal_url.getPortalObject(), 'language', language)
         self.portal_languages.setDefaultLanguage(language)
 
     def get_the_last_sent_email(self):
