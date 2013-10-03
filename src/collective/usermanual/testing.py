@@ -29,6 +29,7 @@ from plone.testing import (
     z2
 )
 
+from robot.libraries.BuiltIn import BuiltIn
 
 class MockMailHostLayer(Layer):
     """Layer for setting up a MockMailHost to store all sent messages as
@@ -163,7 +164,8 @@ class UserManualLayer(PloneSandboxLayer):
                     USERMANUAL_REMOTE_LIBRARY_FIXTURE)
 
     def setUpZope(self, app, configurationContext):
-        from robot.libraries.BuiltIn import BuiltIn
+        if getattr(BuiltIn(), '_context', None) is None:
+            return
 
         for name in BuiltIn().get_variable_value('${META_PACKAGES}', []):
             if not name in sys.modules:
@@ -193,12 +195,13 @@ class UserManualLayer(PloneSandboxLayer):
             z2.installProduct(app, package)
 
     def setUpPloneSite(self, portal):
-        from robot.libraries.BuiltIn import BuiltIn
+        portal.portal_workflow.setDefaultChain("simple_publication_workflow")
+
+        if getattr(BuiltIn(), '_context', None) is not None:
+            return
 
         for name in BuiltIn().get_variable_value('${APPLY_PROFILES}', []):
             self.applyProfile(portal, name)
-
-        portal.portal_workflow.setDefaultChain("simple_publication_workflow")
 
 USERMANUAL_FIXTURE = UserManualLayer()
 
