@@ -37,7 +37,7 @@ Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
 .. .. figure:: ../_robot/editpagepanelplone3.png
-.. figure:: ../_robot/adding-pages_add-form.png.png
+.. figure:: ../_robot/adding-pages_add-form.png
    :align: center
    :alt:
 
@@ -55,7 +55,7 @@ panel:
        ...    css=input#title
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/adding-pages_add-form.png.png
+       ...    ${CURDIR}/../_robot/adding-pages_add-form.png
        ...    css=#content
 
 The **Title** and **Description** fields are there at the top. Fill each
@@ -100,4 +100,4 @@ fluidity of expression.
 
 .. robotframework::
    :creates: ../_robot/adding-pages_add-menu.png
-             ../_robot/adding-pages_add-form.png.png
+             ../_robot/adding-pages_add-form.png
