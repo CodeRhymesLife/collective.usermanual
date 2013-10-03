@@ -70,6 +70,22 @@ class CustomRemoteKeywords(RemoteLibrary):
 
     """
 
+    def remote_zodb_setup(self, layer_dotted_name):
+        """Magic
+        """
+        from plone.app.robotframework.server import Zope2Server
+        inst = Zope2Server()
+        inst.set_zope_layer(layer_dotted_name)
+        inst.zodb_setup()
+
+    def remote_zodb_teardown(self, layer_dotted_name):
+        """Magic
+        """
+        from plone.app.robotframework.server import Zope2Server
+        inst = Zope2Server()
+        inst.set_zope_layer(layer_dotted_name)
+        inst.zodb_teardown()
+
     def create_user(self, username, *args, **kwargs):
         """Create user with given details and return its id
         """
