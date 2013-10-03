@@ -71,7 +71,7 @@ drop-down menu, select "Check out":
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ../_robot/working-copy_checkout.png
+       ...    ${CURDIR}/../_robot/working-copy_checkout.png
        ...    contentActionMenus
        ...    css=#plone-contentmenu-actions dd.actionMenuContent
 
@@ -99,7 +99,7 @@ copy:
        Element should be visible   css=.portalMessage
 
        Capture and crop page screenshot
-       ...    ../_robot/working-copy_checkout-notification.png
+       ...    ${CURDIR}/../_robot/working-copy_checkout-notification.png
        ...    css=#portal-column-content
 
 Now you're free to edit your own local copy of a published document.
@@ -124,7 +124,7 @@ subsequently lost from) the published version while you edit your copy.
        Element should be visible   css=#plone-lock-status
 
        Capture and crop page screenshot
-       ...    ../_robot/working-copy_locked.png
+       ...    ${CURDIR}/../_robot/working-copy_locked.png
        ...    css=#portal-column-content
 
 Using "Check in"

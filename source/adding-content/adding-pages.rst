@@ -29,7 +29,7 @@ To add a page, use the *Add new...* menu for a folder:
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ../_robot/adding-pages_add-menu.png
+       ...    ${CURDIR}/../_robot/adding-pages_add-menu.png
        ...    contentActionMenus
        ...    css=#plone-contentmenu-factories dd.actionMenuContent
 
@@ -55,7 +55,7 @@ panel:
        ...    css=input#title
 
        Capture and crop page screenshot
-       ...    ../_robot/adding-pages_add-form.png.png
+       ...    ${CURDIR}/../_robot/adding-pages_add-form.png.png
        ...    css=#content
 
 The **Title** and **Description** fields are there at the top. Fill each
