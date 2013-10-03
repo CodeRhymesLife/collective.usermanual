@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import sys
 
 from Acquisition import aq_base
@@ -163,45 +164,52 @@ class UserManualLayer(PloneSandboxLayer):
     defaultBases = (MOCK_MAILHOST_FIXTURE,
                     USERMANUAL_REMOTE_LIBRARY_FIXTURE)
 
-    def setUpZope(self, app, configurationContext):
-        if getattr(BuiltIn(), '_context', None) is None:
-            return
+    def _get_robot_variable(self, name):
+        """Return robot list variable either from robot instance or
+        from ROBOT_-prefixed environment variable
+        """
+        if getattr(BuiltIn(), '_context', None) is not None:
+            return BuiltIn().get_variable_value('${%s}' % name, [])
+        else:
+            candidates = os.environ.get(name, '').split(',')
+            return filter(bool, [s.strip() for s in candidates])
 
-        for name in BuiltIn().get_variable_value('${META_PACKAGES}', []):
+    def setUpZope(self, app, configurationContext):
+
+        for name in self._get_robot_variable('META_PACKAGES'):
             if not name in sys.modules:
                 __import__(name)
             package = sys.modules[name]
             xmlconfig.file('meta.zcml', package,
                            context=configurationContext)
 
-        for name in BuiltIn().get_variable_value('${CONFIGURE_PACKAGES}', []):
+        for name in self._get_robot_variable('CONFIGURE_PACKAGES'):
             if not name in sys.modules:
                 __import__(name)
             package = sys.modules[name]
             xmlconfig.file('configure.zcml', package,
                            context=configurationContext)
 
-        for name in BuiltIn().get_variable_value('${OVERRIDE_PACKAGES}', []):
+        for name in self._get_robot_variable('OVERRIDE_PACKAGES'):
             if not name in sys.modules:
                 __import__(name)
             package = sys.modules[name]
             xmlconfig.includeOverrides(
                 configurationContext, 'overrides.zcml', package=package)
 
-        for name in BuiltIn().get_variable_value('${INSTALL_PACKAGES}', []):
+        for name in self._get_robot_variable('INSTALL_PACKAGES'):
             if not name in sys.modules:
                 __import__(name)
             package = sys.modules[name]
             z2.installProduct(app, package)
 
     def setUpPloneSite(self, portal):
+
+        for name in self._get_robot_variable('APPLY_PROFILES'):
+            self.applyProfile(portal, name)
+
         portal.portal_workflow.setDefaultChain("simple_publication_workflow")
 
-        if getattr(BuiltIn(), '_context', None) is not None:
-            return
-
-        for name in BuiltIn().get_variable_value('${APPLY_PROFILES}', []):
-            self.applyProfile(portal, name)
 
 USERMANUAL_FIXTURE = UserManualLayer()
 
