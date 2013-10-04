@@ -18,7 +18,7 @@ Quick start
 
 .. code:: bash
 
-   $ make server
+   $ make serve
 
 3. Build docs
 
