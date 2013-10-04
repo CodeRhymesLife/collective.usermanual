@@ -1,31 +1,38 @@
 Introduction
 ============
 
+Welcome to try
 
-Bootstrapping
--------------
+
+Getting started
+---------------
+
+1. Bootstrap
 
 .. code:: bash
 
    $ python bootstrap.py
    $ bin/buildout
 
-
-Building with Firefox
----------------------
+2. Start server
 
 .. code:: bash
 
-   $ bin/sphinx-build source docs
+   $ CONFIGURE_PACKAGES=plone.app.iterate APPLY_PROFILES=plone.app.iterate:plone.app.iterate bin/robot-server collective.usermanual.
+testing.USERMANUAL_ROBOT_TESTING -v
 
-
-Building with PhantomJS
------------------------
+3. Build docs
 
 .. code:: bash
 
-   $ ROBOT_BROWSER=phantomjs bin/sphinx-build source docs
+   $ make robot
 
+Standalone build
+----------------
+
+.. code:: bash
+
+   $ make html
 
 Resetting generated screenshots
 -------------------------------
