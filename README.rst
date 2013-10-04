@@ -30,6 +30,7 @@ Quick start
 
       $ make robot
 
+.. toc:: Contents
 
 Introduction
 ------------
@@ -46,7 +47,7 @@ with different themes.
 __ http://jenkins.plone.org/view/User Docs/job/collective.usermanual/
 
 
-Rules (technical)
+Rules
 -----------------
 
 See an example_.
