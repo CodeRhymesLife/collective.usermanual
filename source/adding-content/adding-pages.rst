@@ -8,7 +8,7 @@ another.
 
 To add a page, use the *Add new...* menu for a folder:
 
-.. .. figure:: ../_static/copy_of_addnewmenu.png
+.. replaces ../_static/copy_of_addnewmenu.png
 .. figure:: ../_robot/adding-pages_add-menu.png
    :align: center
    :alt:
@@ -36,7 +36,7 @@ To add a page, use the *Add new...* menu for a folder:
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
 
-.. .. figure:: ../_robot/editpagepanelplone3.png
+.. replaces ../_robot/editpagepanelplone3.png
 .. figure:: ../_robot/adding-pages_add-form.png
    :align: center
    :alt:

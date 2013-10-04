@@ -33,12 +33,10 @@ Using "Check out"
 First, navigate to the page you want check out. Then from the "Actions"
 drop-down menu, select "Check out":
 
-.. .. figure:: ../_static/01.png
+.. replaces ../_static/01.png
 .. figure:: ../_robot/working-copy_checkout.png
    :align: center
    :alt:
-
-.. include:: ../robot.rst
 
 .. code:: robotframework
    :class: hidden
@@ -78,7 +76,7 @@ drop-down menu, select "Check out":
 An info message will appear indicating you're now working with a working
 copy:
 
-.. .. figure:: ../_static/03.png
+.. replaces ../_static/03.png
 .. figure:: ../_robot/working-copy_checkout-notification.png
    :align: center
    :alt:
@@ -108,7 +106,7 @@ else can edit that published version while you have a working copy
 checked out. This will prevent other changes from being made to (and
 subsequently lost from) the published version while you edit your copy.
 
-.. .. figure:: ../_static/locked.png
+.. replaces ../_static/locked.png
 .. figure:: ../_robot/working-copy_locked.png
    :align: center
    :alt:
@@ -135,7 +133,7 @@ simply choose "Check-in" from the "Actions" drop-down menu:
 
 .. figure:: ../_static/04a.png
    :align: center
-   :alt: 
+   :alt:
 
 You will then be prompted to enter a Check-in message. Fill it out and
 click on "Check in":
