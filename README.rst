@@ -36,7 +36,7 @@ Quick start
 
       $ make robot
 
-Example at: http://www.youtube.com/watch?v=JyJSSQtP24A
+See this done at http://www.youtube.com/watch?v=JyJSSQtP24A
 
 Introduction
 ------------
