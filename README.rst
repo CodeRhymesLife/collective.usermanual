@@ -51,7 +51,7 @@ Rules (technical)
 
 See an example_.
 
-_ example: https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/adding-content/adding-pages.rst
+.. _example: https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/adding-content/adding-pages.rst
 
 1. Each document (separate ``.rst``-file) represents one story for using Plone:
    document starts with a clean Plone site, performs as many *robot tests* as
@@ -177,12 +177,10 @@ How to work on a new document
    * http://robotframework.googlecode.com/hg/doc/libraries/BuiltIn.html?r=2.8.1
    * http://robotframework.googlecode.com/hg/doc/userguide/RobotFrameworkUserGuide.html?r=2.8.1
 
-   .. note::
-
-      With *Capture and crop page screenshot*-keyword, please, prefix the
-      filename with ``${CURDIR}/``
-      (e.g. ${CURDIR}/../_robot/working-copy_locked.png).
-      It's required to support both Sphinx and *pybot*.
+   **NOTE**: With *Capture and crop page screenshot*-keyword, please, prefix
+   *the filename with ``${CURDIR}/`` (e.g.
+   *${CURDIR}/../_robot/working-copy_locked.png). It's required to support both
+   *Sphinx and *pybot*.
 
 7. Try the results with sphinx:
 
@@ -244,7 +242,7 @@ Advanced topics
 
    In the same document, within any ``.. code:: robotframework``-directive.
    Shared keywords can be defined in
-    ``./src/collective/usermanual/keywords.robot``.
+   ``./src/collective/usermanual/keywords.robot``.
 
 6. How to activate custom product?
 
@@ -254,12 +252,10 @@ Advanced topics
 
    https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/managing-content/working-copy.rst
 
-   .. note::
-
-      These variables only work when document is built in *standalone* mode.
-      With *robot-server*-mode these can be set only once for all documents
-      with environment variables when starting *robot-server*. See Makefile
-      for examples.
+   **NOTE**: These variables only work when document is built in *standalone*
+   *mode. With *robot-server*-mode these can be set only once for all documents
+   *with environment variables when starting *robot-server*. See Makefile for
+   *examples.
 
 
 License
