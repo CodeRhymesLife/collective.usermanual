@@ -6,6 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = bin/sphinx-build
 SPHINXROBOT   = bin/robot-sphinx
 ROBOTSERVER   = bin/robot-server
+PYBOT         = bin/pybot
 PAPER         =
 
 # Internal variables.
@@ -19,7 +20,7 @@ APPLY_PROFILES = plone.app.iterate:plone.app.iterate
 ROBOTSERVER_FIXTURE = collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
 ROBOTSERVER_OPTS = -v
 
-.PHONY: help clean html robot server dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
+.PHONY: help clean html robot server dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest test
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -35,6 +36,7 @@ help:
 	@echo "  changes   to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck to check all external links for integrity"
 	@echo "  doctest   to run all doctests embedded in the documentation (if enabled)"
+	@echo "  test      to run all robot tests embedded in the documentation"
 
 clean:
 	-rm -rf build/*
@@ -105,3 +107,7 @@ doctest:
 	$(SPHINXBUILD) -b doctest $(ALLSPHINXOPTS) build/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in build/doctest/output.txt."
+
+test:
+	cp source/robot-standalone.rst source/robot.rst
+	$(PYBOT) source
