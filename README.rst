@@ -1,11 +1,11 @@
 Introduction
 ============
 
-Welcome to try
+Welcome
 
 
-Getting started
----------------
+Quick start
+-----------
 
 1. Bootstrap
 
@@ -39,7 +39,7 @@ Resetting generated screenshots
 
 .. code:: bash
 
-   $ rm source/_robot/*.png
+   $ make clean
 
 License
 -------

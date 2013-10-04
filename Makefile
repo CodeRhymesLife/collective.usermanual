@@ -5,6 +5,7 @@
 SPHINXOPTS    =
 SPHINXBUILD   = bin/sphinx-build
 SPHINXROBOT   = bin/robot-sphinx
+ROBOTSERVER   = bin/robot-server
 PAPER         =
 
 # Internal variables.
@@ -12,11 +13,12 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
+.PHONY: help clean html robot server dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html      to make standalone HTML files"
+	@echo "  server    to start the server for robot command
 	@echo "  robot     to make standalone HTML files against robot-server"
 	@echo "  dirhtml   to make HTML files named index.html in directories"
 	@echo "  pickle    to make pickle files"
@@ -30,11 +32,15 @@ help:
 
 clean:
 	-rm -rf build/*
+	-rm -rf source/_robot/*.png
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
+
+server:
+	CONFIGURE_PACKAGES=plone.app.iterate APPLY_PROFILES=plone.app.iterate:plone.app.iterate bin/robot-server collective.usermanual.testing.USERMANUAL_ROBOT_TESTING -v
 
 robot:
 	$(SPHINXROBOT) -b html $(ALLSPHINXOPTS) build/html
