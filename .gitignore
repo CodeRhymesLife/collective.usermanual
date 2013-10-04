@@ -12,3 +12,4 @@ ghostdriver.log
 parts
 selenium-screenshot-*.png
 source/_robot/*.png
+source/robot.rst
