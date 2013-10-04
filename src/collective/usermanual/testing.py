@@ -2,6 +2,8 @@
 import os
 import sys
 
+from zope.i18n import translate
+
 from Acquisition import aq_base
 
 from zope.component.hooks import (
@@ -164,6 +166,30 @@ class CustomRemoteKeywords(RemoteLibrary):
         setattr(self.portal_url.getPortalObject(), 'language', language)
         self.portal_languages.setDefaultLanguage(language)
 
+    def translate(self, msgid, *args, **kwargs):
+        """Return localized string for given msgid
+        """
+        # XXX: It seems that **kwargs does not yet work with Robot Framework
+        # remote library interface and that's why we need to unpack the
+        # keyword arguments from positional args list.
+        mapping = {}
+        for arg in args:
+            name, value = arg.split('=', 1)
+            kwargs[name] = value
+        for key, value in kwargs.items():
+            if not key in ('target_language', 'domain', 'default'):
+                mapping[key] = value
+        if kwargs.get('target_language'):
+            return translate(
+                msgid, target_langauge=kwargs.get('target_language'),
+                domain=kwargs.get('domain', 'collective.usermanual'),
+                default=kwargs.get('default', msgid), mapping=mapping)
+        else:
+            return translate(
+                msgid, context=self.REQUEST,
+                domain=kwargs.get('domain', 'collective.usermanual'),
+                default=kwargs.get('default', msgid), mapping=mapping)
+
     def get_the_last_sent_email(self):
         """Return the last sent email from MockMailHost sent messages storage
         """
@@ -191,6 +217,10 @@ class UserManualLayer(PloneSandboxLayer):
             return filter(bool, [s.strip() for s in candidates])
 
     def setUpZope(self, app, configurationContext):
+
+        import collective.usermanual
+        xmlconfig.file('configure.zcml', collective.usermanual,
+                       context=configurationContext)
 
         for name in self._get_robot_variable('META_PACKAGES'):
             if not name in sys.modules:
