@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-04 16:38+0000\n"
+"POT-Creation-Date: 2013-10-04 21:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,13 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: collective/usermanual/messages.py:7
-msgid "Plone User Manual"
+#. Default: "news"
+#: source/managing-content/working-copy.rst:0
+msgid "folder_news_id"
+msgstr ""
+
+#. Default: "News"
+#: source/managing-content/working-copy.rst:0
+msgid "folder_news_title"
 msgstr ""
 
