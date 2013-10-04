@@ -1,6 +1,8 @@
 Working Copy
 ==================
 
+.. include:: ../robot.rst
+
 Working Copy lets you have two versions of your content in parallel.
 
 **When a Plone site is first created, there a number of additional

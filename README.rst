@@ -259,6 +259,45 @@ Advanced topics
    *examples.
 
 
+Magical example
+---------------
+
+Making of
+
+.. raw:: html
+
+   <p><iframe width="420" height="315" src="//www.youtube.com/embed/VN9FROZO5AY" frameborder="0" allowfullscreen></iframe></p>
+
+.. code:: rst
+
+   .. include:: source/robot.rst
+
+   .. code:: robotframework
+      :class: hidden
+
+      *** Variables ***
+
+      @{LOCALES}  af  ar  bg  bn  ca  cs  cy  da  de  el  en  eo  es  et  eu  fa  fi  fr  gl  he  hi  hr  hu  hy  id  it  ja  ka  kn  ko  lt  lv  mk_MK  nl  nn  no  pl  pt  pt_BR  ro  ru  sk  sl  sq  sr  sv  ta  te  th  tr  uk  vi  zh_CN  zh_HK  zh_TW
+
+      *** Test Cases ***
+
+      Show front page
+          Set window size  854  1024
+          :FOR  ${locale}  IN  @{LOCALES}
+          \  Show front page  ${locale}
+
+      *** Keywords ***
+
+      Show front page
+          [Arguments]  ${locale}
+          Set default language  ${locale}
+          Apply profile  Products.CMFPlone:plone-content
+          Go to  ${PLONE_URL}
+
+          Test teardown
+          Test setup
+
+
 License
 -------
 
