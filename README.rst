@@ -36,7 +36,11 @@ Quick start
 
       $ make robot
 
-See this done at http://www.youtube.com/watch?v=JyJSSQtP24A
+Demo: http://www.youtube.com/watch?v=JyJSSQtP24A
+
+
+.. contents:: :local:
+
 
 Introduction
 ------------
@@ -45,11 +49,11 @@ This is a sphinxified version of manually (WYSIWYG) authored Plone User Manual
 from plone.org (sphinxification done by Giacomo Spettoli). Let's finish the
 work by refactoring screenshots to be generated with our robot testing tools.
 
-Of course, that feels like a daunting task at first, but once it's done, it's
-easy to tweak those screenshots, re-generate translate them in different
-languages or with different themes.
+Writing robot-scripts for screenshots is a daunting task at first,
+but once it's done, it's easy to tweak those screenshots, re-generate translate
+them in different languages or with different themes.
 
-`Robot-refactored screenshots work also as acceptance tests for Plone.`__
+`Robot-refactored screenshots also work as acceptance tests for Plone.`__
 
 __ http://jenkins.plone.org/view/User%20Docs/job/collective.usermanual/
 
@@ -61,20 +65,25 @@ Please, see an example_ while reading these rules:
 
 .. _example: https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/adding-content/adding-pages.rst
 
-1. Each document (separate ``.rst``-file) represents one story for using Plone:
-   document starts with a clean Plone site, performs as many *robot tests* as
+1. Each document (``.rst``-file) represents one story for using Plone:
+
+   Each document start with a clean Plone site, performs as many *robot tests* as
    required, in written order, to allow capturing the required screenshots,
    and clean up the site at the end.
 
 2. Each document with screenshots should start (after its title) with
-   ``.. include:: ../robot.rst`` with correct path pointing to  ``robot.rst``
-   file in the root of ``./source``-directory for the documentation. This
+   ``.. include:: ../robot.rst``-line with correct path pointing to  *robot.rst*
+   file in the root of *./source*-directory for the documentation. This
    provides all common resources and the lifecycle management described in 1.
 
-3. After ``.. include:: ../robot``-directive, each document may contain as many
+3. After *.. include:: ../robot*-directive, each document may contain as many
    ``.. code:: robotframework`` -directives as required to provide the required
-   screenshots. Each ``.. code:: robotframework``-directive should contain a
-   complete Robot Framework test suite snippet. Each directive should have
+   screenshots.
+   
+   Each *.. code:: robotframework*-directive should contain a
+   complete Robot Framework test suite snippet.
+   
+   Each directive should also have
    (slighly magical) ``:class: hidden``-option to hide the test source from
    the produced document. (See also: `sphinxcontrib-robotframework -docs`__.)
 
