@@ -8,6 +8,8 @@ Plone with fully automated screenshots. Once all screenshots have been migrated
 to be Selenium-generated, we refactor this to support multiple languages (with
 localized screenshots for free).
 
+.. contents:: :local:
+
 
 Quick start
 -----------
@@ -37,10 +39,6 @@ Quick start
       $ make robot
 
 Demo: http://www.youtube.com/watch?v=JyJSSQtP24A
-
-
-.. contents:: :local:
-
 
 Introduction
 ------------
@@ -275,10 +273,10 @@ Advanced topics
    examples.
 
 
-Magical example
----------------
+Multilingual demo
+-----------------
 
-Making of http://www.youtube.com/watch?v=VN9FROZO5AY
+This demo provides raw-material for http://www.youtube.com/watch?v=VN9FROZO5AY.
 
 .. code:: rst
 
