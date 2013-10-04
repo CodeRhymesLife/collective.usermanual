@@ -262,11 +262,7 @@ Advanced topics
 Magical example
 ---------------
 
-Making of
-
-.. raw:: html
-
-   <p><iframe width="420" height="315" src="//www.youtube.com/embed/VN9FROZO5AY" frameborder="0" allowfullscreen></iframe></p>
+Making of http://www.youtube.com/watch?v=VN9FROZO5AY
 
 .. code:: rst
 
