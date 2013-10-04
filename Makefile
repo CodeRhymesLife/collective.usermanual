@@ -18,7 +18,7 @@ ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo "  html      to make standalone HTML files"
-	@echo "  server    to start the server for robot command
+	@echo "  serve     to start the server for robot command
 	@echo "  robot     to make standalone HTML files against robot-server"
 	@echo "  dirhtml   to make HTML files named index.html in directories"
 	@echo "  pickle    to make pickle files"
@@ -39,7 +39,7 @@ html:
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 
-server:
+serve:
 	CONFIGURE_PACKAGES=plone.app.iterate APPLY_PROFILES=plone.app.iterate:plone.app.iterate bin/robot-server collective.usermanual.testing.USERMANUAL_ROBOT_TESTING -v
 
 robot:

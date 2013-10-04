@@ -7,19 +7,18 @@ Welcome
 Quick start
 -----------
 
-1. Bootstrap
+0. Bootstrap
 
 .. code:: bash
 
    $ python bootstrap.py
    $ bin/buildout
 
-2. Start server
+1. Start server
 
 .. code:: bash
 
-   $ CONFIGURE_PACKAGES=plone.app.iterate APPLY_PROFILES=plone.app.iterate:plone.app.iterate bin/robot-server collective.usermanual.
-testing.USERMANUAL_ROBOT_TESTING -v
+   $ make server
 
 3. Build docs
 
