@@ -5,8 +5,9 @@
 
    Resource  plone/app/robotframework/server.robot
    Resource  plone/app/robotframework/keywords.robot
-
+   Resource  collective/usermanual/keywords.robot
    Resource  Selenium2Screenshots/keywords.robot
+
    Library  Remote  ${PLONE_URL}/RobotRemote
 
    Suite Setup  Suite Setup
@@ -29,15 +30,3 @@
        Remote ZODB TearDown
        ...  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
        Close all browsers
-
-   Highlight
-       [Arguments]  ${locator}
-       Update element style  ${locator}  outline  2px dotted red
-
-   Remove highlighting
-       [Arguments]  ${locator}
-       Update element style  ${locator}  outline  none
-
-   Pause
-       Import library  Dialogs
-       Pause execution
