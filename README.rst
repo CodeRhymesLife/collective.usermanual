@@ -1,17 +1,18 @@
 Plone User Manual
 =================
 
-    With Selenium-automated screenshots
+**Now with Selenium-automated screenshots!**
 
-This is a work in progress to create user manual for Plone with fully
-automated screenshots. Once all screenshots have been migrated, we refactor
-this to support multiple languages (with localized screenshots for free).
+This repository is a work in progress to create up-to-date user manual for
+Plone with fully automated screenshots. Once all screenshots have been migrated
+to be Selenium-generated, we refactor this to support multiple languages (with
+localized screenshots for free).
 
 
 Quick start
 -----------
 
-0. Bootstrap
+0. Clone and bootstrap
 
    .. code:: bash
 
@@ -37,25 +38,27 @@ Quick start
 
 .. toc:: Contents
 
+
 Introduction
 ------------
 
 This is a sphinxified version of manually (WYSIWYG) authored Plone User Manual
 from plone.org (sphinxification done by Giacomo Spettoli). Let's finish the
 work by refactoring screenshots to be generated with our robot testing tools.
-That feels like a daunting task at first, but once it's done, it's easy to
-tweak those screenshots, re-generate translate them in different languages or
-with different themes.
+
+Of course, that feels like a daunting task at first, but once it's done, it's
+easy to tweak those screenshots, re-generate translate them in different
+languages or with different themes.
 
 `Robot-refactored screenshots work also as acceptance tests for Plone.`__
 
-__ http://jenkins.plone.org/view/User Docs/job/collective.usermanual/
+__ http://jenkins.plone.org/view/User%20Docs/job/collective.usermanual/
 
 
 Rules
------------------
+-----
 
-See an example_.
+Please, see an example_ while reading these rules:
 
 .. _example: https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/adding-content/adding-pages.rst
 
@@ -184,9 +187,9 @@ How to work on a new document
    * http://robotframework.googlecode.com/hg/doc/userguide/RobotFrameworkUserGuide.html?r=2.8.1
 
    **NOTE**: With *Capture and crop page screenshot*-keyword, please, prefix
-   *the filename with ``${CURDIR}/`` (e.g.
-   *${CURDIR}/../_robot/working-copy_locked.png). It's required to support both
-   *Sphinx and *pybot*.
+   the filename with ``${CURDIR}/`` (e.g.
+   ``${CURDIR}/../_robot/working-copy_locked.png``).
+   This is required to support both *Sphinx and *pybot*.
 
 7. Try the results with sphinx:
 
@@ -259,9 +262,9 @@ Advanced topics
    https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/managing-content/working-copy.rst
 
    **NOTE**: These variables only work when document is built in *standalone*
-   *mode. With *robot-server*-mode these can be set only once for all documents
-   *with environment variables when starting *robot-server*. See Makefile for
-   *examples.
+   mode. With *robot-server*-mode these can be set only once for all documents
+   with environment variables when starting *robot-server*. See Makefile for
+   examples.
 
 
 Magical example
@@ -316,4 +319,3 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
 USA.
-test
