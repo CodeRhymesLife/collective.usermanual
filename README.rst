@@ -36,8 +36,7 @@ Quick start
 
       $ make robot
 
-.. toc:: Contents
-
+Example at: http://www.youtube.com/watch?v=JyJSSQtP24A
 
 Introduction
 ------------
