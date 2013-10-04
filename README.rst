@@ -15,6 +15,11 @@ Quick start
 
    .. code:: bash
 
+      $ git clone git@github.com:collective/collective.usermanual.git
+      $ cd collective.usermanual
+      $ git fetch origin
+      $ git checkout -b my-robot-screenshots origin/robot-screenshots
+
       $ python bootstrap.py
       $ bin/buildout
 
