@@ -8,6 +8,7 @@
    Resource  collective/usermanual/keywords.robot
    Resource  Selenium2Screenshots/keywords.robot
 
+   Library  OperatingSystem
    Library  Remote  ${PLONE_URL}/RobotRemote
 
    Suite Setup  Run keywords  Suite Setup  Test Setup
@@ -16,6 +17,8 @@
    *** Keywords ***
 
    Suite Setup
+       ${language} =  Get environment variable  LANGUAGE  'en'
+       Set default language  ${language}
        Open test browser
        Set window size  640  1024
 
@@ -24,8 +27,10 @@
        ...  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
 
        Enable autologin as  Manager
-       Create user  jane-doe  Member  fullname=Jane Doe
-       Set autologin username  jane-doe
+       ${user_id} =  Translate  user_id  default=jane-doe
+       ${user_fullname} =  Translate  user_fullname  default=Jane Doe
+       Create user  ${user_id}  Member  fullname=${user_fullname}
+       Set autologin username  ${user_id}
 
    Test Teardown
        Remote ZODB TearDown

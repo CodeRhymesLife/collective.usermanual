@@ -160,9 +160,11 @@ class CustomRemoteKeywords(RemoteLibrary):
             UID=content)[0]._unrestrictedGetObject()
         self.portal_workflow.doActionFor(obj, action)
 
-    def set_default_language(self, language):
+    def set_default_language(self, language=None):
         """Change portal default language
         """
+        if language is None:
+            language = os.environ.get('LANGUAGE') or 'en'
         setattr(self.portal_url.getPortalObject(), 'language', language)
         self.portal_languages.setDefaultLanguage(language)
 
@@ -182,13 +184,13 @@ class CustomRemoteKeywords(RemoteLibrary):
         if kwargs.get('target_language'):
             return translate(
                 msgid, target_langauge=kwargs.get('target_language'),
-                domain=kwargs.get('domain', 'collective.usermanual'),
-                default=kwargs.get('default', msgid), mapping=mapping)
+                domain=kwargs.get('domain') or 'collective.usermanual',
+                default=kwargs.get('default') or msgid, mapping=mapping)
         else:
             return translate(
                 msgid, context=self.REQUEST,
-                domain=kwargs.get('domain', 'collective.usermanual'),
-                default=kwargs.get('default', msgid), mapping=mapping)
+                domain=kwargs.get('domain') or 'collective.usermanual',
+                default=kwargs.get('default') or msgid, mapping=mapping)
 
     def get_the_last_sent_email(self):
         """Return the last sent email from MockMailHost sent messages storage

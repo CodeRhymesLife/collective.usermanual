@@ -19,9 +19,12 @@
 
    Test Setup
        Import library  Remote  ${PLONE_URL}/RobotRemote
+       Set default language
        Enable autologin as  Manager
-       Create user  jane-doe  Member  fullname=Jane Doe
-       Set autologin username  jane-doe
+       ${user_id} =  Translate  user_id  default=jane-doe
+       ${user_fullname} =  Translate  user_fullname  default=Jane Doe
+       Create user  ${user_id}  Member  fullname=${user_fullname}
+       Set autologin username  ${user_id}
 
    Test Teardown
        Set Zope layer  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING

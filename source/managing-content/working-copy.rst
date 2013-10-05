@@ -48,19 +48,32 @@ drop-down menu, select "Check out":
    @{CONFIGURE_PACKAGES}  plone.app.iterate
    @{APPLY_PROFILES}  plone.app.iterate:plone.app.iterate
 
-   *** Test Cases ***
+   *** Test cases ***
 
    Create sample content
-       ${container} =  Create content  type=Folder   id=news  title=News
+       ${folder_id} =  Translate  folder_news_id  default=news
+       ${folder_title} =  Translate  folder_news_title  default=News
+       ${container} =  Create content  type=Folder
+       ...   id=${folder_id}  title=${folder_title}
+
+       ${item_id} =  Translate  sample_news_id
+       ...   default=website-refresh
+       ${item_title} =  Translate  sample_news_title
+       ...   default=Welcome to our new site!
+       ${item_description} =  Translate  sample_news_description
+       ...   default=The long wait is now over
+       ${item_text} =  Translate  sample_news_text
+       ...   default=<p>Our new site is built with Plone.</p>
+
        ${item} =  Create content  container=${container}  type=News Item
-       ...   id=website-refresh
-       ...   title=Welcome to our new site!
-       ...   description=The long wait is now over
-       ...   text=<p>Over new site is built with Plone.</p>
+       ...   id=${item_id}  title=${item_title}
+       ...   description=${item_description}  text=${item_text}
        Do workflow action for  ${item}  publish
 
    Show how to checkout
-       Go to  ${PLONE_URL}/news/website-refresh
+       ${folder_id} =  Translate  folder_news_id  default=news
+       ${item_id} =  Translate  sample_news_id  default=website-refresh
+       Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        Page should contain element  css=#plone-contentmenu-actions dt a
        Click link  css=#plone-contentmenu-actions dt a
@@ -119,7 +132,9 @@ subsequently lost from) the published version while you edit your copy.
    *** Test Cases ***
 
    Show locked original
-       Go to  ${PLONE_URL}/news/website-refresh
+       ${folder_id} =  Translate  folder_news_id  default=news
+       ${item_id} =  Translate  sample_news_id  default=website-refresh
+       Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        Element should be visible   css=#plone-lock-status
 

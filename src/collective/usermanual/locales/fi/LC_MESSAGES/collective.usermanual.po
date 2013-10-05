@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-04 21:57+0300\n"
+"POT-Creation-Date: 2013-10-05 10:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,4 +23,34 @@ msgstr "uutiset"
 #: source/managing-content/working-copy.rst:0
 msgid "folder_news_title"
 msgstr "Uutiset"
+
+#. Default: "The long wait is now over"
+#: source/managing-content/working-copy.rst:0
+msgid "sample_news_description"
+msgstr "Pitkä odotus on päättynyt"
+
+#. Default: "website-refresh"
+#: source/managing-content/working-copy.rst:0
+msgid "sample_news_id"
+msgstr "nettisivu-uudistus"
+
+#. Default: "<p>Our new site is built with Plone.</p>"
+#: source/managing-content/working-copy.rst:0
+msgid "sample_news_text"
+msgstr "<p>Uusi sivustomme on tehty Plonella.</p>"
+
+#. Default: "Welcome to our new site!"
+#: source/managing-content/working-copy.rst:0
+msgid "sample_news_title"
+msgstr "Tervetuloa uusille sivuille!"
+
+#. Default: "Jane Doe"
+#: source/robot-standalone.rst:0
+msgid "user_fullname"
+msgstr "Elli Esimerkki"
+
+#. Default: "jane-doe"
+#: source/robot-standalone.rst:0
+msgid "user_id"
+msgstr "elli-esimerkki"
 
