@@ -77,10 +77,10 @@ Please, see an example_ while reading these rules:
 3. After *.. include:: ../robot*-directive, each document may contain as many
    ``.. code:: robotframework`` -directives as required to provide the required
    screenshots.
-   
+
    Each *.. code:: robotframework*-directive should contain a
    complete Robot Framework test suite snippet.
-   
+
    Each directive should also have
    (slighly magical) ``:class: hidden``-option to hide the test source from
    the produced document. (See also: `sphinxcontrib-robotframework -docs`__.)
@@ -259,7 +259,18 @@ Advanced topics
    Shared keywords can be defined in
    ``./src/collective/usermanual/keywords.robot``.
 
-6. How to activate custom product?
+6. How do I use i18n strings?
+
+   Translate msgid into test level variable with
+   ``${msg} =  Translate  msgidname default=Default translation"``
+   and use that translated variable where localized string is required.
+
+   Update gettext-catalogs by running ``./i18n.sh``.
+
+   Select build default language by setting environment variable
+   ``LANGUAGE`` with your locale, e.g. ``LANGUAGE=fi make clean robot``.
+
+7. How to activate custom product?
 
    See usage of variables *CONFIGURE_PACKAGES* and *APPLY_PROFILES* (also
    *META_PACKAGES*, *OVERRIDE_PACKAGES* and *INSTALL_PACKAGES* are
