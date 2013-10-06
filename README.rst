@@ -1,12 +1,10 @@
 Plone User Manual
 =================
 
-**Now with Selenium-automated screenshots!**
+**Now with Selenium-automated localizable screenshots!**
 
 This repository is a work in progress to create up-to-date user manual for
-Plone with fully automated screenshots. Once all screenshots have been migrated
-to be Selenium-generated, we refactor this to support multiple languages (with
-localized screenshots for free).
+Plone with fully automated screenshots.
 
 .. contents:: :local:
 
@@ -40,6 +38,7 @@ Quick start
 
 Demo: http://www.youtube.com/watch?v=JyJSSQtP24A
 
+
 Introduction
 ------------
 
@@ -65,29 +64,33 @@ Please, see an example_ while reading these rules:
 
 1. Each document (``.rst``-file) represents one story for using Plone:
 
-   Each document start with a clean Plone site, performs as many *robot tests* as
-   required, in written order, to allow capturing the required screenshots,
+   Each document start with a clean Plone site, perform as many *robot tests*
+   as required, in written order, to allow capturing the required screenshots,
    and clean up the site at the end.
 
 2. Each document with screenshots should start (after its title) with
-   ``.. include:: ../robot.rst``-line with correct path pointing to  *robot.rst*
-   file in the root of *./source*-directory for the documentation. This
-   provides all common resources and the lifecycle management described in 1.
+   ``.. include:: ../robot.rst``-line with correct path pointing to
+   *robot.rst* file in the root of *./source*-directory for the documentation.
+
+   This provides all common resources and the lifecycle management described in
+   step 1.
 
 3. After *.. include:: ../robot*-directive, each document may contain as many
-   ``.. code:: robotframework`` -directives as required to provide the required
-   screenshots.
+   ``.. code:: robotframework`` -directives as required to generate the
+   required screenshots.
 
    Each *.. code:: robotframework*-directive should contain a
-   complete Robot Framework test suite snippet.
+   complete Robot Framework test suite snippet (starting with
+   ``*** Settings ***``,  ``*** Variables ***``, ``*** Test Cases ***``
+   or ``*** Keywords ***```).
 
-   Each directive should also have
-   (slighly magical) ``:class: hidden``-option to hide the test source from
-   the produced document. (See also: `sphinxcontrib-robotframework -docs`__.)
+   Each directive should also have (slightly magical) ``:class: hidden``-option
+   to hide the test source from the produced document.
+   (See also: `sphinxcontrib-robotframework -docs`__ for this integration.)
 
-4. The document may end with one ``.. robotframework::``-directive listing all
-   the generated screenshot files in its ``:creates:``-option. This prevents
-   Sphinx from re-generating the screenshots on subsequent builds.
+4. Each document may end with one ``.. robotframework::``-directive listing all
+   the generated screenshot files in its ``:creates:``-option. This would
+   prevent Sphinx from re-generating the screenshots on subsequent builds.
 
 __ http://sphinxcontrib-robotframework.readthedocs.org/en/latest/
 
@@ -97,36 +100,30 @@ How to build
 
 We support two different build modes:
 
-* standalone
-* robot-server -dependent.
+* standalone builds
+* robot-server -dependent builds.
 
-*Standalone*-build is executed with regular ``make html`` and it can setup
-the required Plone sandboxes during the Sphinx compilation process. It's good
-for building the complete docs, but is slow to use for writing the robot
-code for screenshots
+*Standalone*-build is executed with familiar ``make html`` and with it
+each document can setup the required Plone sandboxes during the Sphinx
+compilation process by itself. It's good for building the complete docs,
+but is slow when used for writing the robot code for screenshots
 
 *robot-server*-build requires robot-server to be started with ``make serve``
 into foreground of one console, and then builds to be run with ``make robot``
-on a different console. It uses one Plone sandbox (with fast reset between
+on a different console. It uses the same Plone sandbox (with fast reset between
 documents) for the whole build, which makes it pretty fast.
 
 
 How to work on a single document
 --------------------------------
 
-0. Cleanup old builds
+1. Cleanup old builds and start the server
 
    .. code:: bash
 
-      $ make clean
+      $ make clean serve
 
-1. Start server
-
-   .. code:: bash
-
-      $ make serve
-
-2. Run ``pybot`` for that document
+2. Run ``bin/pybot`` for that document
 
    .. code:: bash
 
@@ -136,20 +133,14 @@ How to work on a single document
 How to work on a new document
 -----------------------------
 
-0. Cleanup old builds
+1. Cleanup old builds and start the server
 
    .. code:: bash
 
-      $ make clean
-
-1. Start server
-
-   .. code:: bash
-
-      $ make serve
+      $ make clean serve
 
 2. Insert ``.. include:: ../robot.rst`` into beginning of the document
-   (after its title, with correct relative path for ``robot.rst``):
+   (after its title, with correct relative path to ``robot.rst``):
 
    .. code:: rst
 
@@ -177,6 +168,13 @@ How to work on a new document
 
          Show how to write a robot generated image
              Pause
+             Capture and crop page screenshot
+             ...    ${CURDIR}/../_robot/document-name_screenshot-name.png
+             ...    css=#content  css=#some-other-id
+
+   **NOTE**: With *Capture and crop page screenshot*-keyword, please, prefix
+   every screenshot filename with ``${CURDIR}/``. This is required to support
+   executing the build with *pybot* in addition to Sphinx*.
 
 5. Execute the file with *pybot*:
 
@@ -192,11 +190,6 @@ How to work on a new document
    * http://robotframework.googlecode.com/hg/doc/libraries/BuiltIn.html?r=2.8.1
    * http://robotframework.googlecode.com/hg/doc/userguide/RobotFrameworkUserGuide.html?r=2.8.1
 
-   **NOTE**: With *Capture and crop page screenshot*-keyword, please, prefix
-   the filename with ``${CURDIR}/`` (e.g.
-   ``${CURDIR}/../_robot/working-copy_locked.png``).
-   This is required to support both *Sphinx and *pybot*.
-
 7. Try the results with sphinx:
 
    .. code:: bash
@@ -204,7 +197,8 @@ How to work on a new document
       $ make clean robot
 
 8. Add ``.. robotframework::``-directive to prevent re-creating screenshots in
-   subsequent builds:
+   subsequent builds (``make clean`` will still always force re-building the
+   images):
 
    .. code:: rst
 
@@ -227,8 +221,7 @@ Advanced topics
              Apply profile  Products.CMFPlone:plone-content
              ...
 
-
-2. How to set the default language?
+2. How to translate strings?
 
    .. code:: rst
 
@@ -236,30 +229,78 @@ Advanced topics
 
          *** Test Cases ***
 
-         Show Plone default content
-             Set default language  fi
+         Do something with translated strings
+             ${my_variable} =  Translate  my_msgid
+             ...   default=Default string for the translation
              ...
 
 3. How to create and log in a user?
 
-   See usage of *Create user*, *Enable autologin as* and *Set autologin username*
-   keywords in
+   .. code:: rst
 
-   https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/robot-standalone.rst
+      .. code:: robotframework
 
-4. How to create sample content?
+         *** Test Cases ***
 
-   See usage of *Create content* and *Do workflow action for* -keywords in
+         Do something as a new user
+             ${user_id} =  Translate  user_id  default=jane-doe
+             ${user_fullname} =  Translate  user_fullname  default=Jane Doe
+             Create user  ${user_id}  Member  fullname=${user_fullname}
+             Set autologin username  ${user_id}
+             ...
 
-   https://raw.github.com/collective/collective.usermanual/robot-screenshots/source/managing-content/working-copy.rst
 
-5. Where should I define custom keywords?
+4. How to logout back to anonymous user?
+
+   .. code:: rst
+
+      .. code:: robotframework
+
+         *** Test Cases ***
+
+         Do something as anonymous user
+             Disable autologin
+             ...
+
+5. How to create sample content?
+
+   .. code:: rst
+
+      .. code:: robotframework
+
+         *** Test Cases ***
+
+         Create sample content
+             ${folder_id} =  Translate  folder_news_id  default=news
+             ${folder_title} =  Translate  folder_news_title  default=News
+             ${container} =  Create content  type=Folder
+             ...   id=${folder_id}  title=${folder_title}
+
+             ${item_id} =  Translate  sample_news_id
+             ...   default=website-refresh
+             ${item_title} =  Translate  sample_news_title
+             ...   default=Welcome to our new site!
+             ${item_description} =  Translate  sample_news_description
+             ...   default=The long wait is now over
+             ${item_text} =  Translate  sample_news_text
+             ...   default=<p>Our new site is built with Plone.</p>
+
+             ${item} =  Create content  container=${container}  type=News Item
+             ...   id=${item_id}  title=${item_title}
+             ...   description=${item_description}  text=${item_text}
+             Do workflow action for  ${item}  publish
+
+   **NOTE:** Sample content is always created as the currently logged-in
+   user (and cannot be created as anonymous user or as an user without enough
+   permissions).
+
+6. Where should I define custom keywords?
 
    In the same document, within any ``.. code:: robotframework``-directive.
    Shared keywords can be defined in
    ``./src/collective/usermanual/keywords.robot``.
 
-6. How do I use i18n strings?
+7. How do I use i18n strings?
 
    Translate msgid into test level variable with
    ``${msg} =  Translate  msgidname default=Default translation"``
@@ -270,7 +311,7 @@ Advanced topics
    Select build default language by setting environment variable
    ``LANGUAGE`` with your locale, e.g. ``LANGUAGE=fi make clean robot``.
 
-7. How to activate custom product?
+8. How to activate custom product?
 
    See usage of variables *CONFIGURE_PACKAGES* and *APPLY_PROFILES* (also
    *META_PACKAGES*, *OVERRIDE_PACKAGES* and *INSTALL_PACKAGES* are
