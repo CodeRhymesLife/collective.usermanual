@@ -249,7 +249,7 @@ class UserManualLayer(PloneSandboxLayer):
             if not name in sys.modules:
                 __import__(name)
             package = sys.modules[name]
-            z2.installProduct(app, package)
+            z2.installProduct(app, name)
 
     def setUpPloneSite(self, portal):
 
