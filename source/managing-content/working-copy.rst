@@ -70,7 +70,7 @@ drop-down menu, select "Check out":
        ${item} =  Create content  container=${container}  type=News Item
        ...  id=${item_id}  title=${item_title}
        ...  description=${item_description}  text=${item_text}
-       Do transition  ${item}  publish
+       Fire transition  ${item}  publish
 
    Show how to checkout
        ${folder_id} =  Translate  folder_news_id
