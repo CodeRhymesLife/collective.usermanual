@@ -25,7 +25,7 @@ To add a page, use the *Add new...* menu for a folder:
        Wait until element is visible
        ...  css=#plone-contentmenu-factories dd.actionMenuContent
 
-       Mouse over  css=a#document
+       Mouse over  document
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
@@ -47,9 +47,8 @@ panel:
    *** Test Cases ***
 
    Show new page edit form
-       Page should contain element  css=a#document
-       ${href} =  Get element attribute  css=a#document@href
-       Go to  ${href}
+       Page should contain element  document
+       Click link  document
 
        Wait until element is visible
        ...  css=input#title
