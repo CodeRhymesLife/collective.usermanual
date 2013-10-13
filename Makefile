@@ -15,9 +15,9 @@ PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
 # Robot-server variables
-CONFIGURE_PACKAGES = plone.app.iterate
+CONFIGURE_PACKAGES = collective.usermanual,plone.app.iterate
 APPLY_PROFILES = plone.app.iterate:plone.app.iterate
-ROBOTSERVER_FIXTURE = collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
+ROBOTSERVER_FIXTURE = plone.app.robotframework.PLONE_ROBOT_TESTING
 ROBOTSERVER_OPTS = -v
 
 .PHONY: help clean html robot server dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest test

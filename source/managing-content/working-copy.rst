@@ -45,48 +45,52 @@ drop-down menu, select "Check out":
 
    *** Variables ***
 
-   @{CONFIGURE_PACKAGES}  plone.app.iterate
+   @{CONFIGURE_PACKAGES}  collective.usermanual  plone.app.iterate
    @{APPLY_PROFILES}  plone.app.iterate:plone.app.iterate
 
    *** Test cases ***
 
    Create sample content
-       ${folder_id} =  Translate  folder_news_id  default=news
-       ${folder_title} =  Translate  folder_news_title  default=News
+       ${folder_id} =  Translate  folder_news_id
+       ...  default=news  domain=${DOMAIN}
+       ${folder_title} =  Translate  folder_news_title
+       ...  default=News  domain=${DOMAIN}
        ${container} =  Create content  type=Folder
-       ...   id=${folder_id}  title=${folder_title}
+       ...  id=${folder_id}  title=${folder_title}
 
        ${item_id} =  Translate  sample_news_id
-       ...   default=website-refresh
+       ...  default=website-refresh  domain=${DOMAIN}
        ${item_title} =  Translate  sample_news_title
-       ...   default=Welcome to our new site!
+       ...  default=Welcome to our new site!  domain=${DOMAIN}
        ${item_description} =  Translate  sample_news_description
-       ...   default=The long wait is now over
+       ...  default=The long wait is now over  domain=${DOMAIN}
        ${item_text} =  Translate  sample_news_text
-       ...   default=<p>Our new site is built with Plone.</p>
+       ...  default=<p>Our new site is built with Plone.</p>  domain=${DOMAIN}
 
        ${item} =  Create content  container=${container}  type=News Item
-       ...   id=${item_id}  title=${item_title}
-       ...   description=${item_description}  text=${item_text}
-       Do workflow action for  ${item}  publish
+       ...  id=${item_id}  title=${item_title}
+       ...  description=${item_description}  text=${item_text}
+       Do transition  ${item}  publish
 
    Show how to checkout
-       ${folder_id} =  Translate  folder_news_id  default=news
-       ${item_id} =  Translate  sample_news_id  default=website-refresh
+       ${folder_id} =  Translate  folder_news_id
+       ...  default=news  domain=${DOMAIN}
+       ${item_id} =  Translate  sample_news_id
+       ...  default=website-refresh  domain=${DOMAIN}
        Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        Page should contain element  css=#plone-contentmenu-actions dt a
        Click link  css=#plone-contentmenu-actions dt a
        Wait until element is visible
-       ...    css=#plone-contentmenu-actions dd.actionMenuContent
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
 
        Mouse over  css=#plone-contentmenu-actions-iterate_checkout
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/working-copy_checkout.png
-       ...    contentActionMenus
-       ...    css=#plone-contentmenu-actions dd.actionMenuContent
+       ...  ${CURDIR}/../_robot/working-copy_checkout.png
+       ...  contentActionMenus
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
 
 An info message will appear indicating you're now working with a working
 copy:
@@ -109,11 +113,11 @@ copy:
 
        Go to  ${href}
 
-       Element should be visible   css=.portalMessage
+       Element should be visible  css=.portalMessage
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/working-copy_checkout-notification.png
-       ...    css=#portal-column-content
+       ...  ${CURDIR}/../_robot/working-copy_checkout-notification.png
+       ...  css=#portal-column-content
 
 Now you're free to edit your own local copy of a published document.
 During this time, the original document is "locked" -- that is, no one
@@ -132,15 +136,17 @@ subsequently lost from) the published version while you edit your copy.
    *** Test Cases ***
 
    Show locked original
-       ${folder_id} =  Translate  folder_news_id  default=news
-       ${item_id} =  Translate  sample_news_id  default=website-refresh
+       ${folder_id} =  Translate  folder_news_id
+       ...  default=news  domain=${DOMAIN}
+       ${item_id} =  Translate  sample_news_id
+       ...  default=website-refresh  domain=${DOMAIN}
        Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
-       Element should be visible   css=#plone-lock-status
+       Element should be visible  css=#plone-lock-status
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/working-copy_locked.png
-       ...    css=#portal-column-content
+       ...  ${CURDIR}/../_robot/working-copy_locked.png
+       ...  css=#portal-column-content
 
 Using "Check in"
 ----------------

@@ -14,3 +14,4 @@ parts
 selenium-screenshot-*.png
 source/_robot/*.png
 source/robot.rst
+src/plone.app.robotframework

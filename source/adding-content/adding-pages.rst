@@ -23,15 +23,15 @@ To add a page, use the *Add new...* menu for a folder:
 
        Click link  css=#plone-contentmenu-factories dt a
        Wait until element is visible
-       ...    css=#plone-contentmenu-factories dd.actionMenuContent
+       ...  css=#plone-contentmenu-factories dd.actionMenuContent
 
        Mouse over  css=a#document
        Update element style  portal-footer  display  none
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/adding-pages_add-menu.png
-       ...    contentActionMenus
-       ...    css=#plone-contentmenu-factories dd.actionMenuContent
+       ...  ${CURDIR}/../_robot/adding-pages_add-menu.png
+       ...  contentActionMenus
+       ...  css=#plone-contentmenu-factories dd.actionMenuContent
 
 Select **Page** from the drop-down menu, and you'll see the *Add Page*
 panel:
@@ -52,11 +52,11 @@ panel:
        Go to  ${href}
 
        Wait until element is visible
-       ...    css=input#title
+       ...  css=input#title
 
        Capture and crop page screenshot
-       ...    ${CURDIR}/../_robot/adding-pages_add-form.png
-       ...    css=#content
+       ...  ${CURDIR}/../_robot/adding-pages_add-form.png
+       ...  css=#content
 
 The **Title** and **Description** fields are there at the top. Fill each
 of them out appropriately. There is a *Change note* field at the bottom,

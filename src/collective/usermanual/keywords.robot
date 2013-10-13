@@ -1,3 +1,8 @@
+*** Variables ***
+
+${DOMAIN}  collective.usermanual
+@{CONFIGURE_PACKAGES}  collective.usermanual  plone.app.iterate
+
 *** Keywords ***
 
 Pause

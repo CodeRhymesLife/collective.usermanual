@@ -24,17 +24,19 @@
 
     Test Setup
        Remote ZODB SetUp
-       ...  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
+       ...  plone.app.robotframework.PLONE_ROBOT_TESTING
 
        Enable autologin as  Manager
-       ${user_id} =  Translate  user_id  default=jane-doe
-       ${user_fullname} =  Translate  user_fullname  default=Jane Doe
+       ${user_id} =  Translate  user_id
+       ...  default=jane-doe  domain=${DOMAIN}
+       ${user_fullname} =  Translate  user_fullname
+       ...  default=Jane Doe  domain=${DOMAIN}
        Create user  ${user_id}  Member  fullname=${user_fullname}
        Set autologin username  ${user_id}
 
    Test Teardown
        Remote ZODB TearDown
-       ...  collective.usermanual.testing.USERMANUAL_ROBOT_TESTING
+       ...  plone.app.robotframework.PLONE_ROBOT_TESTING
 
    Suite Teardown
        Close all browsers
