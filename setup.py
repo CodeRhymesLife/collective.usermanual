@@ -24,9 +24,9 @@ setup(
         'roman',
         'collective.sphinx.includedoc',
         'collective.sphinx.autoatschema',
-        'sphinxcontrib-robotframework[docs]',
+        'sphinxcontrib-robotframework [docs]',
         'Plone',  # We need the complete dist
-        'plone.app.robotframework[speak]',
+        'plone.app.robotframework [speak]',
         'plone.api'
     ]
 )
