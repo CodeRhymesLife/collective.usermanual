@@ -90,7 +90,7 @@ drop-down menu, select "Check out":
        Capture and crop page screenshot
        ...  ${CURDIR}/../_robot/working-copy_checkout.png
        ...  contentActionMenus
-       ...  css=#plone-contentmenu-actions dd.actionMenuContent
+       ...  css=#portal-column-content
 
 An info message will appear indicating you're now working with a working
 copy:
@@ -184,7 +184,7 @@ simply choose "Check-in" from the "Actions" drop-down menu:
        Capture and crop page screenshot
        ...  ${CURDIR}/../_robot/working-copy_checkin.png
        ...  contentActionMenus
-       ...  css=#plone-contentmenu-actions dd.actionMenuContent
+       ...  css=#portal-column-content
 
 You will then be prompted to enter a Check-in message. Fill it out and
 click on "Check in":
@@ -291,7 +291,7 @@ copy and select "Cancel check-out":
        Capture and crop page screenshot
        ...  ${CURDIR}/../_robot/working-copy_cancel-checkout.png
        ...  contentActionMenus
-       ...  css=#plone-contentmenu-actions dd.actionMenuContent
+       ...  css=#portal-column-content
 
 You will prompted to confirm the "Cancel checkout" or to "Keep
 checkout":
