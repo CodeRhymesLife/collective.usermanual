@@ -9,6 +9,7 @@ syntax: glob
 bin
 develop-eggs
 docs/
+extras
 ghostdriver.log
 parts
 selenium-screenshot-*.png
