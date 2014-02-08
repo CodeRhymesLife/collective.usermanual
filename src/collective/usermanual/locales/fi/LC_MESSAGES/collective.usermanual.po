@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-10-05 10:12+0300\n"
+"POT-Creation-Date: 2014-02-08 15:43+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,12 +45,16 @@ msgid "sample_news_title"
 msgstr "Tervetuloa uusille sivuille!"
 
 #. Default: "Jane Doe"
-#: source/robot-standalone.rst:0
+#: source/adding-content/adding-pages.rst:0
+#: source/managing-content/working-copy.rst:0
+#: source/robot-server.rst:0 source/robot-standalone.rst:0 source/robot.rst:0
 msgid "user_fullname"
 msgstr "Elli Esimerkki"
 
 #. Default: "jane-doe"
-#: source/robot-standalone.rst:0
+#: source/adding-content/adding-pages.rst:0
+#: source/managing-content/working-copy.rst:0
+#: source/robot-server.rst:0 source/robot-standalone.rst:0 source/robot.rst:0
 msgid "user_id"
 msgstr "elli-esimerkki"
 
