@@ -48,7 +48,7 @@ drop-down menu, select "Check out":
    @{CONFIGURE_PACKAGES}  collective.usermanual  plone.app.iterate
    @{APPLY_PROFILES}  plone.app.iterate:plone.app.iterate
 
-   *** Test cases ***
+   *** Test Cases ***
 
    Create sample content
        ${folder_id} =  Translate  folder_news_id
@@ -106,12 +106,12 @@ copy:
    *** Test Cases ***
 
    Show checkout notification
-       Page should contain element
+       page should contain element
        ...  css=#plone-contentmenu-actions-iterate_checkout
-       ${href} =  Get element attribute
+       ${href} =  get element attribute
        ...  css=#plone-contentmenu-actions-iterate_checkout@href
 
-       Go to  ${href}
+       go to  ${href}
 
        Element should be visible  css=.portalMessage
 
@@ -148,29 +148,97 @@ subsequently lost from) the published version while you edit your copy.
        ...  ${CURDIR}/../_robot/working-copy_locked.png
        ...  css=#portal-column-content
 
+
 Using "Check in"
 ----------------
 
 When you are ready to have your edited copy replace the published one,
 simply choose "Check-in" from the "Actions" drop-down menu:
 
-.. figure:: ../_static/04a.png
+.. replaces ../_static/04a.png
+.. figure:: ../_robot/working-copy_checkin.png
    :align: center
    :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show check-in option
+       ${folder_id} =  Translate  folder_news_id
+       ...  default=news  domain=${DOMAIN}
+       ${item_id} =  Translate  sample_news_id
+       ...  default=website-refresh  domain=${DOMAIN}
+       Go to  ${PLONE_URL}/${folder_id}/copy_of_${item_id}
+
+       Element should be visible  css=#plone-lock-status
+
+       Click link  css=#plone-contentmenu-actions dt a
+       Wait until element is visible
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
+
+       Mouse over  css=#plone-contentmenu-actions-iterate_checkin
+       Update element style  portal-footer  display  none
+
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../_robot/working-copy_checkin.png
+       ...  contentActionMenus
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
 
 You will then be prompted to enter a Check-in message. Fill it out and
 click on "Check in":
 
-.. figure:: ../_static/04b.png
+.. replaces ../_static/04b.png
+.. figure:: ../_robot/working-copy_checkin-form.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show checkin form
+       Page should contain element
+       ...  css=#plone-contentmenu-actions-iterate_checkin
+       ${href} =  Get element attribute
+       ...  css=#plone-contentmenu-actions-iterate_checkin@href
+
+       Go to  ${href}
+
+       Element should be visible  css=#checkin_message
+       ${checkin_message} =  Translate  checkin_message
+       ...  default=Update news item ingress  domain=${DOMAIN}
+       Input text  css=#checkin_message  ${checkin_message}
+
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../_robot/working-copy_checkin-form.png
+       ...  css=#portal-column-content
 
 Your updated document will now replace the published copy and become the
 new published copy.
 
-.. figure:: ../_static/05.png
+.. replaces ../_static/05.png
+.. figure:: ../_robot/working-copy_checkin-confirmation.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show checkin confirmation
+
+       Click button  form.button.Checkin
+
+       Page should not contain  css=#plone-lock-status
+       Page should contain element  css=.portalMessage.info
+
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../_robot/working-copy_checkin-confirmation.png
+       ...  css=#portal-column-content
 
 You will also notice that there is no longer a copy of the document in
 the user's personal folder.
@@ -187,16 +255,71 @@ If for any reason it becomes necessary to cancel a check out and **you
 don't want to save any of your changes**, simply navigate to the working
 copy and select "Cancel check-out":
 
-.. figure:: ../_static/cancel1.png
+.. replaces ../_static/cancel1.png
+.. figure:: ../_robot/working-copy_cancel-checkout.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show cancel checkout
+       ${folder_id} =  Translate  folder_news_id
+       ...  default=news  domain=${DOMAIN}
+       ${item_id} =  Translate  sample_news_id
+       ...  default=website-refresh  domain=${DOMAIN}
+       Go to  ${PLONE_URL}/${folder_id}/${item_id}
+
+       page should contain element
+       ...  css=#plone-contentmenu-actions-iterate_checkout
+       ${href} =  get element attribute
+       ...  css=#plone-contentmenu-actions-iterate_checkout@href
+
+       go to  ${href}
+
+       Element should be visible  css=.portalMessage
+
+       Click link  css=#plone-contentmenu-actions dt a
+       Wait until element is visible
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
+
+       Mouse over  css=#plone-contentmenu-actions-iterate_checkout_cancel
+       Update element style  portal-footer  display  none
+
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../_robot/working-copy_cancel-checkout.png
+       ...  contentActionMenus
+       ...  css=#plone-contentmenu-actions dd.actionMenuContent
 
 You will prompted to confirm the "Cancel checkout" or to "Keep
 checkout":
 
-.. figure:: ../_static/cancel2.png
+.. replaces ../_static/cancel2.png
+.. figure:: ../_robot/working-copy_cancel-checkout-form.png
    :align: center
-   :alt: 
+   :alt:
+
+.. code:: robotframework
+   :class: hidden
+
+   *** Test Cases ***
+
+   Show cancel checkout form
+
+       Page should contain element
+       ...  css=#plone-contentmenu-actions-iterate_checkout_cancel
+       ${href} =  Get element attribute
+       ...  css=#plone-contentmenu-actions-iterate_checkout_cancel@href
+
+       Go to  ${href}
+
+       Element should be visible  name=form.button.Cancel
+
+       Capture and crop page screenshot
+       ...  ${CURDIR}/../_robot/working-copy_cancel-checkout-form.png
+       ...  css=#portal-column-content
 
 Note that if the user who has checked out a working copy is not
 available to check in or cancel a check out, users with the Manager role
@@ -217,3 +340,8 @@ The check in routine will handle the state.
    :creates: ../_robot/working-copy_checkout.png
              ../_robot/working-copy_checkout-notification.png
              ../_robot/working-copy_locked.png
+             ../_robot/working-copy_checkin.png
+             ../_robot/working-copy_checkin-form.png
+             ../_robot/working-copy_checkin-confirmation.png
+             ../_robot/working-copy_cancel-checkout.png
+             ../_robot/working-copy_cancel-checkout-form.png
