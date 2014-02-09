@@ -1,0 +1,28 @@
+language: python
+python: '2.7'
+addons:
+  sauce_connect:
+  - username: $SAUCE_USERNAME
+  - access_key: $SAUCE_ACCESS_KEY
+install:
+- git clone https://github.com/giacomos/papyrus .. && cd ../papyrus
+- mkdir source && ln -s ../../collective.usermanual source/collective.usermanual
+- mkdir -p buildout-cache/downloads
+- virtualenv buildout
+- buildout/bin/python bootstrap.py -c travis.cfg
+- bin/buildout -N -t 3 -c travis.cfg buildout:checkout=collective.usermanual sources:collective.usermanual="fs collective.usermanual branch=sources-only egg=false"
+before_script:
+- gem install --version 0.8.9 faraday
+- gem install travis-artifacts
+script: bin/test
+after_script:
+- travis-artifacts upload --path build/html
+env:
+  global:
+  - SAUCE_USERNAME=plone
+  - ARTIFACTS_S3_BUCKET=collective.usermanual
+  - ROBOT_BUILD_NUMBER=travis-$TRAVIS_BUILD_NUMBER
+  - ROBOT_REMOTE_URL=http://$SAUCE_USERNAME:$SAUCE_ACCESS_KEY@ondemand.saucelabs.com:80/wd/hub
+  - secure: YdbnLZ8pbm7Rf9o80zap0RnFcN7ecTbmillOwqfk7Be+b7pqyeb3XOvgClvqASSY6BMKDMwA+O65lyA4L3lx1yoShcrG4Bkobh6z3L9YLPlgd7S7JKXhDGGCYGiIjgEuXr9nU4GERbZpEOw+9eYpwuVXkIm/v2KQkflIMd6Hcv4=
+  - secure: MiJ5VKMhFlEHmlrjo6GiXKnwmgZKXXI0J0Api5RiUfHuDtokjKSrzSsaqSkiOORfW8vSKbt3hSTI16Gnbfslgm5Mhx5sqXZxiT1j5q5GmPiKAF1CLrC0bE2wX49vV8SdsShHW49Z5un2yPLQx1qmn/O4LD8ijwCFE9Jh7XN+pm0=
+  - secure: eoRwLYi53CtxUQpiaOCXbvX9HwflwNN6FP9Im1xK/ONBwp6/7GBZb04A4w6oV01yLWJptxtecvaGP9zxtPod+XsqCa+qyAWncsixsdeIHF47W6e3QqtJ0+dgy9ushhHWpXCePdwq3l2v56P34f2udBYmN2sMKLZTk1pGdPexRM8=
