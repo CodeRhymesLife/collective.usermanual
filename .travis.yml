@@ -10,7 +10,7 @@ install:
 - mkdir -p buildout-cache/downloads
 - virtualenv buildout
 - buildout/bin/python bootstrap.py -c travis.cfg
-- bin/buildout -N -t 3 -c travis.cfg buildout:checkout=collective.usermanual sources:collective.usermanual="fs collective.usermanual branch=sources-only egg=false"
+- bin/buildout -N -t 3 -c travis.cfg buildout:checkout=collective.usermanual sources:collective.usermanual="fs collective.usermanual branch=sources-only egg=false" sphinx-build:robot-base=robot-saucelabs.rst
 before_script:
 - gem install --version 0.8.9 faraday
 - gem install travis-artifacts

@@ -23,6 +23,7 @@ A User Manual for Plone content creators and managers.
    robot
    robot-server
    robot-standalone
+   robot-saucelabs
 
 .. |Events summary table| image:: _static/events-summary-chart.jpg
 .. |lights-camera-action.png| image:: _static/lights-camera-action.png
