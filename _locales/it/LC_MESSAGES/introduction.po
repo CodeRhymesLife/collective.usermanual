@@ -1,0 +1,693 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../introduction/conceptual-overview.rst:3
+msgid "Conceptual Overview"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:5
+msgid "An explanation of Plone as a content management system"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:8
+msgid "What is Plone?"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:10
+msgid ""
+"Plone is a content management system (CMS) which you can use to build a web "
+"site. With Plone, ordinary people can contribute content to a web site "
+"without the help of a computer geek. Plone runs over the Web, too, so you "
+"don't need to install any special software on your computer. The word "
+"*content* is meant to be general, because you can publish so many types of "
+"information, including:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:21
+msgid ""
+"A Plone web site contains various kinds of content, including text, photos, "
+"and images. These can exist in many forms: documents, news items, events, "
+"videos, audio files, any types of file and data that can be uploaded or "
+"created on a web site. Content can also be uploaded from your local "
+"computer. You create *folders* on a Plone web site to hold content and to "
+"create a navigation structure:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:33
+msgid "You Love Butterflies"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:35
+msgid ""
+"For example, to add content about butterflies, you might add a folder named "
+"\"Butterflies,\" then add some text to a web page in the folder:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:42
+msgid "And then you might add some butterfly photos to the folder:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:48
+msgid ""
+"You can add many types of content to a folder, including sub-folders. After "
+"adding a few reports and videos to the Butterflies folder, the content would"
+" be organized like this, with two sub-folders within the Butterflies folder:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:58
+msgid "What Goes on Behind the Scenes"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:60
+msgid ""
+"You may wonder how it all works. A typical Plone web site exists as an "
+"installation of Plone software on a web server. The web server may be "
+"anywhere, often at a website server company within a \"rack\" of computers "
+"dedicated to the task:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:69
+msgid ""
+"The diagram shows the many cables that connect individual server computers "
+"to the Internet, across fast network connections. Your Plone site is just "
+"software and database storage software installed on one of the individual "
+"server computers. As you type or click on your computer, data is sent up and"
+" down the networking cables and communication channels of the Internet to "
+"interact with your Plone software installation on the server."
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:77
+msgid "Let's simplify the diagram showing how you interact with Plone:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:83
+msgid ""
+"You use your web browser -- Firefox, Safari, Internet Explorer, etc. -- to "
+"view and edit your Plone web site, and the changes are stored by the Plone "
+"software into its database storage system."
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:87
+msgid ""
+"For example, imagine your butterfly Plone web site is located at mysite.com."
+" You type www.mysite.com into your web browser. After you press Enter, the "
+"following sequence of events happens as your browser talks to the web server"
+" at mysite.com:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:96
+msgid "The Plone software responds:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:102
+msgid ""
+"Plone reads its database to look for information stored in mysite.com. It "
+"then sends back the web page to your computer, in a code called HTML. HTML "
+"is a computer language that describes how a web page looks. It includes "
+"text, graphics, fonts, the color of the background, and just about "
+"everything else. There are many online resources that can teach you HTML "
+"details, but one of Plone's advantages is that you don't need to know (much)"
+" about HTML. That's one reason for Plone and other similar web software; to "
+"let you focus on your content, e.g., butterfly text and graphics, instead of"
+" learning a new computer language."
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:112
+msgid ""
+"But back to our overview. Your web browser \"renders\" (translates) this "
+"HTML, and you see the resulting web page:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:119
+msgid ""
+"As you view your butterfly web page, you can choose to change it or add to "
+"it. You can also upload photos, documents, etc. at any time:"
+msgstr ""
+
+#: ../../introduction/conceptual-overview.rst:126
+msgid ""
+"After you make your edits and click \"save changes,\" the new version of the"
+" web page will be immediately available to anyone surfing to your site:"
+msgstr ""
+
+#: ../../introduction/index.rst:2
+msgid "Introduction"
+msgstr ""
+
+#: ../../introduction/index.rst:4
+msgid "A Conceptual Overview of Plone"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:2
+msgid "Logging In"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:4
+msgid "What to expect when you log in to a Plone site"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:6
+msgid ""
+"When you visit a Plone web site anonymously, or are given the web address "
+"for site maintenance, you'll see a *log in* button in the top-right corner "
+"like this:"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:14
+msgid "log-in.png"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:16
+msgid ""
+"After clicking the *log in* link, you'll see an input panel where you can "
+"type in your user name and password:"
+msgstr ""
+
+#: ../../introduction/logging-in.rst:23
+msgid ""
+"After logging in to a Plone web site you will see some indication of your "
+"name, often the top in the top-right corner of the screen. You can click on "
+"your name to perform some actions related to your user, covered in the "
+"following sections."
+msgstr ""
+
+#: ../../introduction/logging-in.rst:28
+msgid ""
+"From Plone 4 on, you (or the site administrator) can allow users to use "
+"their email address as login name. This feature can be switched on in the "
+"Security settings control panel. The effect is that on the registration form"
+" no field is shown for the user name. On the login form the user is now "
+"asked to fill in an email address. See `E-mail address based login in the "
+"Upgrade Guid <http://plone.org/documentation/manual/upgrade-guide/version"
+"/upgrading-plone-3-x-to-4.0/e-mail-address-based-login>`_ for more info "
+"about this feature."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:4
+msgid "Setting Your Preferences"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:6
+msgid ""
+"After logging in to a Plone web site, you can change your personal "
+"preferences for information about your identity and choice of web site "
+"settings."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:10
+msgid ""
+"After logging in, your full name will be posted on the top-right corner of "
+"the screen. Click your name to open the dropdown, then click on the "
+"*Dashboard* link to go to your personal area:"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:18
+msgid "You will see the dashboard** panel:"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:24
+msgid ""
+"When you log in for the first time, your dashboard will be empty, as the "
+"Info message explains. Portlets are specific \"views\" of different types of"
+" content. You can choose which ones you want in your dashboard by clicking "
+"the *Edit* tab, but we'll get to that in a second."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:29
+msgid ""
+"First, let's look at the *Preferences* link in the previous dropdown, which "
+"will bring up the personal preferences edit panel:"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:36
+msgid "Date entry fields include:"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:38
+msgid ""
+"*Full Name*- If your name is common, include your middle initial or middle "
+"name."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:40
+msgid ""
+"*E-mail address* - REQUIRED - You may receive emails from the web site "
+"system, or from a message board, if installed, etc. When an item is "
+"required, a little red square will show alongside the item."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:43
+msgid ""
+"*Location*text box** - This is the name of your city, town, state, province,"
+" or whatever you wish to provide*. *"
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:46
+msgid ""
+"*Language preference* selection menu - Plone excels at offering multilingual"
+" support."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:48
+msgid ""
+"*Biography* text box - Enter a short description of yourself here, about a "
+"paragraph or so in length."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:50
+msgid ""
+"*Home page* web address - If you have your own web site or an area at a "
+"photo-sharing web site, for instance, enter the web address here, if you "
+"wish, so people can find out more about you."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:53
+msgid ""
+"*Content editor* selection menu - You have the choice of using TinyMCE or "
+"Kupu, which lets you edit web pages with a nice graphical interface, or "
+"using a basic editing panel, which is good if you are accustomed to writing "
+"web pages using HTML (the basic \"code\" of web pages). The default setting "
+"for new sites is to use TinyMCE, and is assumed in this user manual."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:59
+msgid ""
+"*Enable external editing* checkbox - This is for switching on and off an "
+"\"external\" editor, if one has been installed by the web site "
+"administrator. Use of an \"external\" editor is mainly for web designers and"
+" programmers who do more editing of actual code, but it could be useful for "
+"volume page creation using specialized text mark-up languages. (Don't worry "
+"about this setting if you haven't heard anything about it from your web site"
+" administrator)."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:66
+msgid ""
+"*Portrait* photograph upload - The portrait photograph will appear as a "
+"small image or thumbnail-size image, so it is best to use a head shot or "
+"upper-torso shot for this."
+msgstr ""
+
+#: ../../introduction/setting-your-preferences.rst:70
+msgid "You can change your preferences whenever you wish."
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:2
+msgid "Plone User Accounts and Roles"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:4
+msgid ""
+"The basics of using a Plone web site account, the distinction between "
+"anonymous surfing and \"logged in\" web site work, and the description of "
+"user roles."
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:8
+msgid ""
+"Plone web sites come in many flavors, ranging from personal websites with "
+"one user to community, organization, or business websites that could have "
+"hundreds of users. Each person who adds content to a Plone web site has "
+"their own user account. A user account includes a user name and a password. "
+"Some Plone sites allow people to sign up by visiting the site, clicking a "
+"**Join** link, and filling out basic user information. Other sites have user"
+" accounts that are created by web site administrators, in which case people "
+"normally receive emails with the user account details."
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:18
+msgid ""
+"However created, a Plone user account allows a person to log in by typing "
+"their user name and password. Passwords are case-sensitive, which means that"
+" you have to pay attention to the uppercase and lowercase letters. For "
+"example, if your password is xcFGt6v, you would have to type that exactly "
+"for it to work. Passwords that have a variety of characters in them are "
+"preferred over passwords like \"raccoon\" or \"boardwalk,\" as they are more"
+" difficult to guess and therefore more secure."
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:28
+msgid "Anonymous vs Authenticated Web Surfing"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:30
+msgid ""
+"The distinction between *anonymous web surfing* and *authenticated (logged-"
+"in) web activity* is an important one:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:34
+msgid "Anonymous Web Surfing"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:36
+msgid ""
+"This is the normal experience for a person surfing the web. You type the web"
+" address of a web site into your browser and you look at web pages, watch "
+"videos, view images, but you don't have to log in. This is why this mode is "
+"called anonymous: anyone can do it just by surfing normally. Note the "
+"presence of the *log in* link the screen image below (top right). If there "
+"is a *log in* link showing, you haven't logged in -- and you are surfing the"
+" web site anonymously, as seen in the following screen capture of a new "
+"Plone web site:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:50
+msgid "Authenticated (Logged-in) Web Activity"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:52
+msgid ""
+"You know the *authenticated* mode of web experience if you have ever used a "
+"bank or credit card website, or any other website that involved a user "
+"account. A bank web site will let you view your account information, fill "
+"out information forms, transfer funds, and do other actions, but only after "
+"you have logged in. A Plone web site is not much different, except that you "
+"can do more sophisticated things. Compare the screen image below, captured "
+"after a user called \"John Smith\" has logged in. Near the top right you see"
+" links for John Smith's name and a log out link. There is another important "
+"difference you see after logging in -- the main area in the middle now has a"
+" green header strip with tabs. This sort of header strip is present when a "
+"user has rights to change an area of the website. John Smith has the user "
+"rights to change this main area. The tabs in the green header strip for the "
+"main area will vary somewhat, but you can count on it looking like a tabbed "
+"interface with this particular green color. In the following screen capture,"
+" user John Smith has logged into a new Plone web site:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:74
+msgid "User Roles"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:76
+msgid ""
+"Equally important is the distinction between different user roles on a Plone"
+" web site. To illustrate the simplest case, let's consider two user roles, "
+"one called *member* and the other called *manager*. Consider the different "
+"rights or \"power\" of these two roles:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:82
+msgid "Member"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:84
+#: ../../introduction/user-accounts-and-roles.rst:95
+msgid "has a user account, so can log in"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:85
+msgid ""
+"can add content, but only in specific areas, and can't change anything "
+"outside of this area; often users are given a \"home area,\" to treat as "
+"personal space where they can add content."
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:88
+msgid ""
+"can not publish content so that it is visible to the anonymous web surfer, "
+"even content which they added; a person with manager role must approve "
+"content for publishing"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:93
+msgid "Manager"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:96
+msgid "can add content anywhere and has the power to change anything"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:97
+msgid "can publish any content"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:99
+msgid ""
+"When you get your new account on a Plone web site, you should be given "
+"information indicating where you have the right to add content, after you "
+"have logged in. After logging in, if you go to a folder where you have "
+"rights, you'll see a header strip that has a green color with tabs for "
+"*contents*, *view*, *edit*, rules**, and *sharing*:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:109
+msgid ""
+"You'll be able to explore to find the differences between these tabs, but "
+"here are descriptions to help you start:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:112
+msgid "*Contents* - shows a list of items in a folder"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:113
+msgid "*View* - shows the view an anonymous web surfer would see"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:114
+msgid "*Edit* - shows a panel for changing a view"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:115
+msgid ""
+"*Rules* - shows a panel for controlling how an item is created and managed"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:117
+msgid ""
+"*Sharing* - shows a panel for setting rights of other users to see or edit "
+"content"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:120
+msgid ""
+"You also see menus in the lower part of the green header strip, *Display, "
+"Add new..., and State*:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:127
+msgid "Explore these also. Here are basic descriptions of these menus:"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:129
+msgid ""
+"*Display* - shows menu choices for setting the display type (list view, "
+"summary view, etc.)"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:131
+msgid ""
+"*Add new...* - shows menu choices for adding content items (images, pages, "
+"folders, etc.)"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:133
+msgid ""
+"*State* - shows menu choices for setting publication state (private, public "
+"draft, public, etc.)"
+msgstr ""
+
+#: ../../introduction/user-accounts-and-roles.rst:136
+msgid ""
+"These menus and tabs will offer the main ways you interact with Plone. You "
+"will become very familiar with them as you learn more about managing a "
+"Plone-powered website."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:2
+msgid "Visual Design of Plone Web Sites"
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:4
+msgid ""
+"Plone allows web site administrators and designers the ability to create "
+"unique site designs. Here's an overview of the Plone layout, and some design"
+" examples."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:8
+msgid ""
+"What does a Plone web site look like? For years there has been a consistent "
+"design for the default Plone appearance. The default design looks generally "
+"like this:"
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:12
+msgid "|plone-default-design-areas.png|"
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:14
+msgid ""
+"The Plone web site you use could have a design radically different from "
+"this, but you should be able to find common elements, such as the log in "
+"link and a navigation panel or menu. In the default design, the navigation "
+"menu is in the left area, and usually appears as an indented list of folders"
+" in the site. There also may be a set of tabs in the *Log In, Location "
+"Information* strip near the top."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:21
+msgid ""
+"We can distinguish between the *design* of a web site and the "
+"*functionality* of a web site. For getting work done, focus on the "
+"functionality and don't worry so much about the appearance and layout of the"
+" web site. A strength of the Plone content management system is that a web "
+"site can be radically redesigned for a new look, without affecting the "
+"underlying content and functionality. The navigation menu can be moved from "
+"the left to the right, but it works the same. The right area can be deleted "
+"where functionality normally put there isn't needed. The areas for left, "
+"main, and right, as depicted above and below, could be changed to top, "
+"middle, and bottom, but it would still be a Plone web site underneath."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:33
+msgid ""
+"We'll use the default Plone layout design as an example of typical divisions"
+" of the screen:"
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:40
+msgid ""
+"You may need to adapt these terms as needed for your Plone web site design. "
+"You may encounter varied terms for describing screen real estate, such as "
+"right and left \"slots,\" for the left and right column areas, \"portlet,\" "
+"or \"viewlet,\" for discrete areas or boxes, and several other terms."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:46
+msgid ""
+"For example, we can select three web sites from the `list of Plone web sites"
+" <http://plone.net/sites>`_ to compare:"
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:53
+msgid ""
+"This is the web site for Akamai, a leading provider of online web tools and "
+"acceleration technology. The header area has simple text menu choices for "
+"five main content areas arrayed horizontally at the bottom of the header "
+"area. At right, the header contains another horizontal menu and a search "
+"box. The bottom of the header area would contain log in information, for use"
+" by the maintainers of the web site. The main graphic at top left is a focus"
+" area for eye-catching graphics and current topics. There is a main area at "
+"left center where the main text is located. The right column holds a series "
+"of \"portlets.\" The footer contains a horizontal menu, repeating the menu "
+"choices in the header, for convenience. There is a right-most column that "
+"has zoom settings."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:69
+msgid ""
+"This is the web site for Discover Magazine. The header area contains a large"
+" horizontal menu, the \"main menu,\" if you will, a smaller horizontal menu "
+"at upper right, and a search box. This site is rich with textual "
+"\"portlets\" that cover so many topic areas, which are divided into three "
+"columnar areas, left, middle, and right. The top of the middle column "
+"contains a focus area with a video. There are large interactive boxes in "
+"several places. The footer contains basic site identification information "
+"and a link to \"about us.\" For a large web site like Discover's, "
+"maintainers of the site log in to custom editing screens, and there is much "
+"automation of data feeds -- Plone uses Zope, a sophisticated storage system,"
+" and Python, a great programming language, which facilitates intelligent "
+"\"wiring\" of the flow of text and graphics into the web site."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:87
+msgid ""
+"The last of the three sites to examine is the web site for Penn State "
+"University's Smeal College of Business. The header contains a logo, a "
+"horizontal menu for main topic areas, and a search box at right. There is a "
+"main menu for this site at left, which is more traditional for a Plone web "
+"site. A large graphical area contains a rolling focus animation. There is "
+"another small graphical focus in the left column. Three textual columns "
+"round out the design, above the basic identification footer. Maintainers of "
+"this web site enter by means of a custom log in page, with the log in and "
+"user information showing along the bottom of the topmost header area."
+msgstr ""
+
+#: ../../introduction/visual-design-of-plone.rst:98
+msgid ""
+"So, what does a Plone web site look like? Traditionally, the out-of-the-box "
+"look is like that shown at the top of this page, with header, menu, columns,"
+" and a footer. These three sites illustrate how designers typically combine "
+"focus areas, vertical and horizontal menus, \"portlets,\" and textual "
+"content, usually arrayed in several columns. The underlying machinery is "
+"Plone and Zope and Python, but the design \"theme\" or \"skin\" can be made "
+"to look any way the designer chooses."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:2
+msgid "Your Dashboard"
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:4
+msgid ""
+"A Plone user has a personal \"dashboard\" for customizing the personal user "
+"interface."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:7
+msgid ""
+"Plone has several built-in \"views\" of news, events, recently changed "
+"items, and such. These list views are held in discrete rectangular areas "
+"called portlets. Think of a portlet as a window view of a given type of "
+"content. For example, the news portlet offers a view of recently published "
+"news items."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:13
+msgid ""
+"You control which portlets you view in your dashboard, and where they are "
+"placed. The following screen capture shows what user Elizabeth Smith would "
+"see after logging in and clicking her own name at upper right to go to her "
+"personal area:"
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:22
+msgid "The dashboard appears to be empty for a new user."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:24
+msgid ""
+"Clicking the edit tab for the dashboard will show that there are portlets "
+"already assigned to the dashboard -- the dashboard view shown above is "
+"empty, because there is no content available for display in the portlets on "
+"this new web site. Here are the default portlets:"
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:33
+msgid ""
+"You see the *News* and *Events* portlets in the left-most column, the "
+"*Recent Items* portlet in the second column, and the *Review List* portlet "
+"in the right column. The third column does not have a portlet assigned."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:38
+msgid ""
+"A new user account on a basic Plone web site will have a dashboard like the "
+"one shown, but for a web site that has been customized with add-on "
+"functionality, there may be more portlets to choose from, and the dashboard "
+"might start out with several more placed in the columns. For example, there "
+"could be portlets for \"current weather,\" \"stock ticker,\" \"quote of the "
+"day,\" etc., depending on what is installed for the web site (such things "
+"would require custom software). Depending on what is installed for the site,"
+" the user can customize the portlets they want to see and where to place "
+"them within the four columns."
+msgstr ""
+
+#: ../../introduction/your-dashboard.rst:48
+msgid ""
+"So, for the typical Plone user account, the dashboard would start with the "
+"portlets shown above, and later would be \"populated\" as news items, "
+"events, and other content items are added to the web site."
+msgstr ""

@@ -1,0 +1,774 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../using-collections/adding-collections.rst:2
+msgid "Adding Collections"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:4
+msgid ""
+"Collections (formerly called Smart Folders) are virtual containers of lists "
+"of items found by doing a specialized search."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:7
+msgid ""
+"Learning to think about content being stored wherever it is stored, and "
+"about using custom collections to gather up different \"views\" of the "
+"content, is an important step to using Plone most effectively. It is an "
+"intelligent system."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:12
+msgid ""
+"To add a collection, use the *Add new...* menu, as for adding other content "
+"types:"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:19
+msgid "p4\\_addnewmenu"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:21
+msgid "You will see the Add*Collection*panel:"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:27
+msgid "p4\\_addcollection2"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:29
+msgid ""
+"Below the title and description fields is a set of fields for specifying the"
+" format of search results returned by the search criterion for the new "
+"collection. The four fields in the panel above are in pairs. The top two "
+"fields let you limit the search results to a number of items that will be "
+"displayed. The bottom two fields let you control the order of the search "
+"result items."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:37
+msgid "Setting the search criterion"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:39
+msgid ""
+"After setting the display configuration in the edit panel shown above, click"
+" the criteria tab to show the panel for setting search criteria:"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:46
+msgid "p4\\_collectionssearchcrit1 2"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:48
+msgid ""
+"The top area of the panel, *Add New Search Criteria*, lets you set a field "
+"and a matching criterion. The bottom area, *Set Sort Order*, is a simple "
+"selection for a field to sort on:"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:56
+msgid "p4\\_collectionssearchcrit2 2"
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:58
+msgid ""
+"The criteria types for matching data in content items depend on which field "
+"is selected."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:61
+msgid ""
+"After saving the collection, the search criteria will be applied and the "
+"results shown when the collection is clicked. You can create any number of "
+"collections for such custom views. For the butterfly example described "
+"above, in addition to a date constraint to find recent items, the categories"
+" field could be used to match color to have a series of collections for "
+"\"Blue Butterflies,\" \"White Butterfles,\" etc."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:68
+msgid ""
+"Multiple criteria can be used for a collection. For example, a collection "
+"called \"Butterflies Photographed in the Last Month,\" could be made by "
+"setting a criterion on Creation Date and on Item Type as Image. Such date-"
+"based collections are really effective to show up-to-date views of content "
+"that don't require any administrative hand-work -- once such a collection "
+"has been created, it will automatically stay up to date."
+msgstr ""
+
+#: ../../using-collections/adding-collections.rst:76
+msgid ""
+"*Note:* A collection doesn't behave like a normal folder â€” you can't add "
+"content items via the add item menu, as you can for a normal folder."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:2
+msgid "Adjusting the Display Settings"
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:4
+msgid "Learn how display settings can change the look of your Collection page"
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:6
+msgid ""
+"While the main power of Collections lies in Criteria, the display settings "
+"can make a big difference in the way your Collection will appear. All three "
+"of the settings we will cover in this section can be found by clicking the "
+"**Edit tab** of a Collection."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:11
+msgid "**Inherit Criteria**"
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:13
+msgid ""
+"By selecting the **Inherit Criteria** option, the Collection will inherit "
+"the Criteria from a parent Collection. This is only useful when using Sub "
+"Collections. If this is checked, you can create another Collection that is "
+"more specific than the Parent while still retaining the basic criteria of "
+"the Parent. A simple example might be a Parent Collection for displaying all"
+" Events in a site, and a Sub Collection that also displays Events (by "
+"inheriting Criteria) *but only* those Events with a particular keyword."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:22
+msgid "**Limit Search Results**"
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:24
+msgid ""
+"We can use Limit Search Results to limit the number of results that are "
+"Collection will display *per page*. This way if we have a Collection that is"
+" displaying News Items, we can limit the results to five or ten, instead of "
+"having it show all News Items on a single, large list."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:29
+msgid "**Display as a Table**"
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:31
+msgid ""
+"Display as a Table is simply another way to display the results of a "
+"Collection. Instead of having the Collection spit out the results in a list "
+"form, we can have it **generate a table** with the results, and set exactly "
+"what information about the results we want displayed. We customize the table"
+" by selecting the **Table Columns** from the left and clicking the right "
+"arrow button to move it over to the right. In the example above we chose to "
+"include the Title of the object, its Creator, and the Effective date. You "
+"can use any number of the columns, or all of them if you so choose."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:41
+msgid ""
+"When considering what to select, keep in mind that not all objects will have"
+" the information for every column available. For example, the **Start Date**"
+" and **End Date** only apply to Events. Therefore if you added these columns"
+" and your table included Pages as well as Events then the rows for the Pages"
+" would not have the Start and End Dates filled in. The other thing to "
+"consider is that the more columns you have showing the more crowded the "
+"table will become. The best rule of thumb is to only display what you "
+"absolutely need to display."
+msgstr ""
+
+#: ../../using-collections/adjusting-the-display-settings.rst:50
+msgid ""
+"A few more notes on selecting columns: You can select more than one at a "
+"time by holding down the control key (Ctrl) while you click. If you want to "
+"remove a column, select it on the right and click on the left arrow button. "
+"Also you can add and remove columns by double clicking on their name."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:2
+msgid "Definition of Criteria"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:4
+msgid "Definitions and examples of the different criteria fields available"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:6
+msgid ""
+"The power of Collections most certainly lies with the Criteria fields. "
+"Mastering how to use the different Criteria will allow you to use "
+"Collections in several useful ways. In this section, we will use examples to"
+" illustrate the many ways of using Criteria."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:12
+msgid "**Categories**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:14
+msgid ""
+"The Category criterion allows you to search the **Category field** of "
+"objects. For this to work you must specify Categories for the content "
+"objects ahead of time (this is done through the Categorization tab on "
+"content objects). An example where you could use this is you want to create "
+"a Collection that would display all objects relating to the Category "
+"*Organization*. As you can see in the image below, we are able to select the"
+" value *Organization* for our criterion. Then, by saving this criterion and "
+"viewing our Collection, the results would be all content objects we had "
+"designated with the Category *Organization*."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:24
+msgid ""
+"Once again the values available to you are completely dependent on what you "
+"have specified on your objects in the Categorization tab."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:28
+#: ../../using-collections/setting-the-sort-order.rst:70
+msgid "**Creator**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:30
+msgid ""
+"When using the Creator criterion, we are **filtering objects based on who "
+"created them**. This might be useful if you want to do a featured author "
+"section, where you would only want to display content on your site that has "
+"been created by a certain author."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:35
+msgid ""
+"As you can see we have several options for our criterion type. They allow us"
+" to restrict the creator to the person currently logged in, enter the name "
+"of another user as text, or to select users from a list."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:39
+msgid ""
+"If you want to display results from multiple users, you would need to use "
+"the **List of Values** option. Otherwise you would normally use the Text "
+"option unless the creator you wanted to select was yourself in which case "
+"you would use Restrict to Current User."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:45
+msgid "**Description**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:47
+msgid ""
+"The Description field is essentially a **search box type** criterion. "
+"However, instead of searching the title and body of a page, it will **only "
+"search for the text in the Description field** of a content object. This "
+"criterion is only really useful if you fill out the Description field "
+"consistently for all your content objects."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:54
+msgid "**Location**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:56
+msgid ""
+"Using the Location criterionis much like specifying a location when you "
+"search for a document on your hard drive. By specifying a Location "
+"criterion, **the results that are displayed in your Collection will only "
+"come from that location**, most commonly a Folder. This can be useful if you"
+" only want to display content that is in the About Us section of your site, "
+"for example. This is also useful for narrowing Collection results when "
+"combined with other criteria."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:64
+msgid ""
+"To specify a Location, simply click the **Add button**, which will pop up a "
+"new window showing you a directory of your site. If we follow our example "
+"and want to search the About Us section of our site, we would click the "
+"InsertÂ button next to the About Us folder."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:69
+msgid ""
+"You can open folders to view content contained within them either by "
+"clicking the Browse button or directly on the title of the folder you want "
+"to open. You may also use the Search box to search for the Title of an "
+"object."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:75
+msgid "**Search Text**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:77
+msgid ""
+"The Search Text is a very useful criterion. It is similar to the search box "
+"on your site or an Internet search engine. It takes the text you specify and"
+" searches the Title, Description, and Body of all objects and returns **any "
+"that have the word or phrase you specify**. This is useful when you want to "
+"find objects that have to deal with a certain thing, especially if the word "
+"or phrase appears across many content types. Using LearnPlone.Org as an "
+"example, if I want to create a Collection that displays all objects that "
+"reference the word Collections, I would use the Search Text criterion and "
+"specify *collections*. All Tutorials, Videos, Glossary items, etc with "
+"*collections* in the Title, Description, or Body would then appear in the "
+"Collection results."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:90
+#: ../../using-collections/setting-the-sort-order.rst:50
+msgid "**Related To**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:92
+msgid ""
+"The Related To field is another field, like Category, that **must be "
+"specified on a content object prior to being used for a Collection**. The "
+"Related To field on an object lets you specify which other objects in your "
+"site are similar or are relevant to the object you created. By specifying "
+"this field, when you create an object you can create a web of related "
+"content that will reference each other (think of a \"see also\" kind of "
+"function). When you have done this, you can use the Related To criterion in "
+"a Collection to display anything related to a specific object.****"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:102
+msgid ""
+"In this case we have specified that there are pages related to Our Staff, "
+"History, and the About Us Homepage. By selecting one or multiple values from"
+" this list, our Collection will display the pages that related to that "
+"Value."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:107
+msgid ""
+"If we selected History as the value we wanted, our Collection would show us "
+"everything that is related to the History page."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:110
+msgid ""
+"Keep in mind that the Related To Values list does not work based on which "
+"objects are related to content but on which objects have another object "
+"related **to it**. The Collection will display the results that are related "
+"to that value."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:116
+#: ../../using-collections/setting-the-sort-order.rst:34
+msgid "**State**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:118
+msgid ""
+"Using the State criterion is very simple. It allows us to **sort by "
+"published or private** state. It is a very good idea to restrict publicly "
+"viewable Collections **to filter on published**, so that no private content "
+"appears in the Collection results. Filtering on the Private state can be "
+"useful as well. For example, a site administrator might want to quickly see "
+"private content, so that they could determine what work needs to be done and"
+" what could deleted."
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:127
+msgid "**Dates**"
+msgstr ""
+
+#: ../../using-collections/definition-of-criteria.rst:129
+msgid ""
+"You may have noticed that there are **several different dates available** to"
+" use as Criteria. Since there are such a large number of dates, they will be"
+" covered on their own section of the manual."
+msgstr ""
+
+#: ../../using-collections/index.rst:2
+msgid "Using Collections"
+msgstr ""
+
+#: ../../using-collections/index.rst:4
+msgid "Collections take advantage of the intelligence of Plone."
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:2
+msgid "Introduction to Collections"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:4
+msgid ""
+"A Collection in Plone works much like a report or query does in a database. "
+"Use Collections to dynamically sort and display your content."
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:7
+msgid ""
+"A **Collection** in Plone works much like a report or query does in a "
+"database. The idea is that you use a Collection to search your website based"
+" on a set of **Criteria** such as: content type (page, news item, image), "
+"the date it was published, or keywords contained in the title, description, "
+"or body."
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:13
+msgid ""
+"Let's say you have a large catalog of photos and maps on your website. You "
+"can easily display them all at once by creating a `hyperlink "
+"<http://learnplone.onenw.org/glossary/hyperlink>`_ to the `folder "
+"<http://learnplone.onenw.org/glossary/folder>`_ they're stored in. You could"
+" even create different links for subfolders if you've organized things that "
+"way. However, if your images and maps were spread out over the site in many "
+"folders this would quickly become cumbersome. Also, there is no way with "
+"normal folders to display different content, from different parts of your "
+"site based on things like:"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:23
+msgid "keywords in the title"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:24
+msgid "date of creation"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:25
+msgid "author"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:26
+msgid "type of content"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:28
+msgid ""
+"The need for showing content in a variety of dynamic ways has given rise to "
+"**Collections** (formerly known as **Smart Folders**, or **Rich Topic** in "
+"older versions of Plone). Collections do not actually contain any content "
+"items themselves in the same way that a folder does. Instead it is the "
+"**Criteria** that you establish which determines what content appears on "
+"each Collection page."
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:35
+msgid "Common applications for Collections are:"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:37
+msgid "News Archives"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:38
+msgid "Event Archives"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:39
+msgid "Photos Displayed by Date Range"
+msgstr ""
+
+#: ../../using-collections/introduction-to-collections.rst:40
+msgid "Content Displayed by Keyword"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:2
+msgid "Setting the Sort Order"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:4
+msgid ""
+"Learn how to use the Sort Order feature to customize the order in which your"
+" results display"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:7
+msgid ""
+"The Sort Order **determines the order the results of the Collection will be "
+"displayed in**. Sort Order allows you to sort by three main categories: "
+"text, object properties, and dates. When you sort by text, objects will be "
+"sorted in alphabetical order. When sorting by one of the object properties, "
+"we effectively are grouping objects together by the specified properties. "
+"When we sort by a date the results will be displayed with the most recent "
+"first (although there are many 'dates' in Plone). All Sort Orders are in "
+"Ascending Order unless the Reverse Order check box is selected. By checking "
+"this we can display in reverse order, or newest dates first, etc."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:19
+msgid "**Date****s**"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:21
+msgid ""
+"There are numerous Date options which will be explained in the next section "
+"of the manual."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:25
+msgid "Object Properties"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:27
+msgid "**Item Type**"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:29
+msgid ""
+"When sorting by Item Type, we end up with a Collection that has results that"
+" are grouped by Item Type. We would want to use this if we have a Collection"
+" that will return many different Item Types. This way we can make the "
+"Collection very easy to browse for the site visitor."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:36
+msgid ""
+"Sorting by State will display results grouped by the publishing state. Since"
+" there are only two States in the default configuration of Plone, there will"
+" only be Published and Private items. We can use this to separate all pages "
+"on our site and easily see what we have that is public (Published) and what "
+"we are hiding from the public eye (Private)."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:42
+msgid "**Category**"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:44
+msgid ""
+"Category Sort Order is useful when we want to display the objects on our "
+"site in a manner where they are grouped by the Category we placed them in. "
+"Keep in mind, for sorting by Category to even be remotely useful, you must "
+"have specified the Category on several objects. If you have not specified "
+"any Categories, then sorting by Categories will do nothing."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:52
+msgid ""
+"The Related To Sort Order will actually apply a criterion to your "
+"Collection. It limits to the results to only those that have Related To "
+"information Specified on their properties."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:57
+msgid "Text"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:59
+msgid "**Short Name**"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:61
+msgid ""
+"Sorting by the Short Name is the same as putting the result objects in "
+"alphabetical order. By default Plone sets the Short Name of an object to be "
+"the same as the Title. The difference between the two is that the Short Name"
+" is all lower case and hyphenated between all words. For example the Short "
+"Name for the page titled About Us would be *about-us*. The Short Name is "
+"what Plone also uses in the URL for the page (www.myplonesite.org/about-us)."
+" You can specify a different Short Name for an object by using the Rename "
+"button on the Contents tab."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:72
+msgid ""
+"Sorting by the Creator will group all results in alphabetical order by their"
+" author. For example, let's say we had several documents published by Bob "
+"Baker and several of other documents published by Jane Smith. Sorting by the"
+" creator would result in all the documents created by Bob Baker listed first"
+" followed by those of Jane Smith."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:78
+msgid "**Title**"
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:80
+msgid ""
+"Sorting by Title will display the results in alphabetical order, by the "
+"object Titles."
+msgstr ""
+
+#: ../../using-collections/setting-the-sort-order.rst:83
+msgid ""
+"Next we will cover the Dates that we skipped over in this section as well as"
+" the Criteria Field Section."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:2
+msgid "Using and Understanding Dates"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:4
+msgid "Explanation of the Dates associated with Collections and their uses"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:6
+msgid ""
+"There are several different types of dates we can choose from, many of them "
+"sounding similar. Because of this it is very easy to get confused about "
+"which date to use. Below, each date option is defined."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:11
+msgid "Dates Defined"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:13
+msgid ""
+"**Creation Date** The Creation Date is the date the document was made. You "
+"can think of this as its birthday, the day it was born. You cannot change "
+"the Creation Date of an object. ** Effective Date** The Effective Date is "
+"the date when an object becomes published. This date is customizable through"
+" the **Edit tab** on objects under the **Date tab**. However, there it is "
+"referred to as the Publishing Date (a minor discrepancy in Plone's "
+"nomenclature)."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:24
+msgid ""
+"**Creation Date** and **Effective Date** are very similar. They both are "
+"representative of the beginning point of an object. A very important point "
+"to keep in mind when choosing which one you want to use, is that an object "
+"can be created long before it ever becomes public. You could have a page "
+"that is worked on for several weeks before it is actually published. Thus "
+"you would get different results in a Collection depending on which date you "
+"used. We recommend using the **Effective Date**, instead of Creation Date "
+"for date-oriented Collections. This way your Collection shows results based "
+"on when they became viewable to the public, which is more relevant to the "
+"audience of your Collection. Also, you can go in and manually adjust the "
+"Effective Date to control the sort order which is not something you can do "
+"with the Creation Date. ** Expiration Date** The Expiration Date refers to "
+"the day that the item will no longer become publicly available. This date is"
+" also customizable through the Edit tab (shown above) like the Effective "
+"Date. By default, objects have no Expiration Date. ** Modification Date** "
+"The Modification Date is the date the object was last edited. Note that this"
+" date is first set the day the object is created and will automatically "
+"change every time the object is edited. There is no way to customize this "
+"date. You could use this as a Sort Order along with an Item Type criterion "
+"set to Page, to display all recently modified pages within the last week, "
+"for example. The What's New listing on the homepage of LearnPlone.Org uses "
+"Modification Date as its date criterion. That way both newly created "
+"documents *and* ones that have been updated appear in the listing."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:55
+msgid ""
+"**Event Specific Dates** The two following dates **only** apply to objects "
+"that are **Events.** These two dates are very effective for creating Recent "
+"Events and Upcoming Events Collections that will let your audience know what"
+" your organization is doing and will be doing in the future."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:61
+msgid "**Start Date** The Start Date is simply the date that an Event starts."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:64
+msgid "**End Date** The End Date is simply the date that the Event ends."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:67
+msgid "**Publication Date**"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:69
+msgid ""
+"The Publication Date is the date when object was last published. It can "
+"either be set manually by means of Effective Date field or, if the latter "
+"hasn't been set, calculated based on date when object was last published."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:74
+msgid ""
+"To display Publication Date on your pages you need to switch it on with "
+"*\"Display publication date in 'about' information\"* option in **Site "
+"Settings Control Panel**. Publication Date will be visible right before "
+"object Modification Date inside 'about' information area. Make sure *\"Allow"
+" anyone to view 'about' information\"* option is also enabled inside "
+"**Security Settings Control Panel** to make it all work."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:82
+msgid "Setting Dates"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:84
+msgid ""
+"A confusing thing about dates can be how its Criteria are set up. They have "
+"a setup that is not like any of the other Criteria. First off, you have to "
+"choose whether you want a Relative Date or a Date Range."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:88
+msgid ""
+"The Relative Date allows you to construct a **conditional statement**. Such "
+"as: Items modified less than 5 days in the past. A Date Range will allow you"
+" to **specify an exact range of dates**, such as 01/02/08 to 02/02/08. The "
+"Date Range is useful when you want to create a Collection with a static date"
+" that won't change. The Relative Date can be very useful as it will allow "
+"you to create Collections that are automatically updating themselves, such "
+"as a Recent News Collections or an Upcoming Event Section."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:98
+msgid "Relative Date"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:100
+msgid ""
+"Looking first at the Relative Date option, you can see we have three options"
+" to fill out."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:103
+msgid ""
+"The first option is **Which Day**. This allows us to select the number of "
+"days our criterion will include. One of the options is called *Now*. Using "
+"this will set the date range to the current day. The other two options do "
+"not matter and can be ignored when using *Now*."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:108
+msgid ""
+"The second option is **In the Past or Future**. This enables us to choose "
+"whether we are looking forward or backward into time."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:111
+msgid ""
+"The last option is **More or Less**. Here we can choose from three options. "
+"*Less than* allows us to include everything from now to a period of time "
+"equal to or less than the **Which Day** setting, either in the past or "
+"future. *More than* will include everything from beyond our specified number"
+" of days equal to or more than **Which Day**. Finally *On the Day* will only"
+" include things that are on the day we specified in the **Which Day**. Using"
+" the example in the image above if we had selected *On the Day* instead of "
+"*Less than* our Collection would display only objects that were modified (we"
+" are using the Modification Date criterion) 5 days ago."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:122
+msgid ""
+"If this is confusing to you, try reading it as a statement substituting in "
+"the field options you chose. \"I want the results to include objects **More "
+"or Less** than **Which Day**, **In the Past or Future**\". Our example in "
+"the image above would become \"I want the results to include objects **Less "
+"than** **5 days in the past**\"."
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:129
+msgid "Date Range"
+msgstr ""
+
+#: ../../using-collections/using-and-understanding-dates.rst:131
+msgid ""
+"The **Date Range** is much easier to understand. Both a Start Date and End "
+"Date are required (do not confuse these terms with the Event Specific "
+"dates!). The Date Range allows us to enter a beginning and an end date and "
+"the display everything within that time frame. Notice also that it allows us"
+" to specify a specific time of day as well."
+msgstr ""

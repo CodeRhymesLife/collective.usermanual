@@ -1,0 +1,382 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:2
+msgid "Basics"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:4
+msgid "Basic options of TinyMCE."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:6
+msgid "The default TinyMCE editor will look like this:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:12
+msgid ""
+"On top you can see the toolbar, below the text area and at the bottom a "
+"resize bar. If you drag the lower right corner you can make the editor "
+"window bigger or smaller."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:17
+msgid "Toolbar"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/basics.rst:19
+msgid "The following table describes the function and output of each button."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/index.rst:2
+msgid "Using TinyMCE as visual editor"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/index.rst:4
+msgid "An user manual for creators"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:2
+msgid "Inserting Images"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:4
+msgid ""
+"A description of the options available for inserting images with TinyMCE."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:7
+msgid ""
+"The TinyMCE editor allows you to insert image files stored in Plone into "
+"your document, using the |Image| button on the TinyMCE toolbar:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:14
+msgid "Clicking this button launches the Insert Image dialog:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:20
+msgid "The three columns of the dialog display:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:22
+msgid "In the first column - a folder navigation list."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:23
+msgid ""
+"In the second column - an object navigation list, from which you can select "
+"your image file."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:25
+msgid ""
+"In the third column - image preview, and options for alignment, size and "
+"captions."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:28
+msgid ""
+"In the example above, an image of a rose was selected - rose.png (rather "
+"large one, at its original size of 600\\*450 pixels)."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:31
+msgid ""
+"According to the \"Image alignment\" option you choose, the image will be "
+"placed in your page (and the following HTML code will be generated):"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:34
+msgid "lefthand (<img class=\"image-left captioned\" src=\"rose.png\" alt=\"rose\" />);"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:36
+msgid "righthand (<img class=\"image-right captioned\" src=\"rose.png\" alt=\"rose\" />);"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:38
+msgid "inline (<img class=\"image-inline captioned\" src=\"rose.png\" alt=\"rose\" />)."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:41
+msgid ""
+"You may also choose the size of the image you need. This is especially "
+"convenient when you deal with large images, as there is no need to use "
+"Photoshop or other external image editing application to crop or change the "
+"size of an image. The \"Image size\" dropdown list provides a choice between"
+" many sizes and formats:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:51
+msgid "Large (<img src=\"rose.png/image\\_large\" alt=\"rose\" />);"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:52
+msgid "Preview (<img src=\"rose.png/image\\_preview\" alt=\"rose\" />);"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:53
+msgid ""
+"Mini (<img src=\"rose.png/image\\_mini\" alt=\"rose\" />) - the minimum-size"
+" image is formed;"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:55
+msgid ""
+"Thumb (<img src=\"rose.png/image\\_thumb\" alt=\"rose\" />) - a "
+"thumb(inch)-size icon is made out of your image (little bigger than 2,5cm);"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:58
+msgid ""
+"Tile (<img src=\"rose.png/image\\_tile\" alt=\"rose\" />) - a tile is made "
+"out of your image;"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:60
+msgid ""
+"Icon (<img src=\"rose.png/image\\_icon\" alt=\"rose\" />) - an icon is made "
+"out of your image;"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:62
+msgid ""
+"Listing (<img src=\"rose.png/image\\_listing\" alt=\"rose\" />) - a listing "
+"icon is made out of your image;"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:66
+msgid "Image Captioning"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:68
+msgid ""
+"It is possible to put image caption under the image in TinyMCE. Caption is "
+"taken from image description. Alt text is taken from image title. Alt text "
+"and caption update if image is updated."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:72
+msgid ""
+"To enable image captioning go to **Site Setup â†’ TinyMCE**. Make sure that "
+"you have **Allow captioned images** selected in the **Resource Types tab**."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:80
+msgid ""
+"When you add image to the site, you can put some text into its description "
+"that will be displayed as an image caption."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:87
+msgid ""
+"Now when we create a page, and insert image into it, check the box Caption:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-images.rst:94
+msgid ""
+"Save this page, and you will see the image followed by its description as "
+"the caption all inserted into a frame:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:2
+msgid "Inserting Links"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:4
+msgid "Inserting internal, external and anchor links."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:7
+msgid "Internal Links"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:9
+msgid ""
+"Select a word or phrase, click the *Insert/edit link* icon, and the "
+"*Insert/edit link* panel will appear: |image19|"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:12
+msgid ""
+"You use this panel by clicking on Home or Current folder to begin navigating"
+" the Plone web site to find a folder, page, or image to which you wish to "
+"make a link. In the example above, a page named \"Long-tailed Skippers\" has"
+" been chosen for the link. After this panel is closed, a link to the \"Long-"
+"tailed Skippers\" page will be set for the word or phrase selected for the "
+"link."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:20
+msgid "External Links"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:22
+msgid ""
+"Select a word or phrase, click the *Insert/edit link* icon, select "
+"*External* under *Libraries*, and the External link panel will appear:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:29
+msgid ""
+"Type the web address of the external web site in the box after http://. When"
+" you press return or leave the field a preview will appear to check the "
+"address. If you paste in the web address, make sure you don't have duplicate"
+" http:// at the beginning of the address. Then click *ok*. The external link"
+" will be set to the word or phrase you selected."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:36
+msgid "Anchors"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:38
+msgid ""
+"Anchors are like position markers within a document, based on headings, "
+"subheadings, or another style set within the document. As an example, for a "
+"page called \"Eastern Tiger Swallowtail,\" with subheadings entitled "
+"\"Description,\" \"Habitat,\" \"Behavior,\" \"Conservation Status,\" and "
+"\"Literature,\" an easy set of links to these subheadings (to the positions "
+"within the document at those subheadings) can be created using anchors."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:46
+msgid ""
+"First, create the document with the subheadings set within it, and re-type "
+"the subheadings at the top of the document:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:53
+msgid ""
+"Now create the anchors for each subheading. To create each anchor move the "
+"cursor to the beginning of the subheading and press the *Insert/edit anchor*"
+" icon. Enter the name of the anchor in the *Anchor name* field. Then click "
+"*ok*."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:62
+msgid ""
+"Then select each of the re-typed subheadings at the top and click the "
+"*Insert/edit link* icon to select by subheadings:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:69
+msgid ""
+"When selecting *Anchors* under *Libraries*, a panel will appear for "
+"selecting which subheading to which the anchor link should connect:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:76
+msgid ""
+"The *Link to anchor* tab will appear. The right side of the panel shows the "
+"anchors that have been set within the document. Here the *Description* "
+"anchor is chosen for the link (for the word Description, typed at the top of"
+" the document)."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-links.rst:81
+msgid ""
+"You can be creative with this powerful feature, by weaving such links-to-"
+"anchors within narrative text, by setting anchors to other styles within the"
+" document, and coming up with clever mixes. This functionality is especially"
+" important for large documents."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:2
+msgid "Inserting Tables"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:4
+msgid "Inserting, updating and deleting tables, columns, rows and cells."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:6
+msgid ""
+"Tables are handy for tabular data and lists. To add a table, put your cursor"
+" where you want it and click the *Inserts a new table* icon. You'll see the "
+"*Insert/Modify table* panel:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:14
+msgid ""
+"Setting rows and columns is straightforward. You can add a summary of the "
+"table in the *Summary* field if you like. Table class refers to how you want"
+" the table to be styled. You have choices such as these:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:22
+msgid "Here are examples of these table styles:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:24
+msgid "Subdued grid:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:30
+msgid "Invisible grid:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:36
+msgid "Fancy listing:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:42
+msgid "Fancy grid listing:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:48
+msgid "Fancy vertical listing:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:54
+msgid ""
+"After the table has been created you can click in a cell to show table "
+"resizing handles:"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/inserting-tables.rst:61
+msgid ""
+"In the table above, the cursor has been placed in the \"Special Leader\" "
+"cell, which activates little square handles around the edges for resizing "
+"the entire table. It also activates the other table controls in the toolbar "
+"which, lets you edit properties of a row or a cell, lets you add and remove "
+"rows or columns and lets you split and merge cells."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/introduction.rst:2
+msgid "Introduction"
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/introduction.rst:4
+msgid "Introduction to TinyMCE."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/introduction.rst:6
+msgid ""
+"TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor. "
+"What this means is that it will let you create html content on your web "
+"site. TinyMCE supports a lot of Operating Systems and browsers. Some "
+"examples are: Mozilla, Internet Explorer, Firefox, Opera, Safari and Chrome."
+" TinyMCE has a large userbase and an active development community."
+msgstr ""
+
+#: ../../using-tinymce-as-visual-editor/introduction.rst:13
+msgid ""
+"TinyMCE is the default visual editor starting from Plone 4.0, although Kupu "
+"is also available for users who prefer it. TinyMCE was decided to be shipped"
+" as default because Kupu wasn't being well-maintained, whereas TinyMCE had a"
+" much broader use in other communities, as well as a better plugin story and"
+" some other usability niceties as adding both internal and external links "
+"via the same button."
+msgstr ""

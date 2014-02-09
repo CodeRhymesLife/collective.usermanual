@@ -1,0 +1,442 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../using-kupu-as-visual-editor/index.rst:2
+msgid "Using Kupu as visual editor"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:4
+msgid ""
+"Kupu is a platform independent web based Javascript HTML WYSIWYG editor. "
+"What this means is that it will let you create HTML content on your web "
+"site."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:8
+msgid ""
+"From Plone 4 on, TinyMCE is the default visual editor for new sites. "
+"However, Kupu is still available to use if you prefer so. Check the :ref"
+":`rst_setting-preferences` section to learn how to set Kupu as your default "
+"editor."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:13
+msgid "A typical Kupu toolbar looks like this:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:19
+msgid "kupu-grab"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:21
+msgid ""
+"The text format is normally left with the HTML setting, but some sites offer"
+" structured text or other markup languages for editing pages."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:24
+msgid "The icons are:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:26
+msgid "bold,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:27
+msgid "italics,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:28
+msgid "left align,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:29
+msgid "center,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:30
+msgid "right align,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:31
+msgid "numbered list,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:32
+msgid "bulleted list,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:33
+msgid "dictionary list,"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:34
+msgid "tab left (block),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:35
+msgid "tab right (block),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:36
+msgid "image (the \"tree\" icon),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:37
+msgid ""
+"internal link (the \"chain link\" icon; make a link to another page in the "
+"given site),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:39
+msgid "external link (the \"world\" icon; make a link to a web page elsewhere),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:41
+msgid ""
+"anchor (the \"anchor\" icon; make a link to a specific section of a web "
+"page),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:43
+msgid "table (add a table with rows and columns),"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:44
+msgid ""
+"direct HTML editing (the \"HTML\" icon; if you know HTML, edit the HTML for "
+"the page directly), and a"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:46
+msgid "pulldown menu for text styling."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:49
+msgid "Images"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:51
+msgid ""
+"Place your cursor within the text of a page, then click the \"tree\" icon. "
+"This panel will pop up:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:54
+msgid "|insert-image-current-folder.png|"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:56
+msgid ""
+"Click \"Current folder\" in the left side of the panel, if it isn't already "
+"highlighted. The current folder is the folder that contains the page you are"
+" editing -- all pages are contained inside some folder. There are many ways "
+"to manage storage of images, including having one central images folder, but"
+" a common method is to store images that show on a page in the folder that "
+"contains the page (the current folder). In this method, pages and the images"
+" associated with them are stored together within the folder structure. If "
+"you click the Upload button, you will be prompted to select an image on your"
+" computer and upload it. After selecting an image to upload, the right panel"
+" will let you give the image a title for use on the web site, and several "
+"image placement and sizing options. Clicking OK will upload the image and "
+"place it on the page. The same panel will appear if you click an image on "
+"page to select it, then click the same \"tree\" icon for editing the image "
+"options or for changing the image. You are responsible for sizing and "
+"editing images on your computer before you upload them, but one easy way to "
+"handle images for use on most web pages is to make a copy of an image on "
+"your computer, then resize it to something like 1000 pixels in largest "
+"dimension. This is a reasonable size for uploading -- there is no need to "
+"upload your gargantuan images coming from your digital camera. Plone will "
+"automatically create several sizes of an uploaded image, including "
+"\"large,\" \"mini,\" and other sizes. You pick the size you want to use when"
+" your upload or edit the image with the \"tree\" icon. You can also override"
+" the image size choice by editing the HTML."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:84
+msgid "Internal Links"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:86
+msgid ""
+"Select a word or phrase, click the *internal link* icon, and the *insert "
+"link* panel will appear:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:93
+msgid ""
+"You use this panel by clicking on Home or Current folder to begin navigating"
+" the Plone web site to find a folder, page, or image to which you wish to "
+"make a link. In the example above, a page named \"Long-tailed Skippers\" has"
+" been chosen for the link. After this panel is closed, a link to the \"Long-"
+"tailed Skippers\" page will be set for the word or phrase selected for the "
+"link."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:101
+msgid "External Links"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:103
+msgid ""
+"Select a word or phrase, click the *external link* icon, and the External "
+"link panel will appear:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:110
+msgid ""
+"Type the web address of the external website in the box starting with "
+"http://. You can click *preview* if you need to check the address. If you "
+"paste in the web address, make sure you don't have duplicate http:// at the "
+"beginning of the address. Then click *ok*. The external link will be set to "
+"the word or phrase you selected."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:117
+msgid "Anchors"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:119
+msgid ""
+"Anchors are like position markers within a document, based on headings, "
+"subheadings, or another style set within the document. As an example, for a "
+"page called \"Eastern Tiger Swallowtail,\" with subheadings entitled "
+"\"Description,\" \"Habitat,\" \"Behavior,\" \"Conservation Status,\" and "
+"\"Literature,\" an easy set of links to these subheadings (to the positions "
+"within the document at those subheadings) can be created using anchors."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:127
+msgid ""
+"First, create the document with the subheadings set within it, and re-type "
+"the subheadings at the top of the document:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:134
+msgid ""
+"Then select each of the re-typed subheadings at the top and click the anchor"
+" icon to select by subheadings:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:141
+msgid ""
+"A panel will appear for selecting which subheading to which the anchor link "
+"should connect:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:148
+msgid ""
+"The *Link to anchor* tab will appear. The left side shows a list of styles "
+"that could be set within the document. For this example, the subheadings are"
+" used for each section, which is the usual case, so subheadings has been "
+"selected. The right side of the panel shows the subheadings that have been "
+"set within the document. Here the *Description* subheading is chosen for the"
+" link (for the word Description, typed at the top of the document)."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:156
+msgid ""
+"You can be creative with this powerful feature, by weaving such links-to-"
+"anchors within narrative text, by setting anchors to other styles within the"
+" document, and coming up with clever mixes. This functionality is especially"
+" important for large documents."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:162
+msgid "Tables"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:164
+msgid ""
+"Tables are handy for tabular data and lists. To add a table, put your cursor"
+" where you want it and click the *add table* icon. You'll see the *add "
+"table* panel:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:172
+msgid ""
+"Setting rows and columns is straightforward. If you check the *Create "
+"Headings* box you'll have a place to type column headings for the table. "
+"Table class refers to how you want the table to be styled. You have choices "
+"such as these:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:181
+msgid "Here are examples of these table styles:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:183
+msgid "**plain:**"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:186
+msgid "Thoroughbred Champions"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:186
+msgid "Quarter Horse Champions"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:188
+#: ../../using-kupu-as-visual-editor/index.rst:205
+msgid "Man O' War"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:188
+#: ../../using-kupu-as-visual-editor/index.rst:205
+msgid "First Down Dash"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:190
+#: ../../using-kupu-as-visual-editor/index.rst:207
+msgid "Secretariat"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:190
+#: ../../using-kupu-as-visual-editor/index.rst:207
+msgid "Dashing Folly"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:192
+#: ../../using-kupu-as-visual-editor/index.rst:209
+msgid "Citation"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:192
+#: ../../using-kupu-as-visual-editor/index.rst:209
+msgid "Special Leader"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:194
+#: ../../using-kupu-as-visual-editor/index.rst:211
+msgid "Kelso"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:194
+#: ../../using-kupu-as-visual-editor/index.rst:211
+msgid "Gold Coast Express"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:196
+#: ../../using-kupu-as-visual-editor/index.rst:213
+msgid "Count Fleet"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:196
+#: ../../using-kupu-as-visual-editor/index.rst:213
+msgid "Easy Jet"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:199
+msgid "**listing:**"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:202
+msgid "Thoroughbred Champions |image21|"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:202
+msgid "Quarter Horse Champions |image22|"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:216
+msgid ""
+"After the table has been created you can click in a cell to show table "
+"resizing handles and row and column add/delete icons:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:219
+msgid "|image23|"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:221
+msgid ""
+"In the table above, the cursor has been placed in the \"Special Leader\" "
+"cell, which activates little square handles around the edges for resizing "
+"the entire table. It also activates add/delete icons for the current cell, "
+"the \"Special Leader\" cell. Clicking the little x in the circle will delete"
+" the entire row or column that contains the current cell. Clicking the "
+"little arrowhead icons will add a row above or below, or a column to the "
+"left or right of the current cell."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:230
+msgid "Text Styling"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:232
+msgid ""
+"The text style setting is made with a pulldown menu. Here are the choices:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:239
+msgid ""
+"As with normal word-processing editing, select a word, phrase, or paragraph "
+"with your mouse, then choose one of the style choices from the pulldown menu"
+" and you will see the change immediately."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:244
+msgid "Saving"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:246
+msgid ""
+"Click the Save button at the very bottom and your changes will be committed "
+"for the page."
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:252
+msgid "Footnotes"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:254
+msgid "**Markup languages**"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:256
+msgid ""
+"If you are the sort of person who likes to enter text using so-called mark-"
+"up formats, you may switch off the visual editor under your personal "
+"preferences, which will replace Kupu with a simplified text entry panel. The"
+" mark-up formats available in Plone are:"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:261
+msgid "`Markdown <http://en.wikipedia.org/wiki/Markdown>`_"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:262
+msgid ""
+"`Textile <http://en.wikipedia.org/wiki/Textile_%28markup_language%29>`_"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:263
+msgid "`Structured Text <http://www.zope.org/Documentation/Articles/STX>`_"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:264
+msgid "`Restructured Text <http://en.wikipedia.org/wiki/ReStructuredText>`_"
+msgstr ""
+
+#: ../../using-kupu-as-visual-editor/index.rst:266
+msgid ""
+"Each of these works by the embedding of special formatting codes within "
+"text. For example, with structured text formatting, surrounding a word or "
+"phrase by double asterisks will make that word or phrase bold, as in "
+"\\*\\*This text would be bold.\\*\\* These mark-up formats are worth "
+"learning for speed of input if you do a lot of page creation, or if you are "
+"adept at such slightly more technical approaches to entering text. Some "
+"people prefer such formats not just for speed itself, but for fluidity of "
+"expression."
+msgstr ""

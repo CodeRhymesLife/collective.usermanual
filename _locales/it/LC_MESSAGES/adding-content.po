@@ -1,0 +1,1266 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../adding-content/adding-collections.rst:2
+msgid "Adding collections"
+msgstr ""
+
+#: ../../adding-content/adding-collections.rst:4
+msgid ""
+"Collections (formerly called Smart Folders) are virtual containers of lists "
+"of items found by doing a specialized search."
+msgstr ""
+
+#: ../../adding-content/adding-collections.rst:7
+msgid ""
+"See the later section of the manual `Using Collections "
+"<http://plone.org/documentation/manual/plone-4-user-manual/using-"
+"collections>`_."
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:2
+msgid "Adding Events"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:4
+msgid ""
+"Plone web sites have a built-in system for managing and showing calendar "
+"events."
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:7
+msgid "Use the *Add new...* menu for a folder to add an event:"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:13
+#: ../../adding-content/adding-files.rst:12
+#: ../../adding-content/adding-links.rst:17
+#: ../../adding-content/adding-new-content.rst:13
+#: ../../adding-content/adding-news-items.rst:12
+#: ../../adding-content/restricting-types-in-a-folder.rst:20
+msgid "add-new-menu.png"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:15
+msgid "You will see rather large *Add Event* panel:"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:17
+msgid "|image4|"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:19
+msgid "From the top, we have the following fields:"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:21
+msgid "*Title* - **REQUIRED**"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:22
+msgid "*Description*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:23
+msgid "*Event location*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:24
+msgid "*Start date and time* - **REQUIRED**"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:25
+msgid "*End date and time* - **REQUIRED**"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:26
+msgid "*Event body text* (visual editor panel)"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:27
+msgid "*Attendees*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:28
+msgid "*Event type(s)*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:29
+msgid "*Event URL*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:30
+msgid "*Contact Name*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:31
+msgid "*Contact Email*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:32
+msgid "*Contact Phone*"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:33
+msgid "Change note"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:35
+msgid ""
+"Note that only three fields, title and start and end date and time, are "
+"required. So, although this is a large input panel, if you are in a hurry, "
+"just type in the title and the start and end times and save. Of course, if "
+"you have the other information, you should type it in. One part of the panel"
+" needs a bit more explanation: the event start and end times. The year, "
+"month, day, and other fields are simple pull-down menus. But for the day, "
+"often you can't remember exactly and you need to consult a calendar. There "
+"is a handy pop-up calendar that offers an alternate way to select the day. "
+"If you click one of the little calendar icons adjacent to the day pull-down,"
+" :"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:50
+msgid "you'll see this pop-up calendar:"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:56
+msgid ""
+"Just click the day and it will be set. Fill in the fields for which you have"
+" information and save the event, but remember:"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:59
+msgid ""
+"**IMPORTANT:***It will not show on the main web site calendar until it has "
+"been **published*****. **"
+msgstr ""
+
+#: ../../adding-content/adding-events.rst:63
+msgid ""
+"`|image5| <http://media.plone.org/LearnPlone/Creating%20an%20Event.swf>`_ "
+"Watch a Plone 2 video on `adding an event "
+"<http://media.plone.org/LearnPlone/Creating%20an%20Event.swf>`_."
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:2
+msgid "Adding Files"
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:4
+msgid "Files of various types can be uploaded to Plone web sites."
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:6
+msgid "Choose file in the *Add new...* menu for a folder to upload a file:"
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:14
+msgid "You will see the *Add File* panel:"
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:20
+msgid ""
+"Click the *Browse* button to navigate to the file you want to upload from "
+"your local computer. Provide a title (you can use the same file name used on"
+" your local computer if you want). Provide a *description* if you want. When"
+" you click the save button the file will be uploaded to the folder."
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:26
+msgid ""
+"`|image3| <http://media.plone.org/LearnPlone/Adding%20a%20File.swf>`_ Watch "
+"a Plone 2 video on `adding a file "
+"<http://media.plone.org/LearnPlone/Adding%20a%20File.swf>`_."
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:30
+msgid ""
+"Example file types include PDF files, Word documents, database files, zip "
+"files... -- well, practically anything. Files on a Plone web site are "
+"treated as just files and will show up in contents lists for folders, but "
+"there won't be any special display of them. They will appear by name in "
+"lists and will be available for download if clicked."
+msgstr ""
+
+#: ../../adding-content/adding-files.rst:36
+msgid ""
+"There are specialized add-on tools for Plone web sites that search contents "
+"of files. If you are interested in this functionality, ask your Plone web "
+"site administrator."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:2
+msgid "Adding Folders"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:4
+msgid ""
+"Adding folders to a Plone web site is the basic way of controlling the "
+"organization of content."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:7
+msgid ""
+"You have undoubtedly created folders (directories) on your computer's hard "
+"drive. Personal computers use a hierarchy of folders to structure and "
+"organize the programs and files on the hard drive. In Plone folders are "
+"essentially used the same way, except that they are created on a Plone web "
+"site, for organizing content in Plone's built-in storage system."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:14
+msgid ""
+"Folders are added by clicking the **Add new...** drop-down menu. Select "
+"**Folder** from the menu:"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:21
+msgid "add-item-menu-folder.png"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:23
+msgid "You should now see the *Add Folder* screen:"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:29
+msgid ""
+"Fill in the **Title**, which is required, as indicated by the red square. "
+"The **Description** is optional; you can always come back to the edit panel "
+"if you need to add a description of the folder. Descriptions are useful when"
+" a site visitor uses the search tool included with Plone - results will "
+"display with both the Title and Description of the item."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:36
+msgid "You also notice tabs along the top:"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:38
+msgid "*Default*, for entering the Title and Description fields,"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:39
+msgid ""
+"*Categorization,* for specifying categories that apply to the folder (you "
+"may know these as *keywords*),"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:41
+msgid ""
+"*Dates*, for setting the time period when the folder should be available for"
+" view on the web site,"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:43
+msgid ""
+"*Ownership*, for specifying the creator and/or contributors for the content "
+"item,"
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:45
+msgid ""
+"*Settings,* for allowing comments about the item, adding :ref:`_rst_prev-"
+"next-links`, and choosing whether it shows in the navigation menu for the "
+"web site."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:49
+msgid ""
+"These tabs are standard, so you'll see them when you click other content "
+"types. We will cover these tabs in another section of this user manual."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:52
+msgid ""
+"Be sure to click **Save** at the bottom of the page when you are finished. "
+"This will complete the folder creation process."
+msgstr ""
+
+#: ../../adding-content/adding-folders.rst:55
+msgid ""
+"`|lights-camera-action.png| "
+"<http://media.plone.org/LearnPlone/Adding%20a%20new%20folder%20and%20new%20page.swf>`_"
+" Watch a Plone 4 video on `adding a folder "
+"<http://dist.plone.org/media/video/plone4-user-"
+"manual/foldercreation.html>`_."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:2
+msgid "Adding Images"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:4
+msgid ""
+"Adding images to a Plone web site is a basic task that may involve a little "
+"work on your local computer, but is essential, because photographs, maps, "
+"and custom graphics are so important on web sites."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:8
+msgid ""
+"**`Preparing Images for the Web "
+"<http://plone.org/documentation/manual/plone-4-user-manual/adding-content"
+"/preparing-images-for-the-web>`_**"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:11
+msgid ""
+"**Remember to use web-standard file formats for all images. Acceptable "
+"formats include: JPG, JPEG, GIF, and PNG. Do not use BMP or TIFF formats as "
+"these are not widely supported by web browsers.**"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:15
+msgid ""
+"When you are ready to upload an image, use the *Add new...* drop-down menu "
+"(You will only see the *Add new...* menu after logging in):"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:22
+msgid "add-item-menu-image.png"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:24
+msgid "After clicking to add an **Image**, you'll see the *Add Image* panel:"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:30
+msgid "add-image.png"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:32
+msgid ""
+"The Title and Description fields (field, as in \"data input field\") are "
+"there, as with adding a Folder, and at the bottom there is a place to upload"
+" an image. Let's look at the three input fields individually:"
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:36
+msgid ""
+"*Title* - Use whatever text you want, even with blanks and punctuation "
+"(Plone handles web addressing)."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:38
+msgid ""
+"*Description* - Always a good idea, but always optional. Leave it blank if "
+"you want."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:40
+msgid ""
+"*Image* - The Image field is a text entry box along with a Browse... button."
+" You don't have to type anything here; just click the Browse button and "
+"you'll be able to browse you local computer for the image file to upload "
+"(*Remember*: You need to *remember* where you keep your images on your "
+"computer)."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:46
+msgid ""
+"For images, at a minimum, you will browse your local computer for the image "
+"file, then click **Save** at the bottom to upload the image to the Plone web"
+" site. You'll have to wait a few seconds for the upload to complete (or a "
+"minute or so, if you have a slow Web connection). A preview of the uploaded "
+"image will be shown when the upload has finished."
+msgstr ""
+
+#: ../../adding-content/adding-images.rst:53
+msgid ""
+"As of Plone 4, images and files that are uploaded into Plone have their IDs "
+"(URLs) based on the title that is given to the image (instead of the file "
+"name of the image or file). Since the title field is not required, if you do"
+" not fill it out, the name of the item will default to using the name of the"
+" file in place of the title."
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:2
+msgid "Adding Links"
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:4
+msgid ""
+"In addition to links embedding within pages, Links can be created as "
+"discrete content items. Having links as discrete items lets you do things "
+"like organizing them in folders, setting keywords on them to facilitate "
+"grouping in lists and search results, or include them in navigation."
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:10
+msgid ""
+"Add a link by clicking the menu choice in the *Add new...* menu for a "
+"folder:"
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:19
+msgid "You will see the Add*Link* panel:"
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:25
+msgid ""
+"Good titles for links are important, because the titles will show up in "
+"lists of links, and because there tend to be quite a number of links held in"
+" a folder as a set."
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:29
+msgid ""
+"Paste the web address in the URL field or type it in. There is no preview "
+"feature here, so it is best to paste the web address from a browser window "
+"where you are viewing the target for the link to be sure you have the "
+"address correct."
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:35
+msgid "The Link Object in Use"
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:37
+msgid ""
+"A link object will behave in the following ways, depending on your login "
+"status, or permissions."
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:40
+msgid ""
+"**If you have the ability to edit the link object**, when you click on the "
+"link object you'll be taken to the object itself so that you can edit it "
+"(otherwise you'd be taken to the link's target and could never get to the "
+"edit tab!)"
+msgstr ""
+
+#: ../../adding-content/adding-links.rst:44
+msgid ""
+"**If you don't have the ability to edit the link object**, when you click on"
+" the link object you'll be taken to the target of the link object. Likewise,"
+" if you enter the web address of the link object directly in your browser, "
+"you'll be taken directly to the link's target. The link object in this case "
+"acts as a *redirect*."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:2
+msgid "Adding New Content"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:4
+msgid ""
+"A general overview of how to add new content items in Plone, including "
+"definitions of each standard content type"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:7
+msgid "New content items are added via the **Add New . . .** drop-down menu:"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:15
+msgid ""
+"Adding content in Plone is done *placefully,*which is to say that you must "
+"navigate to the section of your Plone website that you wish the new content "
+"to reside before you use the **Add New . . .** drop-down menu. You can of "
+"course cut, copy, and paste content items from one section to another if "
+"necessary."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:22
+msgid "Content Types"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:24
+msgid ""
+"In Plone, you can use a number of **Content Types** to post certain kinds of"
+" content. For example, to upload an image you must use the **Image** content"
+" type. Below is a list of the available content types in order of their "
+"appearance, and what each are used for:"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:31
+msgid "Collection"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:30
+msgid ""
+"Collections are used to group and display content based on a set of "
+"**criteria** which you can set. Collections work much like a query does in a"
+" database."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:57
+msgid "Event"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:34
+msgid ""
+"An Event is a special page-like content type specifically for posting "
+"information about an event (such as a fundraiser, barbecue, etc).Â This "
+"content type has a function which allows the site visitor to add the event "
+"to their desktop calendar with either the iCal or vCal standard. This "
+"includes applications such as: Google Calendar, Outlook, Sunbird and others."
+" To add a single event to your calendar, click on the vCal or iCal links "
+"next to the \"Add event to calendar\" text in the main view of the event "
+"item."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:48
+msgid "events-summary-chart.jpg"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:50
+msgid ""
+"From Plone 3.3 on you can also get all the events in a folder in one go "
+"(currently only available in iCal format). To download the iCal file, append"
+" *@@ics\\_view* to the end of the URL of the folder that contains the "
+"events. For example, if you want to get all the events into the *events* "
+"folder in the root of your site, go to "
+"*http://yourdomain.tld/events/@@ics\\_view*. There are plans to provide a "
+"link to this iCal calendar inside the UI in a future release."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:61
+msgid "File"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:60
+msgid ""
+"A File in Plone is any binary file you wish to upload with the intent that "
+"it can be downloaded by your site visitors. Common examples are PDFs, Word "
+"Documents, and spreadsheets."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:65
+msgid "Folder"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:64
+msgid ""
+"Folders work in Plone much like they do on your computer. You can use "
+"folders to organize your content, and to give your Plone website a "
+"navigation structure."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:69
+msgid "Image"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:68
+msgid ""
+"The Image content type is used for uploading image files (JPG, GIF, PNG) so "
+"that you can insert them into pages or other page-like content types."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:74
+msgid "Link"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:72
+msgid ""
+"Also referred to as the 'Link Object'; do not confuse this with the links "
+"you create via TinyMCE or Kupu, Plone's visual page editors. The Link "
+"content type is often used to include a link to an external website in "
+"Navigation and other specialized uses."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:79
+msgid "News Item"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:77
+msgid ""
+"This content type is similar to Event, only News Item is specifically for "
+"posting news. You can also attach a thumbnail image to a News Item, which "
+"then appears in folder summary views next to the summary of the News Item."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:83
+msgid "Page"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:82
+msgid ""
+"A Page in Plone is one of the most simple content types available. Use Pages"
+" to write the bulk of your web pages on your Plone website."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:85
+msgid ""
+"Note: Depending on what add-on products you have installed, you may see more"
+" options in your **Add New . . .** drop-down menu than appear here. For "
+"information about those additional content types, refer to the Product "
+"documentation for the add-on in question."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:91
+msgid "Title"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:93
+msgid ""
+"Nearly all content types in Plone have two fields in common: **Title** and "
+"**Description.**"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:96
+#: ../../adding-content/whats-in-a-web-name.rst:11
+msgid ""
+"The **Title** of content items, including folders, images, pages, etc., can "
+"be anything you want -- you can use any keyboard characters, including "
+"blanks. **Titles** become part of web address for each item you create in "
+"Plone. Web addresses, also known as URLs, are what you type in a web browser"
+" to go to a specific location in a web site (Or, you would click your way "
+"there), such as:"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:103
+#: ../../adding-content/whats-in-a-web-name.rst:18
+msgid "www.mysite.com/about/personnel/sally/bio"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:105
+msgid "or"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:107
+#: ../../adding-content/whats-in-a-web-name.rst:22
+msgid "www.mysite.com/images/butterflies/skippers/long-tailed-skippers"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:109
+#: ../../adding-content/whats-in-a-web-name.rst:24
+msgid ""
+"Web addresses *do* have restrictions on allowed keyboard characters, and "
+"blanks are not allowed. Plone does a good job of keeping web addresses "
+"correct by using near-equivalents of the **Title** that you provide, by "
+"converting them to lowercase, and by substituting dashes for spaces and "
+"other punctuation."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:115
+#: ../../adding-content/whats-in-a-web-name.rst:75
+msgid ""
+"The web address of a given item is referred to as the **short name** in "
+"Plone. When you use the **Rename** function, you'll see the short name along"
+" with the title."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:119
+msgid ""
+"The fields will vary according to the content type. For instance, the Link "
+"content type has the URL field. The File content type has the File field, "
+"and so on."
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:124
+msgid "Description"
+msgstr ""
+
+#: ../../adding-content/adding-new-content.rst:126
+msgid ""
+"The **Description** appears at the top of pages, just under the Title. "
+"Descriptions are often used to conjunction with a variety of Folder and "
+"Collection views (such as Standard and Summary). The Description also "
+"appears in search results via Plone's native search engine."
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:2
+msgid "Adding News Items"
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:4
+msgid "Plone web sites have a built-in system for publishing news items."
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:6
+msgid "Use the *Add new...* menu for a folder to add a news item:"
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:14
+msgid "You will see the *Add News Item* panel:"
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:20
+msgid ""
+"The standard fields for title, description, and change note are in the "
+"panel, along with a visual editor area for body text and image and image "
+"caption fields. You can be as creative as you want in the body text area, "
+"and you can use the insert image (upload image) function to add as much "
+"illustration as needed. The images you upload for the news item will be "
+"added to the folder in which you are adding the news item."
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:27
+msgid ""
+"The *Image* and *Image Caption* fields are for adding an image to be used as"
+" a representative graphic for the news item, for posting in news item "
+"listings. The image will be automatically resized and positioned. Use the "
+"**Body Text** to insert an image in the actual body of the News Item."
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:33
+msgid ""
+"**IMPORTANT**: News items will not appear in the main web site news listing "
+"or news portlet until they are **published.*** *"
+msgstr ""
+
+#: ../../adding-content/adding-news-items.rst:37
+msgid ""
+"`|image6| "
+"<http://media.plone.org/LearnPlone/Creating%20a%20News%20Item.swf>`_ Watch a"
+" Plone video on `adding a news item "
+"<http://media.plone.org/LearnPlone/Creating%20a%20News%20Item.swf>`_."
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:2
+msgid "Adding Pages"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:6
+msgid ""
+"Pages in Plone vary greatly, but are single \"web pages,\" of one sort or "
+"another."
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:9
+msgid "To add a page, use the *Add new...* menu for a folder:"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:36
+msgid ""
+"Select **Page** from the drop-down menu, and you'll see the *Add Page* "
+"panel:"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:60
+msgid ""
+"The **Title** and **Description** fields are there at the top. Fill each of "
+"them out appropriately. There is a *Change note* field at the bottom, also a"
+" standard input that is very useful for storing helpful memos describing "
+"changes to a document as you make them. This is useful for pages on which "
+"you may be collaborating with others."
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:66
+msgid ""
+"The middle panel, **Body Text**, is where the action is for pages. The "
+"software used for making Pages in Plone, generically called *visual editor* "
+"and specifically a tool called TinyMCE, is a most important feature allowing"
+" you to do WYSIWYG editing. WYSIWYG editing -- *What You See Is What You "
+"Get* -- describes how word processing software works. When you make a "
+"change, such as setting a word to bold, you see the bold text immediately."
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:74
+msgid ""
+"People are naturally comfortable with the WYSIWYG approach of typical word "
+"processors. We will describe later in this manual."
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:78
+msgid "Markup languages"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:80
+msgid ""
+"Your site-administrator may also enable so-called markup languages. If you "
+"are the sort of person who likes to enter text using so-called mark-up "
+"formats, you may switch off the visual editor under your personal "
+"preferences, which will replace Kupu with a simplified text entry panel. The"
+" mark-up formats available in Plone are:"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:86
+msgid "[Markdown](http://en.wikipedia.org/wiki/Markdown)"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:87
+msgid "[Textile](http://en.wikipedia.org/wiki/Textile_%28markup_language%29)"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:88
+msgid "[Structured Text](http://www.zope.org/Documentation/Articles/STX)"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:89
+msgid "[Restructured Text](http://en.wikipedia.org/wiki/ReStructuredText)"
+msgstr ""
+
+#: ../../adding-content/adding-pages.rst:91
+msgid ""
+"Each of these works by the embedding of special formatting codes within "
+"text. For example, with structured text formatting, surrounding a word or "
+"phrase by double asterisks will make that word or phrase bold, as in "
+"\\*\\*This text would be bold.\\*\\* These mark-up formats are worth "
+"learning for speed of input if you do a lot of page creation, or if you are "
+"adept at such slightly more technical approaches to entering text. Some "
+"people prefer such formats not just for speed itself, but for fluidity of "
+"expression."
+msgstr ""
+
+#: ../../adding-content/index.rst:3
+msgid "Adding Content"
+msgstr ""
+
+#: ../../adding-content/index.rst:5
+msgid "How to add basic content types to Plone web sites"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:2
+msgid "Preparing Images for the Web"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:4
+msgid ""
+"Preparing images for the web is an essential part of using images in Plone, "
+"or in any online context. As you will see, size matters."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:7
+msgid ""
+"Many people source photographs taken with a digital camera, but they can "
+"also be scanned images, graphical illustrations made with software, and "
+"other specialized images. Let's take a look at the case of a butterfly photo"
+" taken with a digital camera."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:12
+msgid ""
+"Digital photographs taken with modern cameras are usually too big to post "
+"directly on a website, so they need to be resized. A typical web site design"
+" may have a width of around 1000 pixels. When a photograph comes off your "
+"camera, it may be several thousand pixels wide and tall, and several "
+"megabytes in file size. You need to use software on your computer to resize "
+"the image to something less than 1000 x 1000 pixels, often much smaller than"
+" that."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:20
+msgid ""
+"The software you use to view or print your digital photos will often have "
+"this resizing functionality, or you may have graphics software such as Corel"
+" Draw, Adobe Photoshop, Irfanview, or Gimp on your computer. Resizing an "
+"image, sometimes called resampling, is a standard function you should be "
+"able to find in your software, often under the *Image* menu."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:27
+msgid ""
+"How do you know what width, in pixels, to resize your image? It depends. For"
+" a little \"head shot\" photograph to go in a biography, maybe 200 pixels "
+"wide is just right. For a group photograph, 200 pixels would be too small to"
+" allow identification of the people in the photograph, so it may need to be "
+"closer to 400 pixels wide. For a scanned map image, perhaps the image width "
+"would need to be 1000 pixels for the map detail to be usable."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:35
+msgid ""
+"After saving your resized image, give it a name that indicates the new size "
+"(e.g., butteryfly-resized-300px.jpg). The file format is most commonly .jpg "
+"(or .jpeg). Other common formats for images include .png and .gif. Take note"
+" of where you save images on your computer so that you can find them when "
+"you upload them to your Plone web site."
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:45
+msgid "image\\_resizing.png"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:47
+msgid "**To summarize**:"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:49
+msgid ""
+"Take your photograph with your camera, or find an existing image you want to"
+" use"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:51
+msgid "Transfer it to your computer"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:52
+msgid "Use image software on your computer to resize your photograph"
+msgstr ""
+
+#: ../../adding-content/preparing-images-for-the-web.rst:53
+msgid "Upload it to your Plone website"
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:2
+msgid "Restricting Types in a Folder"
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:4
+msgid ""
+"The Add new... menu has a choice for restricting the content types that can "
+"be added to the folder."
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:7
+msgid ""
+"Restricting types available for adding to a folder is the simplest way to "
+"control content creation on a Plone web site. You may want to restrict "
+"content types if your site is going to be worked on by several people. In "
+"this way you can enforce good practices such as putting just images in the "
+"images folder."
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:13
+msgid ""
+"First, select the last choice in the *Add new...* menu called "
+"*Restrictions...*:"
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:22
+msgid "There are three choices shown for restricting types in the folder:"
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:28
+msgid ""
+"The default choice, to use the setting of the parent folder. Having this as "
+"the default means that if you create a folder and restrict the types that "
+"can be added, any subfolders created in the folder will automatically carry "
+"the restrictions. The second choice, to allow the standard types to be "
+"added, is a way to reset to the default, unrestricted setting. The last "
+"choice allows selection from a list of available types:"
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:40
+msgid ""
+"Types listed under the *Allowed types* heading are those available on the "
+"web site. The default, as shown, is to allow all types. Allowed types may be"
+" toggled on and off for the folder."
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:44
+msgid ""
+"Use of *Secondary types* allows a kind of more detailed control. For "
+"example, if it is preferred to store images in one folder, instead of "
+"scattering them in different folders on the web site -- a scheme that some "
+"people prefer -- an \"Images\" folder could be created with the allowed type"
+" set to the Image content type *only*. Likewise an \"Company Events\" folder"
+" could be created to hold only the Event content type. If left this way, "
+"content creators would be forced (or a single web site owner) to follow this"
+" strict scheme. Perhaps some flexibility is desired for images, though. By "
+"checking the Image content type under the *Secondary types* heading for the "
+"\"Company Events\" folder, images could be added if really needed, by using "
+"the *More...* submenu, which would appear when this mechanism is in place."
+msgstr ""
+
+#: ../../adding-content/restricting-types-in-a-folder.rst:57
+msgid ""
+"Some people prefer a heterogeneous mix of content across the web site, with "
+"no restrictions. Others prefer a more regimented approach, restricting types"
+" in one organizational scheme or another. Plone has the flexibility to "
+"accommodate a range of designs."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:2
+msgid "Setting Basic Properties"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:4
+msgid ""
+"The tab panels available on each content item has fields for basic "
+"information. Providing such data is important, providing fuel for the "
+"engines that run Plone."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:8
+msgid ""
+"Any content item, when clicked by a user with edit rights for the item, will"
+" show a set of tabs at the top for setting basic properties:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:15
+#: ../../adding-content/setting-basic-properties.rst:40
+#: ../../adding-content/setting-basic-properties.rst:72
+#: ../../adding-content/setting-basic-properties.rst:116
+msgid "null"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:17
+msgid "These basic properties tabs are:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:19
+msgid "*Default* - shows the main data entry panel for the content item"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:20
+msgid ""
+"*Categorization* - shows a panel for creating and setting categories "
+"(keywords) for the item"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:22
+msgid "*Dates* - shows the publishing date and expiration date for the item"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:23
+msgid ""
+"*Ownership* - shows a panel for setting creators, contributors, and any "
+"copyright information for the item"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:25
+msgid ""
+"*Settings* - shows a small panel for setting whether or not the item will "
+"appear in navigation menus and if comments are allowed on the item"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:29
+msgid ""
+"The input fields under these tabs cover basic descriptive information called"
+" ***metadata***. Metadata is sometimes called \"data about data.\" Plone can"
+" use this metadata in a multitude of ways."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:33
+msgid ""
+"Here is the *Categorization* panel, shown for a page content item (would be "
+"the same for other content types):"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:42
+msgid ""
+"*Note: Tags were formerly called Categories in Plone 3, and Keywords prior "
+"to version 3.0.*"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:45
+msgid ""
+"The main input field for the panel is for specifying *categories*. Create "
+"them anew, just by typing in words or phrases, one per line, in the **New "
+"tags** box. When you save, the new tags will be created within the system of"
+" tags for the web site, and this content item will be filed under them. If "
+"you re-edit this item, or edit any other, the new tags will show up as "
+"**Existing tags**."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:52
+msgid ""
+"The *Related Items* field lets you set links between content items, which "
+"will show as links at the bottom, when a content item is viewed. This is "
+"useful when you don't want to use explicit categories to connect content."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:57
+msgid ""
+"The *Location* field is a geographic location, suitable for use with mapping"
+" systems, but appropriate to enter, for general record keeping."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:60
+msgid ""
+"The *Language* choice normally would be allowed to fall to the site default,"
+" but on multilingual web sites, different languages could be used in a mix "
+"of content."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:64
+msgid ""
+"The *Dates* panel has fields for the publishing date and the expiration "
+"date, effectively start and stop dates for the content if you wish to set "
+"them:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:74
+msgid "The publication and expiration dates work like this:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:76
+msgid ""
+"When an item is past its expiration date, it's marked \"expired\" in red in "
+"its document byline when viewed."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:78
+msgid ""
+"An item whose publication date is before the current date doesn't get extra "
+"text in its byline."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:80
+msgid ""
+"In both cases, the item is \"unpublished\", which is not to be confused with"
+" a workflow state."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:82
+msgid "It merely means the item doesn't show up in listings and searches."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:83
+msgid "These listings include folder listings."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:84
+msgid ""
+"However, the owner of the item will keep seeing it, which is handy because "
+"you like to know what you have lying around in your site."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:86
+msgid "The permission that controls this is Access inactive portal content."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:87
+msgid ""
+"Expired items in a folder are marked as such when viewing the "
+"folder\\_contents."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:89
+msgid ""
+"There's no quick way of seeing if items in a folder listing are not yet "
+"published."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:91
+msgid ""
+"When you set an unpublished item as the default view for a folder, that item"
+" will be shown."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:93
+msgid ""
+"Unpublishing an item doesn't have any effect for admins. They will always "
+"see unpublished items in their listings and searches."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:95
+msgid ""
+"Giving another regular users rights (\"can add\", can edit\", \"can "
+"review\") on the item doesn't make it any less unpublished for those users."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:98
+msgid ""
+"A practical way for a non-admin user to access an unpublished item is "
+"directly through its URL."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:101
+msgid ""
+"The *Ownership* panel has three free-form fields for listing creators, "
+"contributors, and information about copyright or ownership rights to the "
+"content:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:105
+msgid "|null|"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:107
+msgid ""
+"The *Settings* panel has fields that may vary a bit from content type to "
+"content type, but generally there are input fields controlling whether or "
+"not the item appears in navigation, or if there are comments allowed, and "
+"other similar controls:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:119
+msgid "Recommendations"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:121
+msgid ""
+"There is no requirement to enter the information specified through these "
+"panels, but it is a good idea to do so. For the *Ownership* panel, providing"
+" the data is important for situations where there are several people "
+"involved in content creation, especially if there are multiple creators and "
+"contributors working in groups. You don't always need fields such as "
+"publishing and expiration dates, language, and copyrights, but these data "
+"should be specified when appropriate. A content management system can only "
+"be as good as the data completeness allows."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:131
+msgid ""
+"Specifying categories requires attention, but if you are able to get in the "
+"habit, and are zealously committed to creating a meaningful set of "
+"categories, there is a big return on the investment. The return happens "
+"through the use of searching and other facilities in Plone that work off the"
+" categorization. The same holds for setting related items. You'll be able to"
+" put your finger on what you need, and you may be able to discover and use "
+"relationships within the content."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:140
+msgid "Exposing Metadata Properties as meta tags in the HTML source"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:142
+msgid ""
+"From Plone 4 on, in *Site Setup â†’ Site*, there is a check box that will "
+"expose the Dublin Core metadata properties. Checking this box will expose "
+"the title, description, etc. metadata as meta tags within the HTML "
+"``<head>``. For example:"
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:159
+msgid ""
+"` <http://dublincore.org/>`_The generator will check and obey the "
+"`allowAnonymousViewAbout setting <http://plone.org/documentation/manual"
+"/developer-manual/plone-properties/site-"
+"properties/view?searchterm=allowAnonymousViewAbout>`_ and affects the "
+"properties*Creator*, *Contributors* and *Publisher*."
+msgstr ""
+
+#: ../../adding-content/setting-basic-properties.rst:164
+msgid ""
+"You can read more about `Dublin Core <http://dublincore.org/>`_ and `HTML "
+"Metatags <http://www.w3.org/TR/html401/struct/global.html#h-7.4.4.2>`_."
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:2
+#: ../../adding-content/whats-in-a-web-name.rst:9
+msgid "What's in a Web Name?"
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:4
+msgid ""
+"Individual content items on a Plone web site have discrete web addresses. "
+"Plone creates these automatically, based on the Title that you supply."
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:20
+msgid "OR"
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:30
+msgid ""
+"To illustrate, let's take each of these two web addresses and split them out"
+" into their component parts:"
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:47
+msgid ""
+"In this example, Plone changed each folder title to lowercase, e.g., from "
+"Personnel to personnel. You don't have to worry about this. Plone handles "
+"the web addressing; you just type in titles however you want."
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:51
+msgid "And, for the second example:"
+msgstr ""
+
+#: ../../adding-content/whats-in-a-web-name.rst:67
+msgid ""
+"This example is similar to the first, illustrating how there is a lowercase "
+"conversion from the title of each folder to the corresponding part of the "
+"web address. Note the case of the folder named Long-tailed Skippers. Plone "
+"kept the dash, as that is allowed in both title and part of the web address,"
+" but it changed the blank between the words Tailed and Skippers to a dash, "
+"in the web address, along with the lowercase conversion."
+msgstr ""

@@ -1,0 +1,366 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../portlet-management/index.rst:2
+msgid "Portlet Management"
+msgstr ""
+
+#: ../../portlet-management/index.rst:4
+msgid "An introduction to the use and management of portlets."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:2
+msgid "Managing Portlets"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:4
+msgid "How to add, remove, and rearrange portlets."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:6
+msgid ""
+"To begin manipulating portlets, you must find the **Manage Portlets link**, "
+"usually located on the bottom of each side column. Under Manage Portlets, "
+"you can create new Portlets, remove Portlets, rename and rearrange Portlets."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:12
+msgid "|Portlet manage link|"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:14
+msgid ""
+"Clicking on this link will take us to a new page that will allow us to edit "
+"the Portlets. The other method of getting to this screen is by adding "
+"/@@manage-portlets to the end of the page URL that we want to edit the "
+"Portlets on. For example, to edit the Portlets on the About Us Page, the URL"
+" would end up being www.myplonesite.org/about/@@manage-portlets."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:22
+msgid "|Manage portlets|"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:25
+msgid "Adding a Portlet"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:27
+msgid ""
+"Adding a Portlet is as simple as selecting the **Add Portlet** drop down box"
+" and clicking on the type of Portlet you would like to add. We will cover "
+"the different options available in the next section."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:32
+msgid "Editing an Existing Portlet"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:34
+msgid ""
+"To edit the properties of an existing Portlet, simply click on the name of "
+"the Portlet. In the example to the left, if we wanted to edit the properties"
+" of the Navigation Portlet, we would Click on *Navigation*. Each type of "
+"Portlet will have different configuration options available to it."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:41
+msgid "Rearranging Portlets"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:43
+msgid ""
+"To Rearrange your Portlets, simply click the **blue up or down arrow**. This"
+" will affect the order your Portlets are displayed on the page."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:47
+msgid "Removing Portlets"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:49
+msgid "To remove a Portlet, click the **red \"X\"** associated with its name."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:52
+msgid "Hiding Portlets"
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:54
+msgid ""
+"From Plone 4 on you can show/hide portlets using the associated show/hide "
+"links present."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:57
+msgid ""
+"As you may have noticed on the Manage Portlet screen, you have the ability "
+"to work with Portlets on both the right and left side of the page. This is "
+"because there are two columns for Portlets to be in, a left column and a "
+"right column. **Portlets will only appear on the side that you add them "
+"on**."
+msgstr ""
+
+#: ../../portlet-management/managing-portlets.rst:63
+msgid ""
+"With Portlets, you can add more than one of the same type on a page. There "
+"is no limit to how many times you can use an individual Portlet or a limit "
+"to how many total Portlets can be on a Page."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:2
+msgid "Portlet Hierarchy"
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:4
+msgid ""
+"Portlets use a basic hierarchy approach which determines how and why they "
+"appear on each section of your site."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:7
+msgid ""
+"Portlets use a basic hierarchical approach. By default, the portlets that "
+"you assign at the root (homepage) of the site will propogate down to all the"
+" subsections of the site. If you want a different set of portlets or order "
+"of portlets for a particular sub-section, you must use the **Block/unblock "
+"portlets** controls, to \"block\" the parent portlets. When you block "
+"Portlets, you must explicitly add all the Portlets that you wish to see on "
+"the child page."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:15
+msgid ""
+"The portlet management screen has been updated in Plone 4 to show all "
+"portlets, including portlets that are blocked. Users can now see what's "
+"being blocked and what's being inherited. When a portlet is blocked, you "
+"will notice a subtle change in color on on the portlet management screen:"
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:25
+msgid "Blocked portlets in management"
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:27
+msgid ""
+"In this diagram, our Portlets are designated in blue underneath the Page "
+"title:"
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:34
+msgid "hierarchy.gif"
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:36
+msgid ""
+"As you can see we have two Portlets designated on our Home page (navigation "
+"and recent items). These same Portlets appear on our About Page because of "
+"portlet hierarchy."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:40
+msgid ""
+"However, on the Documentation page we added a third portlet - the Collection"
+" Portlet. Here we are still allowing Parental Portlets, but in addition we "
+"specifically added the Collection Portlet."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:44
+msgid ""
+"On **both** the Tutorials and Videos Pages we have to block Parental "
+"Portlets because we do not want the Collection Portlet that is on the "
+"Documentation Page to show. When we block Parental Portlets we must re-add "
+"the Portlets to **each** Child page. In this case we re-added the Navigation"
+" Portlet to both and then added the Search Portlet to both."
+msgstr ""
+
+#: ../../portlet-management/portlet-hierarchy.rst:50
+msgid ""
+"Remember that the child pages only inherit from the parent page directly "
+"above them. In our example, if we added a page called *Staff* under About "
+"and allowed the parent portlets without adding any additional portlets, it "
+"would show the same Portlets as the Home Page as well as the About Page. "
+"However do not think that it is inheriting from the Home page. If we were to"
+" change the About Page and added a Search Portlet, our Staff Page would "
+"reflect the Portlets on the About Page not the Home Page."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:2
+msgid "Portlet Types"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:4
+msgid "Descriptions of each Portlet Type"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:6
+msgid ""
+"There are several different types of Portlets to chose from. The way that "
+"Portlet types are named can be confusing at times. Also, some can be "
+"configured through Manage Portlets and others require some setup through the"
+" ZMI or by creating other content objects first. Below is a basic "
+"description of the use and functionality of each available Portlet type."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:14
+msgid "Navigation"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:16
+msgid ""
+"The Navigation Portlet **allows users to navigate your site** with ease by "
+"providing a structured \"site map\", or navigation tree. You have the option"
+" to display the navigation for the overall site or choose to only display "
+"the current folder contents. On LearnPlone.Org, you can see an example of "
+"the Navigation Portlet in the left column. As you dig deeper into the site, "
+"the tree will continue to expand. There are several configuration options "
+"available that effect how the Navigation Portlet will behave."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:26
+msgid "Calendar"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:28
+msgid ""
+"The Calendar Portlet is a very simple Portlet that will display a Calendar "
+"on your site. This Portlet has no customizable options. If you have "
+"published Event content objects on your site, the days upon which they occur"
+" will be bolded in the calendar and will link to the corresponding events on"
+" your site."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:35
+msgid "Classic"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:37
+msgid ""
+"A Classic Portlet is refers to the way portlets were used in older version "
+"of Plone, prior to Plone 3. You must create a Page Template in the ZMI and "
+"properly set the path and macro to enable the portlet. This requires "
+"technical knowledege of both TALES and the ZMI."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:43
+msgid "Collection"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:45
+msgid ""
+"The Collection Portlet will allow you to **display the results of a "
+"Collection**. You must have a Collection previously created when you add "
+"this Portlet, then you can specifying the Collection to be used . This is a "
+"great way to summarize the results of an important Collection so that it is "
+"easily viewable to the public. For instructions on creating a Collection "
+"Portlet follow this `How-to <http://plone.org/documentation/manual/plone-4"
+"-user-manual/portlet-"
+"management/resolveuid/eb8800b7a664b35d069ddbcae7e4c837>`_."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:54
+msgid "Events"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:56
+msgid ""
+"The Events Portlet will **display Upcoming Events**, provided that you have "
+"Events on your site. You can determine how many events you want to be "
+"displayed and also which events you want to display based on publishing "
+"state."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:62
+msgid "Log in"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:64
+msgid ""
+"The Log in Portlet is another non configurable Portlet that will simply "
+"**display a Log in Form** that will allow users with Log in information to "
+"log in to the site. Once a user is logged into the site, this Portlet will "
+"not appear."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:70
+msgid "News"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:72
+msgid ""
+"The News Portlet works exactly like the Events Portlet. However instead of "
+"displaying Events, it **displays recent News items**. Once again you can "
+"choose how many News items are displayed and filter them based on their "
+"state."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:78
+msgid "RSS Feeds"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:80
+msgid ""
+"The RSS Feed Portlet allows you to link to an RSS Feed, choose how many "
+"items to display, and specify the refresh rate."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:84
+msgid "Recent Items"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:86
+msgid ""
+"The Recent Items Portlet displays a customizable **number of Recent Items**,"
+" listed by Title. A Recent Item is determined by its Last Modified Date."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:91
+msgid "Review List"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:93
+msgid ""
+"The Review List Portlet will display a **list of objects that have been "
+"submitted for review**. If you are using a submit and review cycle (and have"
+" properly set global roles for your users) this is a great way for reviewers"
+" to see what content has been submitted for review. This Portlet only "
+"appears to those logged in as this state is not viewable to the public."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:101
+msgid "Search"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:103
+msgid ""
+"The Search Portlet will place a search box in your Portlet Column. This "
+"search box will search the Titles, Descriptions, and Body text of objects on"
+" your site for the text specified. You have the option of enabling Live "
+"Search. Live Search is a feature which shows live results if the browser "
+"supports JavaScript."
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:110
+msgid "Static Text"
+msgstr ""
+
+#: ../../portlet-management/portlet-types.rst:112
+msgid ""
+"The Static Text Portlet allows you to enter content just as you would on a "
+"normal Page object. This is useful for adding hyperlink to different sites "
+"or any information that will not change. An example of this Portlet is the "
+"\"Still Stumped?\" Portlet on the right hand side of this site. For more on "
+"Static Text Portlets and an example view the How-to `Static Portlets "
+"<http://plone.org/documentation/manual/plone-4-user-manual/portlet-"
+"management/resolveuid/3698a06fc5f57d6f9bd6eaf1824f5cc8>`_."
+msgstr ""

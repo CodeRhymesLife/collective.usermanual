@@ -1,0 +1,1032 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:2
+msgid "Automatic Locking and Unlocking"
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:4
+msgid ""
+"Plone gives you a locking message that will tell you that a document was "
+"locked, by whom, and how long ago — so you won't accidentally stomp on "
+"somebody else's changes."
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:8
+msgid ""
+"When somebody clicks on the Edit tab, that item immediately becomes locked. "
+"This feature prevents two people from editing the same document at the same "
+"time, or accidentally saving edits over another users edits. In this "
+"example, George Schrubb has started editing the \"Widget Installation\" "
+"document. When Jane Smythe (who has permissions to edit that document as "
+"well) goes to view it, she will see the following:"
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:19
+msgid "locking01.png"
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:21
+msgid ""
+"Once George has finished editing the document and clicks the Save button, "
+"the document is automatically unlocked and available to be edited by others "
+"(should they have the proper permissions to do so, of course)."
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:26
+msgid ""
+"However, if it becomes clear to Jane that George isn't really editing the "
+"document anymore (e.g. the locking message says that the item was locked "
+"several days ago and not just a few minutes ago) then Jane can \"unlock\" it"
+" and make it available for editing again."
+msgstr ""
+
+#: ../../managing-content/automatic-locking-and-unlocking.rst:31
+msgid ""
+"In Plone 3.3 or higher: If a user leaves the edit page without clicking Save"
+" or Cancel, the content locking will remain effective for the next ten "
+"minutes after which time, the locked content item becomes automatically "
+"unlocked. This timeout feature is important for browsers that do not execute"
+" the \"on-unload\" javascript action properly such as Safari. Should you "
+"desire to disable locking, go to the Plone control panel (Site Setup -> "
+"Site) and uncheck *Enable locking for through-the-web edits*."
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:2
+msgid "Cutting, Copying and Pasting Items"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:4
+msgid ""
+"Cut, copy, and paste operations involve moving one or more items from one "
+"folder to another."
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:8
+msgid "Cut/Paste"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:10
+msgid ""
+"Moving items from one area to another on a website is a common task. Often "
+"this need arises with placement of content in the wrong folder. For example,"
+" if the author of the following content about Skipper butterflies realizes "
+"that a Swallowtail butterfly was mistakenly included -- the Eastern Tiger "
+"Swallowtail folder shown below -- the folder can simply be moved with a "
+"*cut*/*paste* operation:"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:21
+msgid ""
+"Note that the Eastern Tiger Swallowtail folder has been checked, and that "
+"the *cut* button is about to be clicked. After clicking the *cut* button, "
+"the screen will show a new *paste* button. The Eastern Tiger Swallowtail "
+"folder and all of its contents are now in the web site's \"memory.\" The "
+"Eastern Tiger Swallowtail folder does not immediately disappear, however, "
+"awaiting the actual *paste* operation. The *paste* button is now highlighted"
+" to show the cut/paste operation is in progress:"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:34
+msgid ""
+"The *paste* button is now active. The next step is to navigate to the "
+"destination folder, in this case the Swallowtails folder:"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:41
+msgid ""
+"After clicking the Swallowtails folder, the *paste* button will continue to "
+"show, because the paste operation has not yet been completed:"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:48
+msgid ""
+"And last, clicking the *paste* button for the destination folder adds the "
+"Eastern Tiger Swallowtail folder to its proper place in the Swallowtails "
+"folder, and cuts it from the original location, the Skippers folder, and the"
+" *cut*/*paste* operation is complete:"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:57
+msgid ""
+"The *paste* button remains active, because you would be allowed to continue "
+"pasting the folder in other places if you wanted. This could happen in "
+"several situations, including when you need to copy one page, for example, "
+"as a kind of template or basis document, into several folders."
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:64
+msgid "Copy/Paste"
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:66
+msgid ""
+"A *copy*/*paste* operation is identical to the *cut*/*paste* operation, "
+"except that there is no removal of content from the original folder. It "
+"works as you would expect it to work."
+msgstr ""
+
+#: ../../managing-content/cutting-copying-and-pasting-items.rst:70
+msgid ""
+"`|image8| "
+"<http://media.plone.org/LearnPlone/Copy,%20Paste,%20Cut,%20etc.swf>`_ Watch "
+"a Plone 2 video about `performing these operations. "
+"<http://media.plone.org/LearnPlone/Copy,%20Paste,%20Cut,%20etc.swf>`_"
+msgstr ""
+
+#: ../../managing-content/deleting-items.rst:2
+msgid "Deleting Items"
+msgstr ""
+
+#: ../../managing-content/deleting-items.rst:4
+msgid "Items may be deleted from a folder with ease."
+msgstr ""
+
+#: ../../managing-content/deleting-items.rst:6
+msgid ""
+"Sometimes it is necessary to delete a content item, often to replace it with"
+" an updated version. Or, you could simply delete an item, for a variety of "
+"reasons. In the example of the swallowtail butterfly mistakenly added to the"
+" Skippers folder, instead of cutting it and pasting it somewhere, it could "
+"simply be deleted:"
+msgstr ""
+
+#: ../../managing-content/deleting-items.rst:16
+msgid ""
+"In the example shown above, the *Eastern Tiger Swallowtail* folder is will "
+"be deleted after clicking on the *Delete* button."
+msgstr ""
+
+#: ../../managing-content/deleting-items.rst:19
+msgid ""
+"Entire folders may be deleted, so care must be taken with the delete "
+"operation, but this is true for computer use in general, and we all have "
+"learned to do a last minute self-check to make sure the delete operation is "
+"intended."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:2
+msgid "Editing Content"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:4
+msgid ""
+"Editing Plone content works the same as adding content -- usually the data "
+"entry and configuration panels for the content are the same for editing as "
+"for adding."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:8
+msgid ""
+"Of course, when we edit an item of content, the item already exists. Click "
+"the Edit tab for an item and you will see the data entry panel for the item,"
+" along with the existing values of the item's data."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:12
+msgid ""
+"For an example of something really simple, where editing looks the same as "
+"adding, we can review how to edit a folder."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:15
+msgid ""
+"The *Edit* panel for a folder simply shows the title and description input "
+"areas. Often a description is not provided for a folder, so the only thing "
+"changed is the title.Â If you do wish to give a description, which is a good"
+" idea for distinguishing folders in a list, the description can be text only"
+" -- there is no opportunity for setting styling of text, such as bold, "
+"italics, or other formatting.Â This keeps the descriptions of Plone content "
+"items as simple as possible."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:23
+msgid ""
+"Here is the *Edit* panel for a folder, in this case, one called "
+"\"Butterflies\":"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:30
+msgid ""
+"That's it. Change what you want and save, and the content item will be "
+"updated in Plone's storage system. You can repeatedly edit content items, "
+"just as you can repeatedly edit files on your local computer.Â By now you "
+"have appreciated that Plone stores discrete content items as separate "
+"entities, akin to \"files\" on a local computer, but you really don't have "
+"to think about it that way. Plone is a content management system, where the "
+"content comes in the form of numerous discrete content items that may be "
+"individually edited. Edit away at your heart's content."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:40
+msgid ""
+"For an example of editing a content item that is a bit different than adding"
+" in the first place, we can examine editing an image. Editing an Image can "
+"be done by navigating to an individual image and clicking the *Edit* tab. "
+"Clicking the *Edit* tab for the image, you will see the following *Edit "
+"Image* panel:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:50
+msgid ""
+"Here, an image called \"Eastern Tiger Swallowtail Butterfly\" is being "
+"edited.Â You can change the title and description, as usual, in which case "
+"you would usually keep the setting to \"Keep existing image.\"Â You can also"
+" change the image itself by checking the \"Replace with new image\" choice. "
+"Or, clicking the \"Delete current image\" choice will simply delete the "
+"image entirely."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:57
+msgid ""
+"Notice also the *Transform* tab at the top, which pertains specifically to "
+"images, offering a choice of several image transforms:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:64
+msgid ""
+"So, editing an image is a bit different than adding one in the first place, "
+"but not by much."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:67
+msgid ""
+"Editing panels for other content items are also usually just like the panels"
+" for adding."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:71
+msgid "Inline Editing (*optional*)"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:73
+msgid ""
+"Inline editing is disabled by default in the latest versions of Plone "
+"(3.3+). It can be enabled through the control panel by a Site Manager (Site "
+"Setup -> Editing -> Enable Inline Editing checkbox)."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:77
+msgid ""
+"The normal procedure to edit a content item is to click the *Edit* tab and "
+"use the discrete input fields for the item.Â For text fields, such as Title,"
+" Description, Body Text, etc., there is a quicker way to edit called inline "
+"editing. Inline editing is used when viewing the content item (the *View* "
+"tab is active)."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:83
+msgid ""
+"As the mouse passes over editable text parts of the item, a subtle box will "
+"outline the editable text. In the following screen capture, the mouse cursor"
+" is *not* over editable text, so you see the page title and body text as "
+"normal:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:92
+msgid ""
+"But when the mouse is moved over the body text, a box highlights the body "
+"text as editable:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:99
+msgid ""
+"Clicking within the body text after the inline editing box has appeared will"
+" bring up the visual editor:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:106
+msgid ""
+"Change or add text and save, and the normal view is back. This is "
+"considerably quicker -- fewer clicks and less intervening wait time -- than "
+"clicking the *Edit* tab and bringing up the entire edit panel for the page."
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:111
+msgid ""
+"If the mouse is moved over the title, also editable, an inline editing box "
+"appears:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:118
+msgid ""
+"Clicking the title after the box appears will activate a very simple editing"
+" field with a Save/Cancel choice:"
+msgstr ""
+
+#: ../../managing-content/editing-content.rst:125
+msgid ""
+"Change the title and save. The speed benefit of inline editing is really "
+"sensed for editing something as simple as a title."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:2
+msgid "Folder Contents"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:4
+msgid ""
+"The Contents tab shows a list of items in a folder. It is the place for "
+"simple item-by-item actions and for the manipulative actions of copy, cut, "
+"paste, move, reorder, etc."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:8
+msgid ""
+"The Contents tab for folders is like \"File Manager\" or \"My Computer\" "
+"system utilities in Windows and Linux desktops and the \"Finder\" in Mac OS "
+"X, with similar functionality."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:12
+msgid ""
+"Clicking the *Contents* tab for a folder, such as the \"Skippers\" folder "
+"below, shows the *Contents* tab panel:"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:19
+msgid "folder-contents.png"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:21
+msgid ""
+"The *Contents* tab panel is immediately recognized by observing the check "
+"boxes beside the items in the contents list. Click these check boxes to "
+"select multiple items for performing *copy*, *cut*, *rename*, *delete*, or "
+"*change state* operations."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:26
+msgid ""
+"Plone has a clipboard for *copy* and *cut* operations. If you check one or "
+"more items, and click cut or copy, a paste button will be added to the row "
+"of buttons along the bottom of the panel. If you then click another folder, "
+"you'll be able to paste the items there. For a cut operation, the items will"
+" remain in the source folder -- they won't disappear -- until they are "
+"pasted somewhere."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:33
+msgid ""
+"*Renaming* items will show a panel for entering a new name for the *short "
+"name* (or *id*) of the item, as well as the *title*. The distinction between"
+" *short name* and *title* is one that becomes apparent only when you rename,"
+" because Plone automatically creates the *short name* from the *title* in "
+"most Plone web sites. But the renaming operation must show you the *short "
+"name* as well as the *title*, because usually would want to change both, if "
+"changing either. Consider the following example:"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:46
+msgid "rename-item.png"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:48
+msgid ""
+"If you were to change the title to \"Long-tailed Skippers,\" you would also "
+"change the short name to \"long-tailed-skippers.\" This keeps things tidy --"
+" it keeps them correct, so that the URL for the item, the web address, is "
+"kept up-to-date with the actual content item. Note that the short name "
+"should contain no blanks. Use dashes for any blanks in the title, and "
+"otherwise make it a carbon copy of the title. Also, use lowercase for the "
+"short name. See also the page \"`What's in a Web Name? "
+"<http://plone.org/documentation/manual/plone-4-user-manual/adding-content"
+"/whats-in-a-web-name>`_\" for a description of how Plone handles web "
+"addressing and the short name. The following video also includes in "
+"illustration of renaming:"
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:59
+msgid ""
+"`|image11| "
+"<http://media.plone.org/LearnPlone/Copy,%20Paste,%20Cut,%20etc.swf>`_ Watch "
+"a Plone 2 video that includes `renaming an item "
+"<http://media.plone.org/LearnPlone/Copy,%20Paste,%20Cut,%20etc.swf>`_."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:63
+msgid ""
+"The *delete* operation is straightforward. Click to select one or more "
+"items, and then the delete button, and the items will be deleted."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:66
+msgid ""
+"The *change state* operation offers a great way to change the publication "
+"state of a selection of folders, and their subfolders if you select this "
+"option. In the following example, the publication state for a folder called "
+"\"Long-tailed Skippers\" is being modified. Checking the \"Include Folder "
+"Items\" will make the state change affect all contained content. Don't "
+"forget that you can do this to, say, three folders at a time, and all of "
+"their subfolders and contained content, so that in one fell swoop you can "
+"quickly publish, unpublish, etc."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:75
+msgid ""
+"*Shift-clicking* to select a range of items works. This could be very handy "
+"for a folder with more than a dozen items or so, and would be indispensable "
+"for folders with hundreds of items."
+msgstr ""
+
+#: ../../managing-content/folder-contents.rst:83
+msgid ""
+"In addition to these individual action operations, reordering is a natural "
+"mouse-driven manipulation, as described in the next section."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:2
+msgid "Folder View"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:4
+msgid ""
+"Folders have the Display tab which controls the several ways of showing "
+"folder contents."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:7
+msgid ""
+"For most content items, if you want to change how it looks, you edit the "
+"content directly. But folders are a different animal. As containers of other"
+" items, folders can display their contents in a variety of ways. We'll cover"
+" each of the options in this section."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:12
+msgid ""
+"Consider a scenario where a butterfly enthusiast, John Smith, has logged in "
+"to his web site to work on the part devoted to Skipper butterflies. He "
+"navigates to the \"Skippers\" folder by clicking the top tabs of the web "
+"site, or the navigation menu, which is on the left in his default Plone web "
+"site design. When he clicks the \"Skippers\" folder, the standard view tab "
+"panel, or just \"standard view,\" for the folder is shown:"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:24
+msgid "folder-view-standard.png"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:26
+msgid ""
+"The *View* is always how a content item would show for anonymous web site "
+"visitors. Click the *View tab* when you want to see what a content item "
+"looks like after you have changed something. For folders, you will see a "
+"listing of contained content items, in one of several list presentations, "
+"selected via the *display* pull-down menu. The default view is called "
+"*standard view*:"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:37
+msgid "And, here is *summary view*:"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:43
+msgid "And, *tabular view*:"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:49
+msgid ""
+"And, *thumbnail view*, which is mainly useful for photographs, but still "
+"works for normal content:"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:56
+msgid ""
+"Making a photo album is easy. Just add the photographs (images, or image "
+"files, the most common being .jpg files) to a folder and set the display "
+"view for the folder to **thumbnail view**. Thumbnail view will automatically"
+" update the display as images are added to the folder, presenting a multi-"
+"page division into sets of images, as needed, as the number of images grows."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:63
+msgid ""
+"If you are uploading photographic images from a digital camera or scanner, "
+"you will most likely want to resize them on your local computer before "
+"uploading them, because they are too large."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:68
+msgid "Setting an Individual Content Item as the View for a Folder"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:70
+msgid ""
+"The basic list view functionality described above for folders fits the "
+"normal way we think of folders -- as containers of items -- but Plone adds a"
+" nice facility to set the view of a folder to be that of any single item "
+"contained within the folder. This takes advantage of the way the navigation "
+"system dynamically reflects the folder structure of a Plone web site as "
+"folders are created."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:77
+msgid ""
+"You can set the display view for a folder to show a single page, which can "
+"be useful for showing the most recent document within a list of documents "
+"stored in the folder. Or, you can set it to a collection, which on its own "
+"is already a powerful content filter. The display view setting should be "
+"used with care, because it changes the behavior of folders, from acting as "
+"simple containers to acting as direct links to content. Instead, you can "
+"often accomplish what you want by only using collections, which will be "
+"covered later in this manual."
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:86
+msgid ""
+"`|image10| "
+"<http://media.plone.org/LearnPlone/Choosing%20a%20default%20page.swf>`_ "
+"Watch a Plone 2 video about `setting the page display view. "
+"<http://media.plone.org/LearnPlone/Choosing%20a%20default%20page.swf>`_"
+msgstr ""
+
+#: ../../managing-content/folder-view.rst:90
+msgid ""
+"Next, we move to the *Contents* tab to see important functions for accessing"
+" content in a list of folder content."
+msgstr ""
+
+#: ../../managing-content/index.rst:2
+msgid "Managing Content"
+msgstr ""
+
+#: ../../managing-content/index.rst:4
+msgid ""
+"The contents tab is the place where content items can be copied, cut, "
+"pasted, moved, renamed, etc."
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:2
+msgid "Presentation Mode"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:4
+msgid ""
+"Plone comes with the ability to create very simple slideshow presentations."
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:7
+msgid ""
+"Presentation Mode is a special feature of the Page content type. You can "
+"enable Presentation Mode by editing the page, then going to the **Settings**"
+" tab. Notice the Presentation Mode checkbox available there. Once checked, a"
+" link will appear in the view of the page for a user to view the page in "
+"Presentation Mode."
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:14
+msgid "How to Create Slides"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:16
+msgid ""
+"All the content for a presentation lives on a single page. You do not need "
+"to create a page for each slide. A slide is created when you use the Heading"
+" (h1) class on the page - they effectively indicate to Plone where you want "
+"your slides to be."
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:21
+msgid ""
+"You can have as many slides as you want in your presentation. Just add more "
+"Heading (h1) tags to your page and the content between that h1 tag and the "
+"next h1 tag becomes the content of your slide."
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:26
+msgid "How to Format a Slide"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:28
+msgid ""
+"It is very important to note that the **Normal Paragraph style will not "
+"render any content in the slide**. Slides are meant to display summary "
+"information, not chunks of paragraph text. As such, you must class all "
+"content in each slide with a style other than Normal Paragraph. Examples of "
+"those styles include:"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:34
+msgid "Heading (h1)"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:35
+msgid "Subheading (h3)"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:36
+msgid "Definition list"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:37
+msgid "Bulleted list"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:38
+msgid "Numbered list"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:39
+msgid "Literal"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:40
+msgid "Pull-quote"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:41
+msgid "Call out"
+msgstr ""
+
+#: ../../managing-content/presentation-mode.rst:42
+msgid "Highlight"
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:4
+msgid "Previous - Next Links"
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:6
+msgid ""
+"Automatic previous-next links for content items in a folder can be enabled "
+"under the Settings tab for a folder."
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:9
+msgid ""
+"The *Settings* tab is found by clicking the *Edit* tab for the folder. There"
+" is a toggle for enabling previous-next links for items contained in the "
+"folder:"
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:17
+msgid ""
+"Once enabled, as content items are added to the folder, previous and next "
+"links will automatically appear as needed:"
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:24
+msgid ""
+"Three pages have been created within the Cloudywings folder, and \"Page "
+"Two\" (which has no text, for this example) has been clicked. At the bottom "
+"of \"Page Two\" are links for \"Previous: Page One\" and \"Next: Page "
+"Three.\""
+msgstr ""
+
+#: ../../managing-content/previous-next-links.rst:29
+msgid "This is a *really* useful feature!"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:2
+msgid "Reordering Items"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:4
+msgid ""
+"The contents tab contains functionality for quick and precise reordering of "
+"items in a folder."
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:7
+msgid ""
+"Consider the following folder, called \"Skippers,\" for holding information "
+"about this type of butterfly.Â Often, when we add content items, we don't "
+"initially get them in the order we want.Â The desired ordering is not always"
+" alphabetical, but in this example we can assume so. Below you see the "
+"Skipper butterfly subfolders are not in alphabetical order:"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:18
+msgid ""
+"To move the top item named \"Spread-winged Skippers\" to the bottom of the "
+"list, one would click within the Order column on the left (containing the "
+"\"double-colon\" symbols) and drag the row to the desired position:"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:26
+msgid "Example of Reordering"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:28
+msgid ""
+"Dragging and dropping is done by holding the mouse button down as you move "
+"the item. The item that is being moved turns yellow as it is being moved:"
+msgstr ""
+
+#: ../../managing-content/reordering-items.rst:36
+msgid ""
+"When the mouse button is released, the item stays where it was dropped:"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:2
+msgid "Versioning"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:4
+msgid ""
+"An overview on how to view the version history of an item, compare versions,"
+" preview previous versions and revert to previous versions."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:8
+msgid "Creating a new version"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:10
+msgid ""
+"Plone includes a versioning feature. By default, the following content types"
+" have versioning enabled:"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:13
+msgid "Pages"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:14
+msgid "News Items"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:15
+msgid "Events"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:16
+msgid "Links"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:18
+msgid "Note that all other content types do track workflow history."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:20
+msgid ""
+"Content items can be configured to have versioning enabled/disabled through "
+"the Site Setup â†’ Plone Configuration panel under \"Types\"."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:23
+msgid ""
+"When editing an item, you may use the **change note** field at the bottom; "
+"the change note will be stored in the item's version history. If the change "
+"note is left blank, Plone includes a default note: \"Initial Revision\"."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:28
+msgid ""
+"A new version is created every time the item is saved. Versioning keeps "
+"track of all kinds of edits: content, metadata, settings, etc."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:32
+msgid "Viewing the version history"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:34
+msgid ""
+"Once an item as been saved, you can use the **History** link found near the "
+"top of the page. Simply click it to show the History overlay:"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:41
+msgid "history-viewlet.png"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:43
+msgid ""
+"The most recent version is listed first. The History viewlet provides the "
+"following information:"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:46
+msgid "The type of edit (content or workflow)"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:47
+msgid "Which user made the edit"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:48
+msgid "What date and time the edit occurred"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:51
+msgid "Comparing versions"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:53
+msgid ""
+"From the History viewlet you can compare any previous version with the "
+"current version or any other version with the version just before it."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:56
+msgid ""
+"To compare any previous version with the one just before it, click the "
+"*Compare* link located between two adjacent versions in the History overlay."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:64
+msgid "compare-button.png"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:66
+msgid ""
+"By clicking this button, you'll see a screen like this one where you can see"
+" the differences between the two versions:"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:73
+msgid "compare-versions.png"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:75
+msgid ""
+"In this example, text in red is text which has been deleted and text in "
+"green is text which has been added to the newer version. You can toggle "
+"between **inline** or **as code** views of the differences between versions."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:84
+msgid "Comparing Versions (HTML Source)"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:86
+msgid ""
+"You may also compare any previous version to the *current* version by "
+"clicking the *Compare to current* link History overlay, found to the far "
+"right of each version listed."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:91
+msgid "Viewing and reverting to previous versions"
+msgstr ""
+
+#: ../../managing-content/versioning.rst:93
+msgid ""
+"**You can preview any previous version** of a document by clicking the "
+"*View* link to the right of any version listed."
+msgstr ""
+
+#: ../../managing-content/versioning.rst:96
+msgid ""
+"**To revert back to a previous version**, click on the *Revert to this "
+"revision* button to the right of any version listed."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:2
+msgid "Working Copy"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:6
+msgid "Working Copy lets you have two versions of your content in parallel."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:8
+msgid ""
+"**When a Plone site is first created, there a number of additional features "
+"that can be enabled, including \"Working Copy\". If the Plone site you are "
+"using doesn't show the \"Check out\" option under the Actions menu, you will"
+" need to contact your site manager and request that \"Working Copy Support "
+"(Iterate)\" be installed.**"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:15
+msgid "Overview"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:17
+msgid ""
+"You might have been in a situation like this before: you have published a "
+"document, and you need to update it extensively, but you want the old "
+"version to exist on the web site until you have published the new one. You "
+"also want the new document to replace the current one, but you'd like to "
+"keep the history of the old one, just in case. Working copy makes all this "
+"possible."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:24
+msgid ""
+"Essentially, you \"check out\" a version of the currently published "
+"document, which creates a \"working copy\" of the document. You then edit "
+"the working copy (for as long as you like) and when you're ready for the new"
+" version to go live, you \"check in\" your working copy, and it's live. "
+"Behind the scenes, Plone will replace the original document with the new one"
+" in the exact same location and web address â€” and archive the old version "
+"as part of the document's version history."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:33
+msgid "Using \"Check out\""
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:35
+msgid ""
+"First, navigate to the page you want check out. Then from the \"Actions\" "
+"drop-down menu, select \"Check out\":"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:95
+msgid ""
+"An info message will appear indicating you're now working with a working "
+"copy:"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:122
+msgid ""
+"Now you're free to edit your own local copy of a published document. During "
+"this time, the original document is \"locked\" -- that is, no one else can "
+"edit that published version while you have a working copy checked out. This "
+"will prevent other changes from being made to (and subsequently lost from) "
+"the published version while you edit your copy."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:153
+msgid "Using \"Check in\""
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:155
+msgid ""
+"When you are ready to have your edited copy replace the published one, "
+"simply choose \"Check-in\" from the \"Actions\" drop-down menu:"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:189
+msgid ""
+"You will then be prompted to enter a Check-in message. Fill it out and click"
+" on \"Check in\":"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:219
+msgid ""
+"Your updated document will now replace the published copy and become the new"
+" published copy."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:243
+msgid ""
+"You will also notice that there is no longer a copy of the document in the "
+"user's personal folder."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:246
+msgid ""
+"Note that it is not necessary (and in fact, it is not recommended) to use "
+"the \"State\" drop-down menu on a working copy. If you inadvertently do so, "
+"however, don't panic. Just go back to your working copy and use \"Check in\""
+" from the \"Actions\" menu."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:252
+msgid "Canceling a \"Check out\""
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:254
+msgid ""
+"If for any reason it becomes necessary to cancel a check out and **you don't"
+" want to save any of your changes**, simply navigate to the working copy and"
+" select \"Cancel check-out\":"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:296
+msgid "You will prompted to confirm the \"Cancel checkout\" or to \"Keep checkout\":"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:324
+msgid ""
+"Note that if the user who has checked out a working copy is not available to"
+" check in or cancel a check out, users with the Manager role may navigate to"
+" the working copy and perform either the check in or cancel check out "
+"actions. That's because not all contributors have the *Check in* privilege. "
+"If that option is missing from your *Actions* menu:"
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:331
+msgid "Use the *State* menu."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:332
+msgid "Submit for publication."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:333
+msgid "Ask a reviewer to **not** change the state."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:334
+msgid "Ask the reviewer to perform the check in on your behalf instead."
+msgstr ""
+
+#: ../../managing-content/working-copy.rst:336
+msgid "The check in routine will handle the state."
+msgstr ""

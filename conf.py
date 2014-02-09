@@ -219,3 +219,4 @@ html_use_index = False
 
 # Don't copy sources with output HTML, as they live on GitHub
 html_copy_source = False
+locale_dirs = ['_locale/']

@@ -1,0 +1,558 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone 4 User Manual 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 12:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../collaboration-and-workflow/advanced-control.rst:2
+msgid "Advanced Control"
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:4
+msgid ""
+"The publication control system, under the advanced menu, has sophisticated "
+"features for setting availability by date and by context."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:7
+msgid "The *state* menu has an *advanced*... item:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:13
+msgid "state-menu.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:15
+msgid "which brings up the *advanced* state panel:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:21
+msgid ""
+"Below an explanation section at the beginning of the panel, there is a check"
+" box showing the content that will be affected by this change of publication"
+" state. It shows that the folder \"Long-tailed Skipper\" will be affected by"
+" this state change."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:26
+msgid ""
+"The next field, *Include contained items*, is a check box for controlling "
+"whether the state change affects this item only (the \"Long-tailed Skipper\""
+" folder) or the items it contains and all of any subfolders and other "
+"contained items. This is an important check box. It lets you easily change "
+"the availability of an entire section of a website. For example, the \"Long-"
+"tailed Skipper\" folder could contain four subfolders, for photographs, "
+"species occurrence descriptions, taxonomic history, and behavior "
+"descriptions, all of which has been kept *private* during the initial work "
+"to build up this content. All of it could be immediately made public -- it "
+"could be *published* -- by checking this box and checking *Publish* at the "
+"bottom before saving. Likewise, the *Submit for publication* choice would be"
+" used on a web site where editors controlled ultimate publication."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:40
+msgid ""
+"Likewise, an entire section could be immediately made *private*. For "
+"example, if an automobile rental agency decided to remove a car model from "
+"its fleet, an entire section of their website devoted to this car model, "
+"with several subfolders full of pages, images, and files, could be set to "
+"*private*."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:46
+msgid ""
+"The next two date fields are for *effective date* and *expiration date*. "
+"Their meanings are straightforward. If there is a window of time, for which "
+"a content item or a set of content items is valid for publication, it may be"
+" set with these fields."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:51
+msgid ""
+"A comment lets you attach an explanation to all content affected by the "
+"state change. This is especially useful when several people are working on a"
+" website, and a person less familiar with an area of the web site looks at "
+"content and wonders why it isn't published. They wonder, \"This information "
+"looks good. Why isn't it published already?\" Then they read a comment that "
+"says something like, \"Don't publish until Richard checks on copyright "
+"issues regarding the items described here.\" Using comments is a good idea "
+"for sensitive information, even if you are the only person working on the "
+"web site, because you might forget why you made a decision about publication"
+" state."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:62
+msgid ""
+"Finally, at the bottom there is a choice of several available states for "
+"this action. It will vary, depending on the present state of the item. For "
+"example, if the item is currently in a published state, there won't be a "
+"choice for *publish*, if the item is presently in a *private* state, there "
+"won't be a choice for *make private*, etc. If an item is published already, "
+"there will be choices in this bottom part of the panel for *reject* and "
+"*retract*, for \"unpublishing\" at item, setting it back to *public draft* "
+"or then to *private* state."
+msgstr ""
+
+#: ../../collaboration-and-workflow/advanced-control.rst:71
+msgid ""
+"`|image24| <http://media.plone.org/LearnPlone/Publishing%20States.swf>`_ "
+"Watch a Plone 2 video about `controlling publication state. "
+"<http://media.plone.org/LearnPlone/Publishing%20States.swf>`_"
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:2
+msgid "Basic Publication States"
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:4
+msgid ""
+"The publication control system for Plone is very flexible, starting with "
+"basic settings for making an item private or public."
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:7
+msgid ""
+"In the upper right corner of the edit panel for any content type -- folders,"
+" images, pages, etc., and any specialized content types -- there is a menu "
+"on the right for publication state. This *state* menu has settings for "
+"controlling publication state:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:16
+msgid ""
+"The header for the menu will show the current publication state for the "
+"content item, such as *State: Private*, as shown above. Private is the "
+"initial state when you create a content item -- an uploaded image, a page, a"
+" news item -- and in the private state, as the name indicates, the content "
+"item will generally not be available to visitors to the web site. The "
+"*Publish* menu choice will make the content item available on the web site "
+"to anonymous visitors. The *Submit for publication* menu choice is used on "
+"web sites where there are content editors who must approve items for "
+"publication, as discussed below."
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:26
+msgid ""
+"Also, and this will be very important, certain content types, such as news "
+"items and events, will not appear on the website as you expect, until they "
+"are explicitly *published*."
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:30
+msgid "Store this in your memory: **Publication state is important!**"
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:32
+msgid ""
+"Publication state can be changed only by users whose accounts have the "
+"necessary permissions. The menu choices in the state menu will reflect "
+"existing permissions settings. For example, in a big newspaper web site, a "
+"reporter could add pages for news articles, but the state menu will not show"
+" a *Publish* menu choice, only a *Submit for publication* menu choice. This "
+"is because a reporter must submit articles up the line to the editorial "
+"staff for approval before publication. If your account has the permissions, "
+"however, the *Publish* menu choice will appear and you can simply publish in"
+" one step."
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:42
+msgid ""
+"For an editor, a content item that has been submitted may be *published* or "
+"*rejected*, either outright, because it is an inappropriate submission for "
+"the situation, or for the more typical reason that the content item needs "
+"revision."
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:47
+msgid ""
+"After a content item has been *published*, it may be *retracted*, to change "
+"the state back to *public draft* state, or *sent back* to private, if "
+"desired. The menu choices in the state menu will change accordingly:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/basic-publication-states.rst:56
+msgid ""
+"Consideration should be given to retracting (\"unpublishing\"), or setting "
+"to *private*, any content that has become obsolete or undesired for some "
+"reason. Setting to *private* will take the item from public view and from "
+"showing up in search results, but will keep it around in case the format or "
+"the actual material (text, images, etc.) is needed later. This is especially"
+" true for content relating to events that may recur or to one-of-a-kind "
+"creations. The decision to delete or to set to *private* may depend on "
+"whether or not the content exists elsewhere, on a local computer. If the "
+"content is large in size, in the sense of disk space taken, perhaps saving "
+"to a local computer is warranted before deletion, if space on the website "
+"server computer is an issue."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:2
+msgid "Collaboration through Sharing"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:4
+msgid ""
+"The Sharing tab empowers you collaborate with other users through the use of"
+" several built-in roles."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:8
+msgid "Example 1: Letting others add content to a folder you created"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:10
+msgid ""
+"In this example, Jane Smythe has full access to her Plone site. She can add,"
+" edit, delete and publish content anywhere in the site. For now, she has "
+"created a folder called \"Documentation\" and added one Page to it, "
+"\"Project Overview\". She hasn't published either the folder or the "
+"document. The default workflow for this Plone site has not been modified. "
+"Now she wants to let her colleague, George Shrubb, add content to the "
+"Documentation folder. He have permission to edit any of the existing "
+"content, but she needs him to start adding content. Before we follow along "
+"with Jane, let's take a peek at what George currently sees when he logs in "
+"on this Plone site:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:26
+msgid ""
+"Notice that as of right now, George can't even view the Documentation "
+"folder, because Jane created it and it is still in the *Private* state. All "
+"the default permissions are currently in place and work as expected."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:30
+msgid ""
+"Jane gives George the permissions he needs to add content to the "
+"Documentation folder."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:33
+msgid ""
+"Jane navigates to the Documentation folder and clicks on the Sharing tab:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:40
+msgid ""
+"One of the first things to notice is that Jane already has all the "
+"permissions available for this Folder. These permissions were actually "
+"granted from higher up in the site as indicated by the green/check mark "
+"symbol."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:45
+msgid "Taking a closer look at the available permissions, they are:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:47
+msgid ""
+"**Can add** - This means that when this permission is granted to a "
+"particular user (or group of users), that user can then add new content "
+"items. And since that user was also the creator of that content item, they "
+"will be able to edit it as they like."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:51
+msgid ""
+"**Can edit**- When this permission is granted on a folder, the user can not "
+"only edit the Folder (its title and description) but can also edit any of "
+"the items in the folder. Note, however, the user is not allowed to delete "
+"any of the content. When this permission is granted on a Page, for example, "
+"the user can only edit that Page and none of the other items in the folder."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:57
+msgid ""
+"**Can view** - When this permission is used on a folder or other item, the "
+"user can view the content but not make any changes."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:59
+msgid ""
+"**Can review** - When this permission is granted, the user can publish "
+"items."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:62
+msgid ""
+"Note: these permissions will override the default workflow permissions! For "
+"example, if you grant a user \"Can view\" permission on a Page that is in "
+"the Private state, that user will be able to see that Page."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:66
+msgid ""
+"In this example, Jane will grant George \"Can add\" permission on the "
+"\"Documentation\" folder so that he can add content to the folder. First, "
+"she searches to find him by his name:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:74
+msgid ""
+"Jane can now add specific permissions for George in the \"Documentation\" "
+"folder. She is going to give him the \"Can add\" permission and then click "
+"on \"Save\":"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:82
+msgid ""
+"And that's all there is to it! Let's see how George views the site now."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:84
+msgid ""
+"Note: George does NOT need to log out and log back in. Permissions are "
+"always current because they are checked every time a user accesses anything "
+"(e.g. clicks on a link) on a Plone site."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:88
+msgid ""
+"George clicks on the *Home* tab (for example) to refresh his view of the "
+"site and can now see the \"Documentation\" folder:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:95
+msgid ""
+"When George clicks on the \"Documentation\" tab, he notices that he can view"
+" all the content in the \"Documentation\" folder, and he now is able to add "
+"the available content types to the folder, as shown in the *Add new...* "
+"menu:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:104
+msgid ""
+"George wants to review what Jane has already created, so he clicks on the "
+"Project Overview link and sees:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:107
+msgid "|image25|"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:109
+msgid ""
+"While George can view the document, his limited permissions do not allow him"
+" to edit it or change its state. The only thing he can do beyond viewing the"
+" document is to make his own copy of it."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:113
+msgid ""
+"George adds a Page called \"Widget Installation\" and creates the content "
+"for that Page. When he's done he saves it:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:120
+msgid ""
+"Jane views the work George has done. She clicks on the \"Documentation\" tab"
+" and sees that George indeed has been busy. She clicks on \"Widget "
+"Installation\" page to take a closer look:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:128
+msgid ""
+"Notice that Jane has full access to the page that George created. She can "
+"edit it as well as cut/copy/paste it. Instead, she will wait until George "
+"submits the page for review before actually doing anything further with this"
+" page."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:134
+msgid "Example 2: Letting others edit content you created"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:136
+msgid ""
+"Both Jane and George have been hard at work creating pages in the "
+"Documentation folder. **Jane has published the Documentation folder and "
+"several pages:**"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:144
+msgid ""
+"Jane has decided that she wants to turn over all editing (but not "
+"publishing) control of the \"Documentation\" folder to George. So she "
+"returns to the \"Documentation\" folder and clicks on the *Sharing* tab:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:152
+msgid "sharing10.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:154
+msgid ""
+"From here she only needs to tick the \"Can edit\" check box and George will "
+"be able to edit all the content in the \"Documentation\" folder -- including"
+" the \"Documentation\" folder itself. When George next visits the folder and"
+" clicks on \"Project Overview\" (which is a Page that Jane created), this is"
+" what he sees:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:164
+msgid "sharing11.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:166
+msgid ""
+"So now George can edit any item in the \"Documentation\" folder regardless "
+"of who created it or when."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:169
+msgid ""
+"Meanwhile, Molly has joined George as a new team member. George helps Molly "
+"start updating the \"Widget Installation\" document. He goes to the sharing "
+"tab for \"Widget Installation\" and searches on Molly's Full Name (not "
+"username) and gives her the \"Can edit\" permissions on this document."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:179
+msgid "sharing12.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:181
+msgid ""
+"Now when Molly goes to the \"Documentation\" folder, she can see the two "
+"published items and the private item that she is now allowed to edit:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:188
+msgid "sharing13.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:190
+msgid ""
+"And, in fact, when she clicks on the \"Widget Installation\" document, she "
+"is able to edit it:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:197
+msgid "sharing13b.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:199
+msgid ""
+"Notice, however, when she clicks on either of the two items she isn't "
+"allowed to edit, she doesn't have any additional access. She can view these "
+"two items because they are published and in the default Plone workflow "
+"(meaning that anyone can view them)."
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:208
+msgid "sharing13c.png"
+msgstr ""
+
+#: ../../collaboration-and-workflow/collaboration-through-sharing.rst:210
+msgid ""
+"One final note on this example: if the \"Documentation\" folder was not in "
+"the published state OR Molly had not been given any other permissions (for "
+"example, \"Can view\" on the Documentation folder), then Molly would have "
+"needed the complete URL to reach the document she had been given access to "
+"edit. Permissions are very specific in Plone!"
+msgstr ""
+
+#: ../../collaboration-and-workflow/index.rst:2
+msgid "Collaboration and Workflow"
+msgstr ""
+
+#: ../../collaboration-and-workflow/index.rst:4
+msgid ""
+"Learn how to share and control access to your content by using the Sharing "
+"tab and the State menu."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:2
+msgid "Workflow Policies"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:4
+msgid ""
+"Workflow policies allow a site administrator to create a formalized system "
+"for controlling publication and content management as a step-by-step flow "
+"involving different users in set roles."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:8
+msgid ""
+"Workflow is an advanced subject. It involves creation of a more regimented "
+"control of content creation, review, and publication. If you have a user "
+"account on a typical small Plone site, you will probably not encounter "
+"custom workflow policies, because there isn't a need for this more "
+"sophisticated control. But, the potential is there for using this "
+"functionality, as it is built in to Plone."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:15
+msgid ""
+"For an introduction to the workflow concept, consider an example involving a"
+" web site for a newspaper business, for which these different groups of "
+"people are at work:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:19
+msgid "Reporters"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:20
+msgid "Can create stories, but can only submit them for review."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:23
+msgid "Editors"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:22
+msgid ""
+"Can review stories, but can't publish completely. They send positively "
+"reviewed and edited stories up the line for further approval."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:26
+msgid "Copy Editors"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:26
+msgid "Do final fact checking, fixes, and review, and may publish stories."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:28
+msgid ""
+"A *workflow policy*, sometimes abbreviated to *workflow*, describes the "
+"constraints on state-changing actions for different groups of people. Once "
+"the workflow policy has been created, it needs to be applied to an area of "
+"the website for the rules to take affect. In the example of the newspaper "
+"web site, a workflow policy would be set up and then applied to the folders "
+"where reporters do the work of adding news articles. Then, reporters would "
+"create stories and send them up the line for review and approval:"
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:41
+msgid ""
+"Reporters would add news articles and would *submit* them (the *publish* "
+"menu choice is not available to them). Likewise, editors may *reject* the "
+"article for revision or they may, in turn, *submit* the article up the line "
+"to a copy editor for final proofreading and publication. In this newspaper "
+"business example, this policy could be called something like \"Editorial "
+"Review Policy.\" Configuring a workflow policy is a matter of applying it to"
+" an area of the website -- to define the scope of the workflow. This is a "
+"web site administrator task. The web site administrator would use control "
+"panels of Plone to specify where on the web site the \"Editorial Review "
+"Policy\" applies, site-wide or to a subsection."
+msgstr ""
+
+#: ../../collaboration-and-workflow/workflow-policies.rst:53
+msgid ""
+"Plone comes with several useful workflow policies -- the default one is a "
+"simple web publishing policy. Your web site administrator might employ a "
+"more specific policy, such as a policy for a community-based web site or a "
+"company Intranet (internal web system). If so, you may need to learn some "
+"procedural steps to publishing, but these are just elaborations of "
+"principles in the default, basic workflow policy."
+msgstr ""
