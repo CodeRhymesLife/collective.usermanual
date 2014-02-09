@@ -10,11 +10,6 @@
    Suite Setup  Run keywords  Suite Setup  Test Setup
    Suite Teardown  Suite Teardown
 
-   *** Variables ***
-
-   @{CONFIGURE_PACKAGES}  plone.app.iterate
-   ${DOMAIN}  collective.usermanual
-
    *** Keywords ***
 
    Suite Setup
@@ -26,9 +21,9 @@
        Set default language
        Enable autologin as  Manager
        ${user_id} =  Translate  user_id
-       ...   default=jane-doe  domain=${DOMAIN}
+       ...  default=jane-doe
        ${user_fullname} =  Translate  user_fullname
-       ...   default=Jane Doe  domain=${DOMAIN}
+       ...  default=Jane Doe
        Create user  ${user_id}  Member  fullname=${user_fullname}
        Set autologin username  ${user_id}
 

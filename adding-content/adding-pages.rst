@@ -16,6 +16,10 @@ To add a page, use the *Add new...* menu for a folder:
 .. code:: robotframework
    :class: hidden
 
+   *** Variables ***
+
+   ${REGISTER_TRANSLATIONS}  ${CURDIR}/../_locales
+
    *** Test Cases ***
 
    Show add new menu

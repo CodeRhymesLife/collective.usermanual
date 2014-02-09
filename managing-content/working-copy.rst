@@ -45,27 +45,28 @@ drop-down menu, select "Check out":
 
    *** Variables ***
 
-   @{CONFIGURE_PACKAGES}  collective.usermanual  plone.app.iterate
+   @{CONFIGURE_PACKAGES}  plone.app.iterate
    @{APPLY_PROFILES}  plone.app.iterate:plone.app.iterate
+   ${REGISTER_TRANSLATIONS}  ${CURDIR}/../_locales
 
    *** Test Cases ***
 
    Create sample content
        ${folder_id} =  Translate  folder_news_id
-       ...  default=news  domain=${DOMAIN}
+       ...  default=news
        ${folder_title} =  Translate  folder_news_title
-       ...  default=News  domain=${DOMAIN}
+       ...  default=News
        ${container} =  Create content  type=Folder
        ...  id=${folder_id}  title=${folder_title}
 
        ${item_id} =  Translate  sample_news_id
-       ...  default=website-refresh  domain=${DOMAIN}
+       ...  default=website-refresh
        ${item_title} =  Translate  sample_news_title
-       ...  default=Welcome to our new site!  domain=${DOMAIN}
+       ...  default=Welcome to our new site!
        ${item_description} =  Translate  sample_news_description
-       ...  default=The long wait is now over  domain=${DOMAIN}
+       ...  default=The long wait is now over
        ${item_text} =  Translate  sample_news_text
-       ...  default=<p>Our new site is built with Plone.</p>  domain=${DOMAIN}
+       ...  default=<p>Our new site is built with Plone.</p>
 
        ${item} =  Create content  container=${container}  type=News Item
        ...  id=${item_id}  title=${item_title}
@@ -74,9 +75,9 @@ drop-down menu, select "Check out":
 
    Show how to checkout
        ${folder_id} =  Translate  folder_news_id
-       ...  default=news  domain=${DOMAIN}
+       ...  default=news
        ${item_id} =  Translate  sample_news_id
-       ...  default=website-refresh  domain=${DOMAIN}
+       ...  default=website-refresh
        Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        Page should contain element  css=#plone-contentmenu-actions dt a
@@ -137,9 +138,9 @@ subsequently lost from) the published version while you edit your copy.
 
    Show locked original
        ${folder_id} =  Translate  folder_news_id
-       ...  default=news  domain=${DOMAIN}
+       ...  default=news
        ${item_id} =  Translate  sample_news_id
-       ...  default=website-refresh  domain=${DOMAIN}
+       ...  default=website-refresh
        Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        Element should be visible  css=#plone-lock-status
@@ -167,9 +168,9 @@ simply choose "Check-in" from the "Actions" drop-down menu:
 
    Show check-in option
        ${folder_id} =  Translate  folder_news_id
-       ...  default=news  domain=${DOMAIN}
+       ...  default=news
        ${item_id} =  Translate  sample_news_id
-       ...  default=website-refresh  domain=${DOMAIN}
+       ...  default=website-refresh
        Go to  ${PLONE_URL}/${folder_id}/copy_of_${item_id}
 
        Element should be visible  css=#plone-lock-status
@@ -209,7 +210,7 @@ click on "Check in":
 
        Element should be visible  css=#checkin_message
        ${checkin_message} =  Translate  checkin_message
-       ...  default=Update news item ingress  domain=${DOMAIN}
+       ...  default=Update news item ingress
        Input text  css=#checkin_message  ${checkin_message}
 
        Capture and crop page screenshot
@@ -267,9 +268,9 @@ copy and select "Cancel check-out":
 
    Show cancel checkout
        ${folder_id} =  Translate  folder_news_id
-       ...  default=news  domain=${DOMAIN}
+       ...  default=news
        ${item_id} =  Translate  sample_news_id
-       ...  default=website-refresh  domain=${DOMAIN}
+       ...  default=website-refresh
        Go to  ${PLONE_URL}/${folder_id}/${item_id}
 
        page should contain element
