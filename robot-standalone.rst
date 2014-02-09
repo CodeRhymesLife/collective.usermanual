@@ -5,11 +5,15 @@
 
    Resource  plone/app/robotframework/server.robot
    Resource  plone/app/robotframework/keywords.robot
-   Resource  collective/usermanual/keywords.robot
    Resource  Selenium2Screenshots/keywords.robot
 
    Suite Setup  Run keywords  Suite Setup  Test Setup
    Suite Teardown  Suite Teardown
+
+   *** Variables ***
+
+   @{CONFIGURE_PACKAGES}  plone.app.iterate
+   ${DOMAIN}  collective.usermanual
 
    *** Keywords ***
 
